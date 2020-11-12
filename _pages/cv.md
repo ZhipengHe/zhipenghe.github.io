@@ -11,32 +11,30 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* Jinling Institute of Technology, China
+  * B.E. in Software Engineering, 2019
+* Queensland University of Technology, Australia
+  * BInfTech in Information System, 2020 (expected)
 
-Work experience
+Experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Mar 2020 - Oct 2020: Capstone Analyst
+  * Suncorp Group - Internship
+  * Brisbane, Queensland, Australia
+  * Capstone project for BInfTech at QUT. Coordinated with a team of 4 to integrate the enterprise architectural systems within the insurance department. Gathered business requirements and improving data models and reporting frameworks to improve efficiency.
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Nov 2020 - Ongoing: Vacation Research Experience Scheme
+  * School of Information System, Queensland University of Technology
+  * Topic: Towards Design and Development of Interactive Visualisation for Organisational Analytics
+  * Supervisor: Dr Chun Ouyang
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Software Development
+* Business Analysis
+* Data Analysis
 
-Publications
+<!-- Publications
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
@@ -56,4 +54,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
