@@ -20,11 +20,15 @@ Experience
 ======
 * Mar 2020 - Oct 2020: Capstone Analyst
   * Suncorp Group - Internship
-  * Brisbane, Queensland, Australia
-  * Capstone project for BInfTech at QUT. Coordinated with a team of 4 to integrate the enterprise architectural systems within the insurance department. Gathered business requirements and improving data models and reporting frameworks to improve efficiency.
+  * Location: Brisbane, Australia
+  * Description:
+    * Capstone project for BInfTech at QUT.
+    * Coordinated with a team of 4 to integrate the enterprise architectural systems within the insurance department.
+    * Gathered business requirements and improving data models and reporting frameworks to improve efficiency.
 
 * Nov 2020 - Ongoing: Vacation Research Experience Scheme
   * School of Information System, Queensland University of Technology
+  * Location: Brisbane, Australia
   * Topic: Towards Design and Development of Interactive Visualisation for Organisational Analytics
   * Supervisor: Dr Chun Ouyang
   
