@@ -1,7 +1,7 @@
 ---
 title: 'My First Post: Why I use post to record my study?'
 date: 2020-11-23
-permalink: /posts/2020/11/blog-post-1/
+permalink: /posts/2020/11/23/My-First-Post-Why-I-use-post-to-record-my-study/
 tags:
   - Just Chat
 ---
