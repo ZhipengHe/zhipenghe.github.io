@@ -1,6 +1,6 @@
 ---
 title:  "Process Mining: Play-In, Play-Out, and Replay"
-date: 2020-11-23
+date: 2020-11-24
 permalink: /posts/2020/11/24/Process-Mining-Play-In-Play-Out-and-Replay/
 categories: 
   - Research Notes
