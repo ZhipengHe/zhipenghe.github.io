@@ -64,4 +64,10 @@ The goal of decision tree learning is to maximize the *information gain* by sele
 
 Note that splitting nodes will always reduce the overall entropy. In the extreme case all the leaf nodes corresponds to single individuals (or individuals having exactly the same attribute values). The overall entropy is then by definition zero. However, the resulting tree is not very useful and probably has little predictive value. It is vital to realize that the decision tree is learned based on *examples*.
 
-A decision tree is “overfitting” if it depends too much on the particularities of the data used to learn it (see also Sect. 4.6). An overfitting decision tree is overly complex and performs poorly on unseen instances. Therefore, it is important to select the right attributes and to stop splitting when little can be gained.
+A decision tree is “overfitting” if it depends too much on the particularities of the data used to learn it. An overfitting decision tree is overly complex and performs poorly on unseen instances. Therefore, it is important to select the right attributes and to stop splitting when little can be gained.
+
+## References
+
+1. van der Aalst, W. (2016). *Process Mining Data Science in Action* (2nd ed.). Springer Berlin Heidelberg. [https://doi.org/10.1007/978-3-662-49851-4](https://doi.org/10.1007/978-3-662-49851-4)
+
+2. van der Aalst, W. (n.d.). *Process Mining: Data science in Action* [MOOC]. Coursera. [https://www.coursera.org/learn/process-mining](https://www.coursera.org/learn/process-mining)
