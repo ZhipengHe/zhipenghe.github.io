@@ -45,3 +45,23 @@ Decision tree learning uses a recursive top-down algorithm that works as follows
 5. For all possible attributes $a\in A$, evaluate the effects of splitting on the attribute. Select the attribute $a$ providing the best improvement, i.e., maximize $s^{new}_a(x) − s^{old}(x)$. The same attribute should not appear multiple times on the same path from the root. Also note that for numerical attributes, so-called “cut values” need to be determined.
 6. If the improvement is substantial enough, create a set of child nodes $Y$ , add $Y$ to $X$ (i.e., $X:= X\cup Y$), and connect $x$ to all child nodes in $Y$.
 7. Associate each node in $Y$ to its corresponding set of instances and go to step 2.
+
+### Entropy: Encoding Uncentainty
+
+Entropy is an information-theoretic measure for the uncertainly in a multi-set of elements.
+
+#### Formula
+
+$$E=-\sum_{i=1}^k p_i \log_2 p_i$$
+
+#### Apply to decision tree learning
+
+The entropy value for root node of decision tree should be a value close to the maximal value.
+
+Information Gain = old overall entropy - new overall entropy
+
+The goal of decision tree learning is to maximize the *information gain* by selecting a particular attribute to split on. Maximizing the information gain corresponds to minimizing the entropy and heterogeneity in leaf nodes.
+
+Note that splitting nodes will always reduce the overall entropy. In the extreme case all the leaf nodes corresponds to single individuals (or individuals having exactly the same attribute values). The overall entropy is then by definition zero. However, the resulting tree is not very useful and probably has little predictive value. It is vital to realize that the decision tree is learned based on *examples*.
+
+A decision tree is “overfitting” if it depends too much on the particularities of the data used to learn it (see also Sect. 4.6). An overfitting decision tree is overly complex and performs poorly on unseen instances. Therefore, it is important to select the right attributes and to stop splitting when little can be gained.
