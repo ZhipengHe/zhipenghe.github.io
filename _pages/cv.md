@@ -14,7 +14,8 @@ Education
 * Jinling Institute of Technology, China
   * B.E. in Software Engineering, 2019
 * Queensland University of Technology, Australia
-  * BInfTech in Information System, 2020 (expected)
+  * BInfTech in Information System, 2020
+  * BInfTech Honours, 2021 (Expect)
 
 Experience
 ======
@@ -26,7 +27,7 @@ Experience
     * Coordinated with a team of 4 to integrate the enterprise architectural systems within the insurance department.
     * Gathered business requirements and improving data models and reporting frameworks to improve efficiency.
 
-* Nov 2020 - Ongoing: Vacation Research Experience Scheme
+* Nov 2020 - Feb 2021: Vacation Research Experience Scheme
   * School of Information System, Queensland University of Technology
   * Location: Brisbane, Australia
   * Topic: Towards Design and Development of Interactive Visualisation for Organisational Analytics
@@ -34,8 +35,9 @@ Experience
   
 Skills
 ======
+* Process Mining
+* Deep Learning
 * Software Development
-* Business Analysis
 * Data Analysis
 
 <!-- Publications
