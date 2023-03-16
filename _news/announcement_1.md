@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2023-03-15 13:00:00+1000
 inline: true
 ---
 
-A simple inline announcement.
+Pass the PhD confirmation seminar successfully & Welcome to 2nd year PhD research!
