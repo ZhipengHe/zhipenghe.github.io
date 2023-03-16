@@ -1,34 +1,23 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Ouyang":
+  - firstname: ["Chun", "C."]
+    url: https://staff.qut.edu.au/staff/c.ouyang
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Moreira":
+  - firstname: ["Catarina", "C.", "C. P.", "Catarina Pinto"]
+    url: https://staff.qut.edu.au/staff/catarina.pintomoreira
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Xu":
+  - firstname: ["Yue", "Y."]
+    url: https://staff.qut.edu.au/staff/yue.xu
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Wickramanayake":
+  - firstname: ["Bemali", "B."]
+    url: https://au.linkedin.com/in/bemali-wickramanayake-b2627261
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Sindhgatta":
+  - firstname: ["Renuka", "R."]
+    url: https://scholar.google.co.in/citations?user=P-YUol0AAAAJ
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
-
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
-
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"Wei":
+  - firstname: ["Jia", "J."]
+    url: https://www.linkedin.com/in/jia-jenny-wei-203795132/
