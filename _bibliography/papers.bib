@@ -1,84 +1,43 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,},
-  preview={brownian-motion.gif}
+
+@article{Honours2021,
+	selected = false,
+	author = {Zhipeng He}, 
+	title = {Investigating the Impact of Event Logs on Deep Learning-based Process Prediction Performance},
+	journal = {Queensland University of Technology},
+	year = {2021},
+	abbr = {Honours},
+	abstract = {Business process predictive analytics exploit historical process execution logs, known as event logs, to generate predictions of running cases of a business process, such as next event or remaining time. In the state-of-the-art approaches, deep learning algorithms have attracted increasing attention and as a result deep learning-based prediction models become the mainstream of the research. Often encoding methods for event logs and neural network architectures have been considered as two factors that would impact models' prediction performance. In fact, an event log, as the input data for prediction, also plays an important role in the predictive pipeline and should not be overlooked. However, there is no recent research concerning with the potential influence of event logs on prediction performance. This thesis aims to investigate how different event logs affect the performance of deep learning-based process prediction models. We propose and implement a benchmark on two different encoding methods and three Long Short-Term Memory (LSTM) models with seven real-life event logs for predicting next activity, next resource and next interval time. Based on the above benchmark, this thesis explores and analyses some key characteristics of event logs and extracts findings on relationships between the characteristics of event logs and performance of process prediction models.},
+	note = {Honours Thesis},
+	pdf = {Honours_Thesis.pdf}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
+@article{KBS2022,
+	abstract = {Predictive process analytics, often underpinned by deep learning techniques, is a newly emerged discipline dedicated for providing business process intelligence in modern organisations. Whilst accuracy has been a dominant criterion in building predictive capabilities, the use of deep learning techniques comes at the cost of the resulting models being used as `black boxes', i.e., they are unable to provide insights into why a certain business process prediction was made. So far, little attention has been paid to interpretability in the design of deep learning-based process predictive models. In this paper, we address the `black-box' problem in the context of predictive process analytics by developing attention-based models that are capable to inform both what and why is a process prediction. We propose i) two types of attentions---event attention to capture the impact of specific events on a prediction, and attribute attention to reveal which attribute(s) of an event influenced the prediction; and ii) two attention mechanisms---shared attention mechanism and specialised attention mechanism to reflect different design decisions between whether to construct attribute attention on individual input features (specialised) or using the concatenated feature tensor of all input feature vectors (shared). These lead to two distinct attention-based models, and both are interpretable models that incorporate interpretability directly into the structure of a process predictive model. We conduct experimental evaluation of the proposed models using real-life dataset and comparative analysis between the models for accuracy and interpretability, and draw insights from the evaluation and analysis results. The results demonstrate that i) the proposed attention-based models can achieve reasonably high accuracy; ii) both are capable of providing relevant interpretations (when validated against domain knowledge); and iii) whilst the two models perform equally in terms of prediction accuracy, the specialised attention-based model tends to provide more relevant interpretations than the shared attention-based model, reflecting the fact that the specialised attention-based model is designed to facilitate better interpretability.},
+	author = {Bemali Wickramanayake and Zhipeng He and Chun Ouyang and Catarina Moreira and Yue Xu and Renuka Sindhgatta},
+	doi = {10.1016/j.knosys.2022.108773},
+	journal = {Knowledge-Based Systems},
+	keywords = {Explainable AI, Attention mechanism, Business process prediction, Event log, LSTM},
+	pages = {108773},
+	title = {Building interpretable models for business process prediction using shared and specialised attention mechanisms},
+	year = {2022},
+	selected=true,
+	abbr={KBS},
+	html = {https://doi.org/10.1016/j.knosys.2022.108773}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  selected={true}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+@article{Physionet2022,
+	abstract = {In this work, we extract an event log from the MIMIC-IV-ED dataset by adopting a well-established event log generation methodology, and we name this event log MIMICEL. The data tables in the MIMIC-IV-ED dataset relate to each other based on the existing relational database schema, and each table records the individual activities of patients along their journey in the emergency department (ED). While the data tables in the MIMIC-IV-ED dataset catch snapshots of a patient journey in the ED, the extracted event log MIMICEL aims to capture an end-to-end patient journey process. This will enable us to analyse the existing patient flows, thereby improving the efficiency of an ED process.},
+	author = {Jia Wei and Zhipeng He and Chun Ouyang and Catarina Moreira},
+	title = {MIMICEL: MIMIC-IV Event Log for Emergency Department},
+	journal = {Physionet},
+	year = {2022},
+	doi = {10.13026/64aq-jw11},
+	html = {https://doi.org/10.13026/64aq-jw11},
+	selected = false,
+	abbr={MIMIC},
+	note = {Version 1.0.0}
 }
