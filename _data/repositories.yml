@@ -1,14 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
-
-repo_description_lines_max: 2
+  - ZhipengHe
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - ZhipengHe/QUT-Beamer-Theme
+  - ZhipengHe/Shared-and-Specialised-Attention-based-Interpretable-Models
+  - ZhipengHe/MIMIC-IV-event-log-extraction-for-ED
+
