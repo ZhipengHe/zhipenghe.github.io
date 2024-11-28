@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Pass the PhD confirmation seminar successfully & Welcome to 2nd year PhD research!
+🎉 Pass the PhD confirmation seminar successfully & Welcome to 2nd year PhD research!
