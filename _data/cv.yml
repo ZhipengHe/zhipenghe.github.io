@@ -1,16 +1,16 @@
 - title: General Information
   type: map
   contents:
-  - name: Full Name
-    value: "HE, Zhipeng"
-  - name: Chinese Name
-    value: 何志鹏
-  - name: Preferred Name
-    value: Zippo
-  - name: Contact
-    value: zhipeng [dot] he [at] hdr [dot] qut [dot] edu [dot] au
-  - name: Languages
-    value: Mandarin Chinese (native), English (fluent)
+    - name: Full Name
+      value: "HE, Zhipeng"
+    - name: Chinese Name
+      value: 何志鹏
+    - name: Preferred Name
+      value: Zippo
+    - name: Contact
+      value: zhipeng [dot] he [at] hdr [dot] qut [dot] edu [dot] au
+    - name: Languages
+      value: Mandarin Chinese (native), English (fluent)
 
 - title: Research Areas
   type: list
@@ -23,29 +23,37 @@
   type: time_table
   contents:
   - title: Doctor of Philosophy, Ph.D.
-    year: Feb. 2022 <br/> - Now
-    location: School of Information Systems<br/> Queensland University of Technology, Australia
+    year: 2022.02 - Present 
+    location: Brisbane, Australia
+    department: School of Information Systems
+    institution: Queensland University of Technology
     description:
     - 'Co-advised by <a href="https://staff.qut.edu.au/staff/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a>, <a href="https://www.qut.edu.au/about/our-people/academic-profiles/alistair.barros" target="_blank"><b>Prof. Alistair Barros</b></a> and <a href="https://staff.qut.edu.au/staff/catarina.pintomoreira" target="_blank"><b>Dr. Catarina Moreira</b></a>'
     - 'Awarded QUT Postgraduate Research Award (International)'
     - 'Awarded QUT HDR Tuition Fee Sponsorship'
   - title: Bachelor of Information Technology (Honours), First Class Honours
-    year: Feb. – Dec.<br/> 2021
-    location: School of Information Systems<br/> Queensland University of Technology, Australia
+    year: 2021.02 - 2021.12
+    location: Brisbane, Australia
+    department: School of Information Systems
+    institution: Queensland University of Technology
     description:
     - 'Co-advised by <a href="https://staff.qut.edu.au/staff/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a> and <a href="https://staff.qut.edu.au/staff/catarina.pintomoreira" target="_blank"><b>Dr. Catarina Moreira</b></a>'
     - 'Graduated with 6.625 out of 7 GPA'
     - 'Awarded QUT International Merit Scholarship'
   - title: Bachelor of Information Technology (Information Systems)
-    year: Feb. – Nov.<br/> 2020
-    location: Queensland University of Technology, Australia
+    year: 2020.02 - 2020.11
+    location: Brisbane, Australia
+    department: Faculty of Science and Engineering
+    institution: Queensland University of Technology
     description:
     - 'JIT-QUT Joint Bachelor of IT Program'
     - 'Graduated with 6 out of 7 GPA'
     - 'Awarded QUT International Merit Scholarship'
   - title: Bachelor of Engineering (Software Engineering)
-    year: Sept. 2016 – <br/> Nov. 2020
-    location: Jinling Institute of Technology, China
+    year: 2016.09 - 2020.11
+    location: Nanjing, China
+    department: Faculty of Software Engineering
+    institution: Jinling Institute of Technology
     description:
     - 'JIT--QUT Joint Bachelor of IT Program'
     - 'Graduated with 87% Weighted Average Mark'
@@ -54,12 +62,12 @@
   type: time_table
   contents:
   - title: QUT Postgraduate Research Award (QUTPRA) (International)
-    year: 2022 - <br/> 2024
+    year: 2022 - 2025
     description:
     - Awarded for international students of exceptional research potential undertaking a Higher Degree by Research (HDR) at QUT
     - Offered an annual stipend to assist with general living costs for Doctor of Philosophy at QUT
   - title: QUT HDR Tuition Fee Sponsorship
-    year: 2022 - <br/> 2024
+    year: 2022 - 2025
     description:
     - Awarded for international students of exceptional research potential undertaking a Higher Degree by Research (HDR) at QUT
     - Offered 100% of tuition fees discount for Doctor of Philosophy at QUT
@@ -83,23 +91,29 @@
   type: time_table
   contents:
   - title: 'PhD Research Project'
-    year: Feb. 2022 <br/> - Now
-    location: School of Information Systems<br/> Queensland University of Technology, Australia
+    year: 2022.02 - PRESENT
+    location: Brisbane, Australia
+    department: School of Information Systems
+    institution: Queensland University of Technology
     description:
     - "Title: Building Robust Predictive Systems for Tabular Data"
     - 'Co-advised by <a href="https://staff.qut.edu.au/staff/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a>, <a href="https://www.qut.edu.au/about/our-people/academic-profiles/alistair.barros" target="_blank"><b>Prof. Alistair Barros</b></a> and <a href="https://staff.qut.edu.au/staff/catarina.pintomoreira" target="_blank"><b>Dr. Catarina Moreira</b></a>'
     - "The focus of this research will be on addressing challenges related to adversarial robustness in tabular data. To accomplish this, the research will investigate cutting-edge attack techniques and analyse the characteristics of successful attacks on structured data. Furthermore, the study will propose an evaluation framework to benchmark these characteristics, aiming to develop defense mechanisms that ultimately enhance the robustness of machine learning models against adversarial attacks in tabular data."
   - title: 'Research Assistant'
-    year: Nov. - Dec.<br/> 2023
-    location: School of Information Systems<br/> Queensland University of Technology, Australia
+    year: 2023.11 - 2023.12
+    location: Brisbane, Australia
+    department: School of Information Systems
+    institution: Queensland University of Technology
     description: 
     - Collect literatures about multi-modal fusion on time-sequence data and find related research gaps
     - Develop multi-modal fusion methods for time-sequence data to enhance the capability of predictive systems
     - Develop an open-source tool package to implement the fusion methods, enabling testing and validation.
     - Design and execute experiments for evaluation, utilizing publicly accessible real-world datasets.
   - title: 'Research Assistant'
-    year: Oct. - Dec.<br/> 2021
-    location: School of Information Systems<br/> Queensland University of Technology, Australia
+    year: 2021.10 - 2021.12
+    location: Brisbane, Australia
+    department: School of Information Systems
+    institution: Queensland University of Technology
     description: 
     - Develop an analytical method for applying explainable AI (XAI) techniques to inspection of predictive models
     - Implement the method as an open-source tool package for testing and validation
@@ -107,8 +121,10 @@
     - Build visualisation of model inspection results
     - Develop a website for project publicity
   - title: 'Honours Research Project'
-    year: Feb. – Dec. <br/>2021
-    location: School of Information Systems<br/> Queensland University of Technology, Australia
+    year: 2021.02 - 2021.12
+    location: Brisbane, Australia
+    department: School of Information Systems
+    institution: Queensland University of Technology
     description:
     - "Title: Investigating the Impact of Event Logs on Deep Learning-based Process Prediction Performance"
     - 'Co-advised by <a href="https://staff.qut.edu.au/staff/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a> and <a href="https://staff.qut.edu.au/staff/catarina.pintomoreira" target="_blank"><b>Dr. Catarina Moreira</b></a>'
@@ -119,15 +135,19 @@
     </ul>"
     - 'Presenting the research findings and outcome in the scientific paper (<a href="https://doi.org/10.1016/j.knosys.2022.108773" target="_blank"><b>KBS 2022</b></a>) and <a href="https://zhipenghe.me/assets/pdf/Honours_Thesis.pdf" target="_blank"><b>Honours thesis</b></a>'
   - title: '2021 AMSI Winter School Academic Training'
-    year: July 2021
-    location: Centre for Data Science<br/> Queensland University of Technology, Australia
+    year: 2021.07
+    location: Brisbane, Australia
+    department: Centre for Data Science
+    institution: Queensland University of Technology
     description:
     - 'Attended lectures and tutorials of advanced statistical learning knowledge such as Bayesian Statistics and Markov chain Monte Carlo related methods'
     - 'Gained knowledge of generative deep learning models'
     - 'Presented a <a href="https://slides.zhipenghe.me/old-slides/2021-07-AMSI.pdf" target="_blank"><b>participant talk</b></a> titled <em>Deep Learning-based Business Process Prediction</em> during the winter school'
   - title: 'VRES Research Project'
-    year: Nov. 2020 – <br/> Feb. 2021
-    location: School of Information Systems<br/> Queensland University of Technology, Australia
+    year: 2020.11 - 2021.02
+    location: Brisbane, Australia
+    department: School of Information Systems
+    institution: Queensland University of Technology
     description:
     - 'Title: Towards Design and Development of Interactive Visualisation for Organisational Analytics'
     - 'Advised by <a href="https://staff.qut.edu.au/staff/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a>'
@@ -138,11 +158,13 @@
 
 
 - title: Teaching Experience
-  type: table
+  type: time_table
   contents:
-  - title: '<b>Teaching Assistant</b> for <b>Graduate Research Project</b>'
+  - title: Teaching Assistant - IFN703/4 - MDA Advanced Project  
     year: Semester 1, 2024
-    location: Faculty of Science<br/> Queensland University of Technology, Australia
+    location: Brisbane, Australia
+    department: Faculty of Science
+    institution: Queensland University of Technology
     description:
     - Propose the topic of <b>Anomaly Detection in ECG Signals</b> for the Graduate Research Project unit
     - Assist in the delivery of the Graduate Research Project unit, which is a capstone unit for the Master of Data Analytics program
@@ -163,18 +185,20 @@
   type: time_table
   contents:
   - title: 'Business Analyst Intern'
-    year: Mar. – Oct. <br/>2020
-    location: Suncorp Group, Australia
+    year: 2020.03 - 2020.10
+    institution: Suncorp Group
+    location: Brisbane, Australia
     description:
       - Coordinated with a team to integrate the enterprise architectural systems within the insurance department.
       - Gathered business requirements and improving data models and reporting frameworks to improve efficiency.
-  - title: 'Java Web Developer Intern'
-    year: July – Oct. <br/> 2019
-    location: Yizhi Software Technology Co., Ltd, China
-    description:
-    - 'Project experience with Java web development frameworks -- Spring'
-    - 'Project experience with database modelling and implementation of application backend'
-    - 'Performs system analysis and system design functions for highly difficult web-based software applications and systems'
+  # - title: 'Java Web Developer Intern'
+  #   year: 2019.07 - 2019.10
+  #   institution: Yizhi Software Technology Co., Ltd, China
+  #   location: Nanjing, China
+  #   description:
+  #   - 'Project experience with Java web development frameworks -- Spring'
+  #   - 'Project experience with database modelling and implementation of application backend'
+  #   - 'Performs system analysis and system design functions for highly difficult web-based software applications and systems'
 
 - title: Computer skills
   type: nested_list
