@@ -7,4 +7,6 @@ description: >
 nav: true
 nav_order: 4
 cv_pdf: long-cv-en.pdf
+toc:
+  sidebar: left
 ---
