@@ -9,7 +9,7 @@ nickname: Zippo
 cn_name: 何志鹏
 email: zhipeng.he@hdr.qut.edu.au
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Crafting ideas, solving problems, and exploring passions—welcome to my world.
 footer_text: 
 
 keywords: Adversarial Attacks, Robust ML, Explainable AI # add your own keywords or leave empty
@@ -28,7 +28,7 @@ back_to_top: true # set to false to disable the back to top button
 
 # repo color theme
 repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_dark: nord  # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
   enabled: true
   theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
@@ -322,7 +322,7 @@ filtered_bibtex_keywords:
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
-max_author_limit: 3 # leave blank to always show all authors
+max_author_limit:  # leave blank to always show all authors
 more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
