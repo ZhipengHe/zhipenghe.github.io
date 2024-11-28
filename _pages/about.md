@@ -33,8 +33,8 @@ Eager to contribute to team success through challenging work, attention to detai
 
 ## honors & awards
 
-* 2022 - 2024 QUT Postgraduate Research Award (QUTPRA) (International)
-* 2022 - 2024 QUT HDR Tuition Fee Scholarship
+* 2022 - 2025 QUT Postgraduate Research Award (QUTPRA) (International)
+* 2022 - 2025 QUT HDR Tuition Fee Scholarship
 * 2021 QUT International Merit Scholarship
 * 2020 QUT Vacation Research Experience Scheme (VRES) Scholarship
 * 2020 QUT International Merit Scholarship
