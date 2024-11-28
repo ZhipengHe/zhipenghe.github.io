@@ -86,9 +86,17 @@
     year: Feb. 2022 <br/> - Now
     location: School of Information Systems<br/> Queensland University of Technology, Australia
     description:
-    - "Title: Building Robust Predictive Systems for Structure Data"
+    - "Title: Building Robust Predictive Systems for Tabular Data"
     - 'Co-advised by <a href="https://staff.qut.edu.au/staff/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a>, <a href="https://www.qut.edu.au/about/our-people/academic-profiles/alistair.barros" target="_blank"><b>Prof. Alistair Barros</b></a> and <a href="https://staff.qut.edu.au/staff/catarina.pintomoreira" target="_blank"><b>Dr. Catarina Moreira</b></a>'
-    - "The focus of this research will be on addressing challenges related to adversarial robustness in tabular and sequential data. To accomplish this, the research will investigate cutting-edge attack techniques and analyse the characteristics of successful attacks on structured data. Furthermore, the study will propose an evaluation framework to benchmark these characteristics, aiming to develop defense mechanisms that ultimately enhance the robustness of machine learning models against adversarial attacks in both tabular and sequential data."
+    - "The focus of this research will be on addressing challenges related to adversarial robustness in tabular data. To accomplish this, the research will investigate cutting-edge attack techniques and analyse the characteristics of successful attacks on structured data. Furthermore, the study will propose an evaluation framework to benchmark these characteristics, aiming to develop defense mechanisms that ultimately enhance the robustness of machine learning models against adversarial attacks in tabular data."
+  - title: 'Research Assistant'
+    year: Nov. - Dec.<br/> 2023
+    location: School of Information Systems<br/> Queensland University of Technology, Australia
+    description: 
+    - Collect literatures about multi-modal fusion on time-sequence data and find related research gaps
+    - Develop multi-modal fusion methods for time-sequence data to enhance the capability of predictive systems
+    - Develop an open-source tool package to implement the fusion methods, enabling testing and validation.
+    - Design and execute experiments for evaluation, utilizing publicly accessible real-world datasets.
   - title: 'Research Assistant'
     year: Oct. - Dec.<br/> 2021
     location: School of Information Systems<br/> Queensland University of Technology, Australia
@@ -127,6 +135,30 @@
     - 'Proposed an organisational mining visualisation design workflow for selecting appropriate visualisation techniques to generate organisational mining visualisation'
     - 'A <a href="https://slides.zhipenghe.me/old-slides/2021-02-VRES.pdf" target="_blank"><b>project showcase</b></a> was presented to all the VRES students and supervisors from School of Computer Science and School of Information Systems.'
   
+
+
+- title: Teaching Experience
+  type: table
+  contents:
+  - title: '<b>Teaching Assistant</b> for <b>Graduate Research Project</b>'
+    year: Semester 1, 2024
+    location: Faculty of Science<br/> Queensland University of Technology, Australia
+    description:
+    - Propose the topic of <b>Anomaly Detection in ECG Signals</b> for the Graduate Research Project unit
+    - Assist in the delivery of the Graduate Research Project unit, which is a capstone unit for the Master of Data Analytics program
+#   - title: '<b>Teaching Assistant</b> for <b>Topics in Deep Learning</b>'
+#     year: Fall 2017
+#     location: USA
+#     description:
+#     - Graduate level deep learning class <a href="http://www.cs.cmu.edu/~rsalakhu/10707/" target="_blank"><b>10-707 Topics in Deep Learning</b></a> at Carnegie Mellon University
+#     - Taught by <a href="https://www.cs.cmu.edu/~rsalakhu/" target="_blank"><b>Prof. Ruslan Salakhutdinov</b></a>
+#   - title: 'Teaching algorithms for competitive programming'
+#     year: 2013 - 2014
+#     location: Romania
+#     description:
+#     - Co-organized a competitive programming seminar at Politehnica University of Timisoara for university and high-school students interested to train for algorithmic competitions (e.g. ACM-ICPC, informatics olympiad).
+#     - Taught algorithms and data structures used in competitive programming, designed and solved practice problems and internal competitions.
+
 - title: Professional Experience
   type: time_table
   contents:
@@ -143,29 +175,6 @@
     - 'Project experience with Java web development frameworks -- Spring'
     - 'Project experience with database modelling and implementation of application backend'
     - 'Performs system analysis and system design functions for highly difficult web-based software applications and systems'
-
-# - title: Teaching Experience
-#   type: table
-#   contents:
-#   - title: '<b>Teaching Assistant</b> for <b>Graduate Machine Learning</b>'
-#     year: Spring 2018
-#     location: USA
-#     description:
-#     - Graduate level introduction to machine learning class <a href="http://www.cs.cmu.edu/~pradeepr/courses/701/2018-spring/" target="_blank"><b>10-701 Graduate Machine Learning</b></a> at Carnegie Mellon University
-#     - Taught by <a href="https://www.cs.cmu.edu/~pradeepr/" target="_blank"><b>Prof. Pradeep Ravikumar</b></a> and <a href="https://www.cs.cmu.edu/~mmv/" target="_blank"><b>Prof. Manuela Veloso</b></a>
-#     - I was awarded a Machine Learning Department <a href="https://www.ml.cmu.edu/news/news-archive/2018/may/machine-learning-ta-awards-2018.html" target="_blank"><b>Teaching Assistant Award</b></a>
-#   - title: '<b>Teaching Assistant</b> for <b>Topics in Deep Learning</b>'
-#     year: Fall 2017
-#     location: USA
-#     description:
-#     - Graduate level deep learning class <a href="http://www.cs.cmu.edu/~rsalakhu/10707/" target="_blank"><b>10-707 Topics in Deep Learning</b></a> at Carnegie Mellon University
-#     - Taught by <a href="https://www.cs.cmu.edu/~rsalakhu/" target="_blank"><b>Prof. Ruslan Salakhutdinov</b></a>
-#   - title: 'Teaching algorithms for competitive programming'
-#     year: 2013 - 2014
-#     location: Romania
-#     description:
-#     - Co-organized a competitive programming seminar at Politehnica University of Timisoara for university and high-school students interested to train for algorithmic competitions (e.g. ACM-ICPC, informatics olympiad).
-#     - Taught algorithms and data structures used in competitive programming, designed and solved practice problems and internal competitions.
 
 - title: Computer skills
   type: nested_list
