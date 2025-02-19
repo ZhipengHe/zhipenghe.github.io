@@ -8,7 +8,7 @@ subtitle: >
 
 profile:
   align: right
-  image: zhipenghe-photo.jpg
+  image: zhipenghe-photo.jpeg
   image_circular: true # crops the image to make it circular
   address: >
     <p>Level 7, Y Block</p>
