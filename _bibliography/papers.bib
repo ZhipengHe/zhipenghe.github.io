@@ -42,17 +42,42 @@
 	note = {Version 1.0.0}
 }
 
-@article{ISWA2024,
+@article{ISWA2025,
 	abstract = {Adversarial attacks are a potential threat to machine learning models by causing incorrect predictions through imperceptible perturbations to the input data. While these attacks have been extensively studied in unstructured data like images, applying them to tabular data, poses new challenges. These challenges arise from the inherent heterogeneity and complex feature interdependencies in tabular data, which differ from the image data. To account for this distinction, it is necessary to establish tailored imperceptibility criteria specific to tabular data. However, there is currently a lack of standardised metrics for assessing the imperceptibility of adversarial attacks on tabular data. To address this gap, we propose a set of key properties and corresponding metrics designed to comprehensively characterise imperceptible adversarial attacks on tabular data. These are: proximity to the original input, sparsity of altered features, deviation from the original data distribution, sensitivity in perturbing features with narrow distribution, immutability of certain features that should remain unchanged, feasibility of specific feature values that should not go beyond valid practical ranges, and feature interdependencies capturing complex relationships between data attributes. We evaluate the imperceptibility of five adversarial attacks, including both bounded attacks and unbounded attacks, on tabular data using the proposed imperceptibility metrics. The results reveal a trade-off between the imperceptibility and effectiveness of these attacks. The study also identifies limitations in current attack algorithms, offering insights that can guide future research in the area. The findings gained from this empirical analysis provide valuable direction for enhancing the design of adversarial attack algorithms, thereby advancing adversarial machine learning on tabular data.},
 	author = {Zhipeng He and Chun Ouyang and Laith Alzubaidi and Alistair Barros and Catarina Moreira},
 	title = {Investigating Imperceptibility of Adversarial Attacks on Tabular Data: An Empirical Analysis},
 	keywords = {Adversarial examples, Imperceptibility, Machine learning models, Robustness, Tabular data},
-	doi = {10.48550/arXiv.2407.11463},
-	html = {https://arxiv.org/abs/2407.11463},
+	pages = {200461},
+	doi = {10.1016/j.iswa.2024.200461},
+	html = {https://doi.org/10.1016/j.iswa.2024.200461},
 	journal = {Intelligent Systems with Applications},
-	year = {2024},
+	year = {2025},
 	selected = true,
 	abbr={ISWA},
-	note = {Accepted, to appear},
 	poster = {https://slides.zhipenghe.me/2024-12-ADSN.pdf}
+}
+
+@article{TabAttackBench2025,
+	abstract = {Adversarial attacks pose a significant threat to machine learning models by inducing incorrect predictions through imperceptible perturbations to input data. While these attacks have been extensively studied in unstructured data like images, their application to tabular data presents new challenges. These challenges arise from the inherent heterogeneity and complex feature interdependencies in tabular data, which differ significantly from those in image data. To address these differences, it is crucial to consider imperceptibility as a key criterion specific to tabular data. Most current research focuses primarily on achieving effective adversarial attacks, often overlooking the importance of maintaining imperceptibility. To address this gap, we propose a new benchmark for adversarial attacks on tabular data that evaluates both effectiveness and imperceptibility. In this study, we assess the effectiveness and imperceptibility of five adversarial attacks across four models using eleven tabular datasets, including both mixed and numerical-only datasets. Our analysis explores how these factors interact and influence the overall performance of the attacks. We also compare the results across different dataset types to understand the broader implications of these findings. The findings from this benchmark provide valuable insights for improving the design of adversarial attack algorithms, thereby advancing the field of adversarial machine learning on tabular data.},
+	author = {Zhipeng He and Chun Ouyang and Lijie Wen and Cong Liu and Catarina Moreira},
+	title = {TabAttackBench: A Benchmark for Adversarial Attacks on Tabular Data},
+	keywords = {Adversarial attack, Tabular data, Benchmark, Machine learning, Robustness},
+	arxiv = {2505.21027},
+	html = {https://arxiv.org/abs/2505.21027},
+	journal = {arXiv preprint arXiv:2505.21027},
+	year = {2025},
+	selected = false,
+	abbr={arXiv},
+}
+
+@article{MIMICEL2025,
+	abstract = {The global issue of overcrowding in emergency departments (ED) necessitates the analysis of patient flow through ED to enhance efficiency and alleviate overcrowding. However, traditional analytical methods are time-consuming and costly. The healthcare industry is embracing process mining tools to analyse healthcare processes and patient flows. Process mining aims to discover, monitor, and enhance processes by obtaining knowledge from event log data. However, the availability of event logs is a prerequisite for applying process mining techniques. Hence, this paper aims to generate an event log for analysing processes in ED. In this study, we extract an event log from the MIMIC-IV-ED dataset and name it MIMICEL. MIMICEL captures the process of patient journey in ED, allowing for analysis of patient flows and improving ED efficiency. We present analyses conducted using MIMICEL to demonstrate the utility of the dataset. The curation of MIMICEL facilitates extensive use of MIMIC-IV-ED data for ED analysis using process mining techniques, while also providing the process mining research communities with a valuable dataset for study.},
+	author = {Jia Wei and Chun Ouyang and  Bemali Wickramanayake and Zhipeng He and Keshara Perera and Catarina Moreira},
+	title = {Curation and Analysis of MIMICEL - An Event Log for MIMIC-IV Emergency Department},
+	arxiv = {2505.19389},
+	html = {https://arxiv.org/abs/2505.19389},
+	journal = {arXiv preprint arXiv:2505.19389},
+	year = {2025},
+	selected = false,
+	abbr={MIMIC},
 }
