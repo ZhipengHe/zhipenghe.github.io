@@ -3,7 +3,10 @@ github_users:
 
 github_repos:
   - ZhipengHe/QUT-Beamer-Theme
+  - ZhipengHe/Walltime-Chronicles
   - ZhipengHe/Shared-and-Specialised-Attention-based-Interpretable-Models
   - ZhipengHe/MIMIC-IV-event-log-extraction-for-ED
   - ZhipengHe/Imperceptibility-of-Tabular-Adversarial-attack
+  - ZhipengHe/TabAttackBench
+  - ZhipengHe/NEM-Dashboard
 
