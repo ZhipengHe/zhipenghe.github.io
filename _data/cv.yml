@@ -61,6 +61,10 @@
 - title: Honors and Awards
   type: time_table
   contents:
+  - title: QUT IS DC Outstanding Presentation Award
+    year: 2024
+    description:
+    - Awarded for the outstanding presentation at the QUT School of Information Systems Doctoral Consortium in 2024
   - title: QUT Postgraduate Research Award (QUTPRA) (International)
     year: 2022 - 2025
     description:
@@ -99,6 +103,16 @@
     - "Title: Building Robust Predictive Systems for Tabular Data"
     - 'Co-advised by <a href="https://staff.qut.edu.au/staff/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a>, <a href="https://www.qut.edu.au/about/our-people/academic-profiles/alistair.barros" target="_blank"><b>Prof. Alistair Barros</b></a> and <a href="https://staff.qut.edu.au/staff/catarina.pintomoreira" target="_blank"><b>Dr. Catarina Moreira</b></a>'
     - "The focus of this research will be on addressing challenges related to adversarial robustness in tabular data. To accomplish this, the research will investigate cutting-edge attack techniques and analyse the characteristics of successful attacks on structured data. Furthermore, the study will propose an evaluation framework to benchmark these characteristics, aiming to develop defense mechanisms that ultimately enhance the robustness of machine learning models against adversarial attacks in tabular data."
+  - title: 'Senior Research Assistant'
+    year: 2025.04 - PRESENT
+    location: Brisbane, Australia
+    department: School of Information Systems
+    institution: Queensland University of Technology
+    description:
+    - 'Corporate Partner: <a href="https://elu.net.au/" target="_blank"><b>eLu Australia</b></a>'
+    - 'Establish baseline understanding of electricity outages and price dynamics in NEM through review of AEMO reports, industry literature, and exploratory data analysis.'
+    - 'Identify and analyse root causes of electricity outages and price volatility within NEM.'
+    - 'Develop and evaluate a predictive model for electricity price forecasting, improving on current AEMO capabilities.'
   - title: 'Research Assistant'
     year: 2023.11 - 2023.12
     location: Brisbane, Australia
@@ -156,10 +170,17 @@
     - 'A <a href="https://slides.zhipenghe.me/old-slides/2021-02-VRES.pdf" target="_blank"><b>project showcase</b></a> was presented to all the VRES students and supervisors from School of Computer Science and School of Information Systems.'
   
 
-
 - title: Teaching Experience
   type: time_table
   contents:
+  - title: Teaching Assistant - IFN695 - MDA Minor Project  
+    year: Semester 1, 2025
+    location: Brisbane, Australia
+    department: Faculty of Science
+    institution: Queensland University of Technology
+    description:
+    - Propose the topic of <b>Australia's National Electricity Market</b> for the Graduate Research Project unit
+    - Assist in the delivery of the Graduate Research Project unit, which is a capstone unit for the Master of Data Analytics program
   - title: Teaching Assistant - IFN703/4 - MDA Advanced Project  
     year: Semester 1, 2024
     location: Brisbane, Australia
