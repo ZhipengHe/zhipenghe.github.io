@@ -10,7 +10,7 @@ profile:
   align: right
   image: zhipenghe-photo.jpeg
   image_circular: true # crops the image to make it circular
-  address: >
+  more_info: >
     <p>Level 7, Y Block</p>
     <p>QUT Gardens Point</p>
     <p>Brisbane City, QLD 4000</p>
