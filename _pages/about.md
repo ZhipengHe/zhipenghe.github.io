@@ -16,7 +16,7 @@ profile:
     <p>Brisbane City, QLD 4000</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: false  # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
@@ -33,17 +33,17 @@ Eager to contribute to team success through challenging work, attention to detai
 
 ## education
 
-* Queensland University of Technology, Australia
-  * Doctor of Philosophy, 2022 - now
-  * BInfTech Honours, First Class, 2021 
-  * BInfTech in Information System, 2020
-* Jinling Institute of Technology, China
-  * B.E. in Software Engineering, 2016 - 2019
+- Queensland University of Technology, Australia
+  - Doctor of Philosophy, 2022 - now
+  - BInfTech Honours, First Class, 2021
+  - BInfTech in Information System, 2020
+- Jinling Institute of Technology, China
+  - B.E. in Software Engineering, 2016 - 2019
 
 ## honors & awards
 
-* 2022 - 2025 QUT Postgraduate Research Award (QUTPRA) (International)
-* 2022 - 2025 QUT HDR Tuition Fee Scholarship
-* 2021 QUT International Merit Scholarship
-* 2020 QUT Vacation Research Experience Scheme (VRES) Scholarship
-* 2020 QUT International Merit Scholarship
+- 2022 - 2025 QUT Postgraduate Research Award (QUTPRA) (International)
+- 2022 - 2025 QUT HDR Tuition Fee Scholarship
+- 2021 QUT International Merit Scholarship
+- 2020 QUT Vacation Research Experience Scheme (VRES) Scholarship
+- 2020 QUT International Merit Scholarship

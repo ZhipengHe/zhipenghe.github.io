@@ -2,7 +2,8 @@
   <footer class="fixed-bottom" role="contentinfo">
     <div class="container mt-0">
       &copy; Copyright {{ site.time | date: '%Y' }}
-      <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by {{ site.first_name }} "{{ site.nickname }}" {{ site.last_name }} {{ site.cn_name }}.
+      <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by {{ site.first_name }} "{{ site.nickname }}" {{ site.last_name }}
+      {{ site.cn_name }}.
       {% if site.impressum_path %}
         <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
       {% endif %}

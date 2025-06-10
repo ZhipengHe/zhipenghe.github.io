@@ -32,6 +32,7 @@ This guide shows how to expose Docker's API (port 2376) to your Tailscale VPN ne
 # Get your Tailscale IP
 tailscale ip -4
 ```
+
 Note the IP address (e.g., `100.xxx.xxx.xxx`) - you'll need this later.
 
 ## Step 2: Configure Docker Daemon
@@ -44,6 +45,7 @@ sudo systemctl edit docker.service
 ```
 
 Add this configuration (replace `100.xxx.xxx.xxx` with your actual Tailscale IP):
+
 ```ini
 [Service]
 ExecStart=
@@ -118,6 +120,7 @@ Expected output should show JSON with container information.
 ## Step 6: Test from Remote Device
 
 From another device on your Tailscale network:
+
 ```bash
 # Test Docker connection (replace with your Tailscale IP)
 curl http://100.xxx.xxx.xxx:2376/containers/json
@@ -137,6 +140,7 @@ docker -H tcp://100.xxx.xxx.xxx:2376 ps
 ## Usage Examples
 
 Once configured, you can use Docker remotely:
+
 ```bash
 # Set environment variable for easier use (replace with your Tailscale IP)
 export DOCKER_HOST=tcp://100.xxx.xxx.xxx:2376
@@ -150,7 +154,6 @@ docker run hello-world
 docker-compose ps
 docker-compose logs
 ```
-
 
 ## Troubleshooting
 
