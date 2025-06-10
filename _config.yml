@@ -16,8 +16,8 @@ keywords: Adversarial Attacks, Robust ML, Explainable AI # add your own keywords
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.ico  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://zhipenghe.me/ # the base hostname & protocol for your site
-baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
+url: https://zhipenghe.me # the base hostname & protocol for your site
+baseurl: / # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
@@ -49,7 +49,7 @@ footer_fixed: true
 search_enabled: false
 socials_in_search: true
 posts_in_search: true
-bib_search: true
+bib_search: false
 
 # Dimensions
 max_width: 950px
@@ -85,8 +85,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name:  # blog_name will be displayed in your blog page
-blog_nav_title: false  # your blog must have a title for it to be displayed in the nav bar
-blog_description: a simple whitespace theme for academics
+blog_nav_title: true  # your blog must have a title for it to be displayed in the nav bar
+blog_description: 'Mmm. Code not work? Fix it you must. Learn from my fails, you will. Docker, AI, web dev—covered, it is. "Do or do not, there is no `try-catch`."'
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -100,18 +100,18 @@ related_blog_posts:
 
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
-# giscus:
-#   repo: # <your-github-user-name>/<your-github-repo-name>
-#   repo_id: # leave empty or specify your repo_id (see https://giscus.app/)
-#   category: Comments # name of the category under which discussions will be created
-#   category_id: # leave empty or specify your category_id (see https://giscus.app/)
-#   mapping: title # identify discussions by post title
-#   strict: 1 # use strict identification mode
-#   reactions_enabled: 1 # enable (1) or disable (0) emoji reactions
-#   input_position: bottom # whether to display input form below (bottom) or above (top) the comments
-#   theme: preferred_color_scheme # name of the color scheme (preferred works well with al-folio light/dark mode)
-#   emit_metadata: 0
-#   lang: en
+giscus:
+  repo: ZhipengHe/zhipenghe.github.io # <your-github-user-name>/<your-github-repo-name>
+  repo_id: R_kgDOJKOkyw # leave empty or specify your repo_id (see https://giscus.app/)
+  category: Announcements # name of the category under which discussions will be created
+  category_id: DIC_kwDOJKOky84CrTTz # leave empty or specify your category_id (see https://giscus.app/)
+  mapping: title # identify discussions by post title
+  strict: 1 # use strict identification mode
+  reactions_enabled: 1 # enable (1) or disable (0) emoji reactions
+  input_position: bottom # whether to display input form below (bottom) or above (top) the comments
+  theme: preferred_color_scheme # name of the color scheme (preferred works well with al-folio light/dark mode)
+  emit_metadata: 0
+  lang: en
 
 # Disqus comments (DEPRECATED)
 # disqus_shortname: al-folio # put your disqus shortname
