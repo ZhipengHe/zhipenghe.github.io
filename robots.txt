@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://zhipenghe.me//sitemap.xml
+Sitemap: https://zhipenghe.me/sitemap.xml
