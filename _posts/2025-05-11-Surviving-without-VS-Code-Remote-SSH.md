@@ -11,13 +11,13 @@ toc:
   sidebar: right
 ---
 
+<!-- prettier-ignore -->
 > ##### VS Code Remote SSH is banned
 >
 > QUT Aqua banned VS Code Remote SSH extension due to potential high workload on the node. Even you try to connect to Aqua through Remote SSH, it will be disconnected automatically after around 30 seconds. Check [this](https://docs.eres.qut.edu.au/hpc-vscode-usage#using-vs-code-to-edit-files-on-the-hpc) for more details.
 {: .block-danger }
 
 So... you're trying to develop on QUT Aqua, but the server gods have other plans. Maybe you can't use VS Code Remote SSH. Maybe you're just feeling adventurous. But do not worry — you can still edit remote files and develop like a champ. Here's how I've kept my sanity while developing on remote HPC systems.
-
 
 ---
 
@@ -38,10 +38,9 @@ Host aqua
 
 Then, you can connect to the HPC by running `ssh aqua`. Also, you can use `aqua` to replace `your-username@aqua.qut.edu.au` in the following commands.
 
-
 ---
 
-## 🧩 1. Fake it with SSH-mounted folders 
+## 🧩 1. Fake it with SSH-mounted folders
 
 ### 🧀 Option A: Mount via Finder — the cheese board approach
 
@@ -50,12 +49,13 @@ Then, you can connect to the HPC by running `ssh aqua`. Also, you can use `aqua`
 1. Open **Finder** → `Go` → `Connect to Server...`
 2. Enter:
 
-    ```
-    smb://hpc-fs/home/
-    ```
+   ```
+   smb://hpc-fs/home/
+   ```
+
 3. Mount it, then open the folder in VS Code like it's 1999.
 
-📝 *Note*: You can edit files, but **no shell**, **no Git**, and no terminal tantrums. It's like eating cake without the frosting.
+📝 _Note_: You can edit files, but **no shell**, **no Git**, and no terminal tantrums. It's like eating cake without the frosting.
 
 #### But ... is this method elegant?
 
@@ -65,7 +65,7 @@ You've mounted an SMB share to your Finder. Congratulations! You've just volunte
 2. **VS Code's Terminal: The Phantom Feature** - That beautiful integrated terminal in VS Code? It now stares at you like a confused puppy. `Command not found` becomes your new error mantra. It's there... but also not there, like your motivation on Monday mornings.
 3. **The Mysterious Disconnection** - Nothing says "surprise vacation" like your SMB connection randomly dropping when you're in the middle of important work. It's like having a co-worker who pulls the fire alarm whenever they're bored.
 4. **HPC Disruption: The Digital Hostage Situation** - Ah, you've put ALL your files on the server! So when the High-Performance Computing cluster decides to have its quarterly existential crisis (or weekly, who's counting?), your work becomes as accessible as your childhood memories. Your options? Make coffee, stare wistfully out the window.
-5. **The .DS_Store Epidemic: Exclusive for macOS** - Ah, macOS and its infamous `.DS_Store` files! Your Mac scatters these digital breadcrumbs in every folder you visit like an overzealous tourist taking selfies at landmarks. The HPC server, meanwhile, treats them with the same enthusiasm as finding glitter in its keyboard – "Thanks for the desktop settings I absolutely didn't ask for and can't use!" 
+5. **The .DS_Store Epidemic: Exclusive for macOS** - Ah, macOS and its infamous `.DS_Store` files! Your Mac scatters these digital breadcrumbs in every folder you visit like an overzealous tourist taking selfies at landmarks. The HPC server, meanwhile, treats them with the same enthusiasm as finding glitter in its keyboard – "Thanks for the desktop settings I absolutely didn't ask for and can't use!"
 
 <div class="text-center mt-3">
     {% include figure.liquid loading="eager" path="assets/img/posts/DS_Store-meme.png" class="img-fluid rounded z-depth-1 w-50" %}
@@ -78,7 +78,7 @@ You've mounted an SMB share to your Finder. Congratulations! You've just volunte
 
 ### 🔧 Option B: SSHFS — Mount through SSH Wizardry
 
-Mount your HPC home directory *directly* via SSH, no Finder fluff. It's like having your HPC filesystem in your pocket.
+Mount your HPC home directory _directly_ via SSH, no Finder fluff. It's like having your HPC filesystem in your pocket.
 
 #### For macOS Users:
 
@@ -98,6 +98,7 @@ diskutil unmount ~/aqua
 ```
 
 Notes:
+
 1. When you're running `sshfs` first time, you will be asked to go to "System Preferences" → "Security & Privacy" → "Security" → click "Allow" for running the app. Then you also need to restart your Mac.
 2. You can use `aqua` to replace `your-username@aqua.qut.edu.au` if you have added a shortcut to `~/.ssh/config`.
 
@@ -122,17 +123,18 @@ Install [WinFSP](https://github.com/winfsp/winfsp/releases) and [SSHFS-Win](http
 ```
 \\sshfs\your-username@aqua.qut.edu.au
 ```
+
 Then open it in VS Code like you've just performed a miracle:
 
 ```bash
 code ~/aqua
 ```
 
-✅ *Pro*: Looks local. Feels local. Git operations work... until they mysteriously don't
+✅ _Pro_: Looks local. Feels local. Git operations work... until they mysteriously don't
 
-❌ *Con*: Feels **too** local for large files. Might lag. If the connection drops, your filesystem freezes like it's seen a ghost
+❌ _Con_: Feels **too** local for large files. Might lag. If the connection drops, your filesystem freezes like it's seen a ghost
 
-
+<!-- prettier-ignore -->
 > ##### Performance Tips That Might Help (No Promises)
 >
 > - Use `-o cache=yes` to create the illusion of performance (side effects may include file synchronization existential crises)
@@ -140,7 +142,7 @@ code ~/aqua
 > - If everything hangs, adjust your `ServerAlive` settings, which is like giving your connection a gentle nudge every few minutes to check if it's still breathing
 {: .block-tip }
 
-
+<!-- prettier-ignore -->
 > ##### Working with Git Over SSHFS: A Tragicomedy
 >
 > When using Git over SSHFS, you're essentially asking Git to perform a synchronized swimming routine while blindfolded. For anything more complex than a simple commit, consider SSH-ing directly into the server and running Git commands there. Your future self will thank you for not testing the limits of your patience.
@@ -186,12 +188,11 @@ git push aqua main
 git clone your-username@aqua.qut.edu.au:/path/to/repo
 ```
 
-✅ *Pro*: Clean history, branch control, reproducibility
+✅ _Pro_: Clean history, branch control, reproducibility
 
-❌ *Con*: Needs initial setup and your SSH keys must behave
+❌ _Con_: Needs initial setup and your SSH keys must behave
 
 ---
-
 
 ## 🖥️ 3. The Terminal-Only Approach
 
@@ -203,14 +204,14 @@ ssh your-username@aqua.qut.edu.au
 
 Then pick your weapon of choice:
 
-* `vim` — For the brave
-* `nano` — For the sane
-* `neovim` — For the modern
-* `emacs` — For the... unique
+- `vim` — For the brave
+- `nano` — For the sane
+- `neovim` — For the modern
+- `emacs` — For the... unique
 
-🎯 *Bonus*: Fast, keyboard-driven, and doesn't require GUI permission forms.
+🎯 _Bonus_: Fast, keyboard-driven, and doesn't require GUI permission forms.
 
-> *Note*: I will write another page about how to use `neovim` and its plugins to replace VS Code as a lightweight editor (with SSH).
+> _Note_: I will write another page about how to use `neovim` and its plugins to replace VS Code as a lightweight editor (with SSH).
 
 ---
 
@@ -218,6 +219,7 @@ Then pick your weapon of choice:
 
 ### 📓 Option A: Jupyter Notebooks
 
+<!-- prettier-ignore -->
 > ##### Install Jupyter Lab in HPC before you start
 >
 > QUT Aqua documentation provides a [guide](https://docs.eres.qut.edu.au/hpc-accessing-available-software#install-conda) on how to install Miniconda in HPC.
@@ -232,7 +234,9 @@ jupyter lab --no-browser --port=8888 # (1)
 # local_port:localhost:remote_port (2)
 ssh -N -L 8888:localhost:8888 your-username@aqua.qut.edu.au
 ```
+
 Notes:
+
 1. If port 8888 is already in use, you can try another port, e.g. 8889.
 2. `-N` means no command to run on the remote machine. `-L` means forward the local port to the remote port. Both local and remote ports are 8888 in this case.
 
@@ -240,39 +244,41 @@ Notes:
 
 ### 🔥 Option B: VSCode in Browser
 
+<!-- prettier-ignore -->
 > ##### This might require a sysadmin's blessing!
 >
-> Fortunately, the server gods haven't locked *everything* down:
+> Fortunately, the server gods haven't locked _everything_ down:
 {: .block-warning }
 
 1. Install [`code-server`](https://github.com/coder/code-server) on the HPC.
 
-    ```bash
-    # On HPC server
-    # Install code-server to your home directory
-    curl -fsSL https://code-server.dev/install.sh | sh -s -- --method standalone --prefix=$HOME
-    # code-server will be installed to $HOME/bin/code-server
+   ```bash
+   # On HPC server
+   # Install code-server to your home directory
+   curl -fsSL https://code-server.dev/install.sh | sh -s -- --method standalone --prefix=$HOME
+   # code-server will be installed to $HOME/bin/code-server
 
-    # check if code-server is installed
-    code-server --version
+   # check if code-server is installed
+   code-server --version
 
-    # Start code-server
-    code-server  --bind-addr 127.0.0.1:8080 --disable-telemetry --disable-update-check --auth none
+   # Start code-server
+   code-server  --bind-addr 127.0.0.1:8080 --disable-telemetry --disable-update-check --auth none
 
-    # On your local machine
-    # Forward the port 8080 to your local machine
-    ssh -N -L 8080:127.0.0.1:8080 your-username@aqua.qut.edu.au
-    ```
+   # On your local machine
+   # Forward the port 8080 to your local machine
+   ssh -N -L 8080:127.0.0.1:8080 your-username@aqua.qut.edu.au
+   ```
 
 2. Open it in your browser
 
-    ```bash
-    # Open the web page in your browser
-    http://localhost:8080
-    ``` 
+   ```bash
+   # Open the web page in your browser
+   http://localhost:8080
+   ```
 
 3. Marvel as VS Code rises from the ashes — web-style
 
+<!-- prettier-ignore -->
 > ##### Sync VS Code settings to code-server
 >
 > You can import your VS Code settings to code-server by importing the profile from VS Code. Check out [this page](https://code.visualstudio.com/docs/configure/profiles#_share-profiles) for more details about how to export and import profiles. However, this's not the perfect solution. Not all VS Code extensions are available for code-server, some extensions are restricted for Microsoft VS Code. Only the extensions that are available for code-server are listed in [Open VSX Registry](https://open-vsx.org/).
@@ -328,14 +334,14 @@ I found that the terminal and the extension host are not stable when using code-
 
 ## TL;DR — What Works (and What Requires Sacrifice)
 
-| 🛠️ Method | 🧑‍💻 Edit in VS Code | 🖥️ Terminal Access | 📂 Where Files Live            | 🖼️ GUI Needed | ⚡ Vibe Check                       |
-| ---------------------------- | ------------------------------------- | ----------------------------------- | ------------------------------------------ | ---------------------------- | -------------------------------------- |
-| **SMB (Finder)**             | ✅ Yes, like it's local                | ❌ Nope, just files                  | 🌐 Remote (mounted)           | ✅ Yes                        | 🧀 "Cheesy but it works"         |
-| **SSHFS**                    | ✅ Yes (mostly)                        | ❌ Not really                        | 🌐 Remote (mounted)           | ❌ Nope                       | 🐢 "Kinda slow, kinda cool"      |
-| **rsync / Git**              | ✅ Edit local, sync later              | ✅ Full control                      | 📂 Local (then synced)                | ❌ Nope                       | 🔨 "Old school, solid"          |
-| **Terminal Editors**         | ❌ No GUI, no problem                  | ✅ Born in the terminal              | 🌐 Remote (SSH only)          | ❌ Nope                       | 💀 "For shell warriors" |
-| **Jupyter**                  | ✅ Yes, via browser                    | ✅ If allowed                        | 🌐 Remote (Jupyter workspace) | ✅ Yes                        | 🧪 "Science with style"      |
-| **code-server**              | ✅ Yes, but web-based                  | ❓ Unstable                    | 🌐 Remote (in browser)        | ✅ Yes                        | 🧙 "Feels like cheating"          |
+| 🛠️ Method            | 🧑‍💻 Edit in VS Code        | 🖥️ Terminal Access      | 📂 Where Files Live           | 🖼️ GUI Needed | ⚡ Vibe Check               |
+| -------------------- | ------------------------- | ----------------------- | ----------------------------- | ------------- | --------------------------- |
+| **SMB (Finder)**     | ✅ Yes, like it's local   | ❌ Nope, just files     | 🌐 Remote (mounted)           | ✅ Yes        | 🧀 "Cheesy but it works"    |
+| **SSHFS**            | ✅ Yes (mostly)           | ❌ Not really           | 🌐 Remote (mounted)           | ❌ Nope       | 🐢 "Kinda slow, kinda cool" |
+| **rsync / Git**      | ✅ Edit local, sync later | ✅ Full control         | 📂 Local (then synced)        | ❌ Nope       | 🔨 "Old school, solid"      |
+| **Terminal Editors** | ❌ No GUI, no problem     | ✅ Born in the terminal | 🌐 Remote (SSH only)          | ❌ Nope       | 💀 "For shell warriors"     |
+| **Jupyter**          | ✅ Yes, via browser       | ✅ If allowed           | 🌐 Remote (Jupyter workspace) | ✅ Yes        | 🧪 "Science with style"     |
+| **code-server**      | ✅ Yes, but web-based     | ❓ Unstable             | 🌐 Remote (in browser)        | ✅ Yes        | 🧙 "Feels like cheating"    |
 
 ---
 

@@ -17,6 +17,7 @@ toc:
 
 This guide shows how to expose Docker's API (port 2375) to your Tailscale VPN network on Windows with WSL2 backend. It's a simple guide for those who want to use Docker remotely or access the status of Docker Containers from another device.
 
+<!-- prettier-ignore -->
 > ##### WARNING
 >
 > We're using port 2375 **without SSL/TLS encryption**. Thus, you need to use a VPN tunnel to provide encryption and access control.
@@ -40,6 +41,7 @@ This guide shows how to expose Docker's API (port 2375) to your Tailscale VPN ne
 ```cmd
 ipconfig
 ```
+
 Look for the **Tailscale adapter** - note the IPv4 address (e.g., `100.xxx.xxx.xxx`)
 
 ## Step 3: Set Up Port Forwarding (Run as Administrator)
@@ -67,6 +69,7 @@ netsh interface portproxy show all
 ```
 
 Expected output:
+
 ```
 Listen on ipv4:             Connect to ipv4:
 Address         Port        Address         Port
@@ -77,6 +80,7 @@ Address         Port        Address         Port
 ## Step 5: Test Connection
 
 From any device on your Tailscale network:
+
 ```bash
 # Test Docker connection
 docker -H tcp://100.xxx.xxx.xxx:2375 version
@@ -105,6 +109,7 @@ netsh advfirewall firewall delete rule name="Docker API Tailscale"
 ## Usage Examples
 
 Once configured, you can use Docker remotely:
+
 ```bash
 # Set environment variable for easier use
 export DOCKER_HOST=tcp://100.xxx.xxx.xxx:2375

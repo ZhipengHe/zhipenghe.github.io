@@ -16,7 +16,7 @@ lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.ico # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://zhipenghe.me # the base hostname & protocol for your site
-baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
+baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
@@ -40,7 +40,7 @@ repo_trophies:
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
 author: Zhipeng "Zippo" He 何志鹏
-  
+
 # -----------------------------------------------------------------------------
 # Layout
 # -----------------------------------------------------------------------------
@@ -87,7 +87,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
 blog_name: # blog_name will be displayed in your blog page
 blog_nav_title: true # your blog must have a title for it to be displayed in the nav bar
-blog_description: 'Learn from my fails, you will. Docker, AI, web dev—covered, it is.'
+blog_description: "Learn from my fails, you will. Docker, AI, Web Dev—covered, it is."
 permalink: /blog/:year/:title/
 lsi: true # produce an index for related posts
 
@@ -255,7 +255,7 @@ jekyll-archives:
   # books:
   #   enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
-display_tags: ["Docker", "Linux", "Auqa"] # these tags will be displayed on the front page of your blog
+display_tags: ["Docker", "Linux", "Aqua"] # these tags will be displayed on the front page of your blog
 display_categories: ["Self-hosted", "HPC"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------

@@ -15,6 +15,7 @@ toc:
 
 This guide shows how to expose Docker's API (port 2376) to your Tailscale VPN network on Linux systems. It's a simple guide for those who want to use Docker remotely or access the status of Docker Containers from another device.
 
+<!-- prettier-ignore -->
 > ##### WARNING
 >
 > We're using port 2376 but **without SSL/TLS encryption**. Thus, you need to use a VPN tunnel to provide encryption and access control.
