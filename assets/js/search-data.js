@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/vitae/";
           },
-        },{id: "post-docker-api-exposure-via-tailscale-vpn-linux-setup-guide",
+        },{id: "post-docker-api-exposure-via-tailscale-vpn-windows-setup-guide-with-wsl2-backend",
+        
+          title: "Docker API Exposure via Tailscale VPN - Windows Setup Guide (with WSL2 Backend)...",
+        
+        description: "This guide shows how to expose Docker&#39;s API (port 2375) to your Tailscale VPN network on Windows with WSL2 backend.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/Docker-API-Exposure-Windows/";
+          
+        },
+      },{id: "post-docker-api-exposure-via-tailscale-vpn-linux-setup-guide",
         
           title: "Docker API Exposure via Tailscale VPN - Linux Setup Guide",
         
@@ -48,12 +59,18 @@ ninja.data = [{
             window.location.href = "/blog/2025/Docker-API-Exposure-Linux/";
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-pass-the-phd-confirmation-seminar-successfully-amp-amp-welcome-to-2nd-year-phd-research",
+      },{id: "post-surviving-without-vs-code-remote-ssh",
+        
+          title: "Surviving without VS Code Remote SSH",
+        
+        description: "Or: &quot;They took away my extension, but not my will to code.&quot;",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/Surviving-without-VS-Code-Remote-SSH/";
+          
+        },
+      },{id: "news-pass-the-phd-confirmation-seminar-successfully-amp-amp-welcome-to-2nd-year-phd-research",
           title: '🎉 Pass the PhD confirmation seminar successfully &amp;amp;amp; Welcome to 2nd year PhD...',
           description: "",
           section: "News",},{id: "news-our-paper-investigating-imperceptibility-of-adversarial-attacks-on-tabular-data-an-empirical-analysis-has-been-accepted-by-q1-journal-iswa",
