@@ -39,6 +39,8 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
+author: Zhipeng "Zippo" He 何志鹏
+  
 # -----------------------------------------------------------------------------
 # Layout
 # -----------------------------------------------------------------------------
@@ -87,14 +89,14 @@ blog_name: # blog_name will be displayed in your blog page
 blog_nav_title: true # your blog must have a title for it to be displayed in the nav bar
 blog_description: 'Learn from my fails, you will. Docker, AI, web dev—covered, it is.'
 permalink: /blog/:year/:title/
-lsi: false # produce an index for related posts
+lsi: true # produce an index for related posts
 
 # Pagination
 pagination:
   enabled: true
 
 related_blog_posts:
-  enabled: false
+  enabled: true
   max_related: 5
 
 # Giscus comments (RECOMMENDED)
@@ -184,7 +186,7 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
+  # - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/

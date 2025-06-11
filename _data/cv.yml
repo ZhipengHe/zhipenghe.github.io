@@ -142,11 +142,12 @@
     description:
     - "Title: Investigating the Impact of Event Logs on Deep Learning-based Process Prediction Performance"
     - 'Co-advised by <a href="https://staff.qut.edu.au/staff/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a> and <a href="https://staff.qut.edu.au/staff/catarina.pintomoreira" target="_blank"><b>Dr. Catarina Moreira</b></a>'
-    - "Focusing on investigating and analysing the potential influence of specific characteristics of event logs when predicting next business process activity using deep learning techniques <br/>
-    <ul>
-      <li>Studying and identifying key characteristics of event logs</li>
-      <li>Analysing the effects of event log characteristics on predicting next processactivity based on LSTM and Transformer</li>
-    </ul>"
+    - |
+      Focusing on investigating and analysing the potential influence of specific characteristics of event logs when predicting next business process activity using deep learning techniques <br/>
+      <ul>
+        <li>Studying and identifying key characteristics of event logs</li>
+        <li>Analysing the effects of event log characteristics on predicting next processactivity based on LSTM and Transformer</li>
+      </ul>
     - 'Presenting the research findings and outcome in the scientific paper (<a href="https://doi.org/10.1016/j.knosys.2022.108773" target="_blank"><b>KBS 2022</b></a>) and <a href="https://zhipenghe.me/assets/pdf/Honours_Thesis.pdf" target="_blank"><b>Honours thesis</b></a>'
   - title: '2021 AMSI Winter School Academic Training'
     year: 2021.07
