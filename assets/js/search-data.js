@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/vitae/";
           },
-        },{id: "post-docker-api-exposure-via-tailscale-vpn-windows-setup-guide-with-wsl2-backend",
+        },{id: "post-jekyll-livereload-vs-websocket-secure-a-protocol-compatibility-issue",
+        
+          title: "Jekyll LiveReload vs WebSocket Secure: A Protocol Compatibility Issue",
+        
+        description: "Jekyll&#39;s LiveReload breaks with HTTPS reverse proxies in OrbStack due to WebSocket limitations. Testing with other tools proves it&#39;s Jekyll&#39;s problem, not the proxy&#39;s.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/Jekyll-LiveReload-vs-WebSocket-Secure/";
+          
+        },
+      },{id: "post-docker-api-exposure-via-tailscale-vpn-windows-setup-guide-with-wsl2-backend",
         
           title: "Docker API Exposure via Tailscale VPN - Windows Setup Guide (with WSL2 Backend)...",
         
