@@ -21,6 +21,7 @@ strong {
 
 hr {
   border-top: 1px solid var(--global-divider-color);
+  margin: 2rem 0;
 }
 
 table {
@@ -61,7 +62,7 @@ blockquote {
   border-left: 5px solid var(--global-theme-color);
   margin: 1.5em 0;
   padding: 1em;
-  font-size: 1.2rem;
+  font-size: 1rem; // used to be 1.2rem
 
   p {
     margin-bottom: 0;
