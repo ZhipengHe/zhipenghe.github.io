@@ -5,6 +5,7 @@ date: 2025-06-07 22:37:00+1000
 description: This guide shows how to expose Docker's API (port 2376) to your Tailscale VPN network on Linux systems.
 tags: Docker, Tailscale, Linux
 categories: Self-hosted
+image: /assets/img/posts/Docker-API-Exposure-Linux.png
 giscus_comments: true
 related_posts: true
 toc:
@@ -21,11 +22,22 @@ This guide shows how to expose Docker's API (port 2376) to your Tailscale VPN ne
 > We're using port 2376 but **without SSL/TLS encryption**. Thus, you need to use a VPN tunnel to provide encryption and access control.
 {: .block-warning }
 
+<div class="text-center mt-3">
+    {% include figure.liquid loading="eager" path="assets/img/posts/Docker-API-Exposure-Linux.png" class="img-fluid rounded z-depth-1 w-100" %}
+</div>
+<div class="caption" style="font-style: italic;">
+    This is a workaround, but it's not a good idea to expose Docker API to the public internet.
+</div>
+
+---
+
 ## Prerequisites
 
 - Docker installed and running on Linux
 - Tailscale VPN installed and connected
 - sudo/root access to the system
+
+---
 
 ## Step 1: Find Your Tailscale IP Address
 
@@ -35,6 +47,8 @@ tailscale ip -4
 ```
 
 Note the IP address (e.g., `100.xxx.xxx.xxx`) - you'll need this later.
+
+---
 
 ## Step 2: Configure Docker Daemon
 
@@ -53,6 +67,8 @@ ExecStart=
 ExecStart=/usr/bin/dockerd -H unix:///var/run/docker.sock -H tcp://100.xxx.xxx.xxx:2376 --containerd=/run/containerd/containerd.sock
 ```
 
+---
+
 ## Step 3: Apply Configuration
 
 ```bash
@@ -63,6 +79,8 @@ sudo systemctl restart docker
 # Verify Docker is running
 sudo systemctl status docker
 ```
+
+---
 
 ## Step 4: Configure Firewall
 
@@ -103,6 +121,8 @@ sudo iptables-save > /etc/iptables/rules.v4
 sudo service iptables save
 ```
 
+---
+
 ## Step 5: Verify Setup
 
 ```bash
@@ -118,6 +138,8 @@ curl http://$(tailscale ip -4):2376/containers/json
 
 Expected output should show JSON with container information.
 
+---
+
 ## Step 6: Test from Remote Device
 
 From another device on your Tailscale network:
@@ -130,6 +152,8 @@ curl http://100.xxx.xxx.xxx:2376/containers/json
 docker -H tcp://100.xxx.xxx.xxx:2376 ps
 ```
 
+---
+
 ## Security Notes
 
 - ⚠️ **Warning**: This exposes Docker daemon without TLS encryption
@@ -137,6 +161,8 @@ docker -H tcp://100.xxx.xxx.xxx:2376 ps
 - 🔒 **Access**: Only devices on your Tailscale network can connect
 - 💡 **Firewall**: Uses Tailscale's CGNAT range (100.64.0.0/10) for access control
 - 🛡️ **Best Practice**: Consider using TLS certificates for production environments
+
+---
 
 ## Usage Examples
 
@@ -155,6 +181,8 @@ docker run hello-world
 docker-compose ps
 docker-compose logs
 ```
+
+---
 
 ## Troubleshooting
 

@@ -5,6 +5,7 @@ date: 2025-05-11 12:06:00+1000
 description: 'Or: "They took away my extension, but not my will to code."'
 tags: Aqua, VSCode, SSH
 categories: HPC
+image: /assets/img/posts/VSCode-Remote-SSH-Error.png
 giscus_comments: true
 related_posts: true
 toc:
@@ -18,6 +19,13 @@ toc:
 {: .block-danger }
 
 So... you're trying to develop on QUT Aqua, but the server gods have other plans. Maybe you can't use VS Code Remote SSH. Maybe you're just feeling adventurous. But do not worry — you can still edit remote files and develop like a champ. Here's how I've kept my sanity while developing on remote HPC systems.
+
+<div class="text-center mt-3">
+    {% include figure.liquid loading="eager" path="assets/img/posts/VSCode-Remote-SSH-Error.png" class="img-fluid rounded z-depth-1 w-75" %}
+</div>
+<div class="caption" style="font-style: italic;">
+    VS Code Remote SSH is banned by QUT Aqua due to potential high workload on the node.
+</div>
 
 ---
 

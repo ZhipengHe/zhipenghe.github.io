@@ -5,6 +5,7 @@ date: 2025-06-12 02:37:38+1000
 description: Jekyll's LiveReload breaks with HTTPS reverse proxies in OrbStack due to WebSocket limitations. Testing with other tools proves it's Jekyll's problem, not the proxy's.
 tags: Jekyll, Docker, WebSocket
 categories: WebDev
+image: /assets/img/posts/OrbStack-Setting-Domain.png
 giscus_comments: true
 related_posts: true
 code_diff: true
@@ -13,6 +14,13 @@ toc:
 ---
 
 ## The Problem
+
+<div class="text-center mt-3">
+    {% include figure.liquid loading="eager" path="assets/img/posts/OrbStack-Setting-Domain.png" class="img-fluid rounded z-depth-1 w-100" %}
+</div>
+<div class="caption" style="font-style: italic;">
+    I have to disable "Allow access to container domains & IPs" in OrbStack to make LiveReload work for Jekyll.
+</div>
 
 I recently switched from Docker Desktop to OrbStack because of its better performance and native macOS integration. One of OrbStack's convenient features is automatic domain name assignment for containers. Instead of remembering port numbers, containers get clean URLs like `https://container-name.orb.local` with automatic HTTPS certificates. This makes accessing development services much more elegant than dealing with `localhost:3000`, `localhost:4000`, etc.
 

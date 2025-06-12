@@ -5,6 +5,7 @@ date: 2025-06-09 22:37:00+1000
 description: This guide shows how to expose Docker's API (port 2375) to your Tailscale VPN network on Windows with WSL2 backend.
 tags: Docker, Tailscale, Windows, WSL2
 categories: Self-hosted
+image: /assets/img/posts/Docker-Desktop-Setting-Windows.png
 giscus_comments: true
 related_posts: true
 toc:
@@ -23,11 +24,22 @@ This guide shows how to expose Docker's API (port 2375) to your Tailscale VPN ne
 > We're using port 2375 **without SSL/TLS encryption**. Thus, you need to use a VPN tunnel to provide encryption and access control.
 {: .block-warning }
 
+<div class="text-center mt-3">
+    {% include figure.liquid loading="eager" path="assets/img/posts/Docker-Desktop-Setting-Windows.png" class="img-fluid rounded z-depth-1 w-100" %}
+</div>
+<div class="caption" style="font-style: italic;">
+    You can manually expose port 2375 to `localhost` in the settings of Docker Desktop for Windows.
+</div>
+
+---
+
 ## Prerequisites
 
 - Docker Desktop for Windows with WSL2 backend
 - Tailscale VPN installed and running
 - Administrator access to Windows
+
+---
 
 ## Step 1: Enable Docker API in Docker Desktop
 
@@ -36,13 +48,17 @@ This guide shows how to expose Docker's API (port 2375) to your Tailscale VPN ne
 3. Check **"Expose daemon on tcp://localhost:2375 without TLS"**
 4. Click **Apply & Restart**
 
+---
+
 ## Step 2: Find Your Tailscale IP Address
 
-```cmd
+```bat
 ipconfig
 ```
 
 Look for the **Tailscale adapter** - note the IPv4 address (e.g., `100.xxx.xxx.xxx`)
+
+---
 
 ## Step 3: Set Up Port Forwarding (Run as Administrator)
 
@@ -53,18 +69,20 @@ Look for the **Tailscale adapter** - note the IPv4 address (e.g., `100.xxx.xxx.x
 
 ### Run these commands:
 
-```cmd
-# Add port forwarding rule (replace with your Tailscale IP)
+```bat
+:: Add port forwarding rule (replace with your Tailscale IP)
 netsh interface portproxy add v4tov4 listenport=2375 listenaddress=100.xxx.xxx.xxx connectport=2375 connectaddress=127.0.0.1
 
-# Configure Windows Firewall (Optional but recommended)
+:: Configure Windows Firewall (Optional but recommended)
 netsh advfirewall firewall add rule name="Docker API Tailscale" dir=in action=allow protocol=TCP localport=2375
 ```
 
+---
+
 ## Step 4: Verify Setup
 
-```cmd
-# Check port forwarding rules
+```bat
+:: Check port forwarding rules
 netsh interface portproxy show all
 ```
 
@@ -76,6 +94,8 @@ Address         Port        Address         Port
 --------------- ----------  --------------- ----------
 100.xxx.xxx.xxx 2375        127.0.0.1       2375
 ```
+
+---
 
 ## Step 5: Test Connection
 
@@ -89,15 +109,19 @@ docker -H tcp://100.xxx.xxx.xxx:2375 version
 telnet 100.xxx.xxx.xxx 2375
 ```
 
+---
+
 ## Cleanup Commands (if needed)
 
-```cmd
-# Remove port forwarding rule
+```bat
+:: Remove port forwarding rule
 netsh interface portproxy delete v4tov4 listenport=2375 listenaddress=100.xxx.xxx.xxx
 
-# Remove firewall rule
+:: Remove firewall rule
 netsh advfirewall firewall delete rule name="Docker API Tailscale"
 ```
+
+---
 
 ## Security Notes
 
@@ -105,6 +129,8 @@ netsh advfirewall firewall delete rule name="Docker API Tailscale"
 - ✅ **Safe**: Tailscale provides encrypted VPN tunnel
 - 🔒 **Access**: Only devices on your Tailscale network can connect
 - 💡 **Tip**: Tailscale IPs are usually stable and don't change frequently
+
+---
 
 ## Usage Examples
 
@@ -119,6 +145,8 @@ docker ps
 docker images
 docker run hello-world
 ```
+
+---
 
 ## Troubleshooting
 
