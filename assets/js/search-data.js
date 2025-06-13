@@ -70,6 +70,17 @@ ninja.data = [{
             window.location.href = "/blog/2025/Docker-API-Exposure-Linux/";
           
         },
+      },{id: "post-the-ds-store-strikes-back-finder-edition",
+        
+          title: "The .DS_Store Strikes Back: Finder Edition",
+        
+        description: "A long time ago, on a remote server far, far away...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/The-DS_Store-Strikes-Back/";
+          
+        },
       },{id: "post-surviving-without-vs-code-remote-ssh",
         
           title: "Surviving without VS Code Remote SSH",
