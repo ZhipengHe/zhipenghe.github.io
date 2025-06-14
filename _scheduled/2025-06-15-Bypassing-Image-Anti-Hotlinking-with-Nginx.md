@@ -3,8 +3,8 @@ layout: post
 title: "Bypassing Image Anti-Hotlinking with Nginx Reverse Proxy"
 date: 2025-06-15 16:04:00+1000
 description: A guide on implementing an Nginx reverse proxy to solve image hotlinking issues in RSS feeds. Learn how to bypass anti-hotlinking protection while maintaining ethical usage, including server-side caching, dynamic DNS resolution, and automated URL conversion techniques.
-tags: Linux, Nginx, Glance, Proxy
-categories: WebDev, Self-hosted
+tags: Linux Nginx Glance Proxy
+categories: WebDev Self-hosted
 image: /assets/img/posts/june-15-pm0404.png
 giscus_comments: true
 related_posts: true

@@ -3,7 +3,7 @@ layout: post
 title: "Jekyll LiveReload vs WebSocket Secure: A Protocol Compatibility Issue"
 date: 2025-06-12 02:37:38+1000
 description: Jekyll's LiveReload breaks with HTTPS reverse proxies in OrbStack due to WebSocket limitations. Testing with other tools proves it's Jekyll's problem, not the proxy's.
-tags: Jekyll, OrbStack, Docker, WebSocket, macOS
+tags: Jekyll OrbStack Docker WebSocket macOS
 categories: WebDev
 image: /assets/img/posts/OrbStack-Setting-Domain.png
 giscus_comments: true

@@ -3,7 +3,7 @@ layout: post
 title: Docker API Exposure via Tailscale VPN - Linux Setup Guide
 date: 2025-06-07 22:37:00+1000
 description: This guide shows how to expose Docker's API (port 2376) to your Tailscale VPN network on Linux systems.
-tags: Docker, Tailscale, Proxy, Linux
+tags: Docker Tailscale Proxy Linux
 categories: Self-hosted
 image: /assets/img/posts/Docker-API-Exposure-Linux.png
 giscus_comments: true

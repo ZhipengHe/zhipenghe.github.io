@@ -3,7 +3,7 @@ layout: post
 title: Surviving without VS Code Remote SSH
 date: 2025-05-11 12:06:00+1000
 description: 'Or: "They took away my extension, but not my will to code."'
-tags: Aqua, VSCode, SSH
+tags: Aqua VSCode SSH
 categories: HPC
 image: /assets/img/posts/VSCode-Remote-SSH-Error.png
 giscus_comments: true
