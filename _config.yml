@@ -90,6 +90,7 @@ blog_nav_title: true # your blog must have a title for it to be displayed in the
 blog_description: "Learn from my fails, you will. Docker, AI, Web Dev—covered, it is."
 permalink: /blog/:year/:title/
 lsi: true # produce an index for related posts
+future: true # publish future posts
 
 # Pagination
 pagination:
