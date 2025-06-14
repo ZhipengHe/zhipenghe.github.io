@@ -3,7 +3,7 @@ layout: post
 title: Docker API Exposure via Tailscale VPN - Windows Setup Guide (with WSL2 Backend)
 date: 2025-06-09 22:37:00+1000
 description: This guide shows how to expose Docker's API (port 2375) to your Tailscale VPN network on Windows with WSL2 backend.
-tags: Docker, Tailscale, Windows, WSL2
+tags: Docker, Tailscale, Proxy, Windows, WSL2
 categories: Self-hosted
 image: /assets/img/posts/Docker-Desktop-Setting-Windows.png
 giscus_comments: true
