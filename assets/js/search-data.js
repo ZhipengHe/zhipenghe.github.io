@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/vitae/";
           },
-        },{id: "post-jekyll-livereload-vs-websocket-secure-a-protocol-compatibility-issue",
+        },{id: "post-bypassing-image-anti-hotlinking-with-nginx-reverse-proxy",
+        
+          title: "Bypassing Image Anti-Hotlinking with Nginx Reverse Proxy",
+        
+        description: "A guide on implementing an Nginx reverse proxy to solve image hotlinking issues in RSS feeds. Learn how to bypass anti-hotlinking protection while maintaining ethical usage, including server-side caching, dynamic DNS resolution, and automated URL conversion techniques.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/Bypassing-Image-Anti-Hotlinking-with-Nginx/";
+          
+        },
+      },{id: "post-jekyll-livereload-vs-websocket-secure-a-protocol-compatibility-issue",
         
           title: "Jekyll LiveReload vs WebSocket Secure: A Protocol Compatibility Issue",
         
