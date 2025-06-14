@@ -2,22 +2,22 @@ name: Publish posts scheduled for today
 
 on:
   schedule:
-    # Run every day at 23:30 UTC or manually run
-    - cron: "30 23 * * *"
+    # Run every day at 18:00 UTC (04:00 AM AEST) or manually run
+    - cron: "0 18 * * *"
   workflow_dispatch:
 
 jobs:
   publish_scheduled:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main branch
+      - name: Checkout master branch
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: master
 
       - name: Get the date for today
         id: date
-        run: echo "TODAY=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+        run: echo "TODAY=$(TZ=Australia/Brisbane date +'%Y-%m-%d')" >> $GITHUB_ENV
 
       - name: Check for scheduled posts and move to posts
         run: |
