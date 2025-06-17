@@ -19,21 +19,32 @@ jobs:
         id: date
         run: echo "TODAY=$(TZ=Australia/Brisbane date +'%Y-%m-%d')" >> $GITHUB_ENV
 
-      - name: Check for scheduled posts and move to posts
+      - name: Check if scheduled posts exist
+        id: check_posts
         run: |
           echo "Today is $TODAY"
-          shopt -s nullglob
+          if ls _scheduled/${TODAY}-*.md 1> /dev/null 2>&1; then
+            echo "has_posts=true" >> $GITHUB_OUTPUT
+            echo "Found scheduled posts for today"
+          else
+            echo "has_posts=false" >> $GITHUB_OUTPUT
+            echo "No scheduled posts found for today"
+          fi
+
+      - name: Move scheduled posts to posts
+        if: steps.check_posts.outputs.has_posts == 'true'
+        run: |
           for file in _scheduled/${TODAY}-*.md; do
-            echo "Found scheduled: $file"
+            echo "Moving $file to _posts/"
             mv "$file" "_posts/"
-            echo "Moved $file to _posts/"
           done
 
       - name: Commit and push changes
+        if: steps.check_posts.outputs.has_posts == 'true'
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add _posts/
           git add _scheduled/
-          git commit -m "Posted Scheduled Drafts on $TODAY" || echo "No changes to commit"
+          git commit -m "Posted scheduled drafts on $TODAY"
           git push
