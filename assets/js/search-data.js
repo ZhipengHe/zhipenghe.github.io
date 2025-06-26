@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/vitae/";
           },
-        },{id: "post-bypassing-image-anti-hotlinking-with-nginx-reverse-proxy",
+        },{id: "post-code-is-cheap-show-me-the-prompts",
+        
+          title: "Code is Cheap. Show me the Prompts",
+        
+        description: "Master AI-assisted development with practical prompting techniques and templates that actually work. Learn when AI shines and how to communicate effectively with coding assistants.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/Code-is-Cheap/";
+          
+        },
+      },{id: "post-bypassing-image-anti-hotlinking-with-nginx-reverse-proxy",
         
           title: "Bypassing Image Anti-Hotlinking with Nginx Reverse Proxy",
         
