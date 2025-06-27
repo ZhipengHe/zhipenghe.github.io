@@ -89,6 +89,37 @@ npx prettier --write .
 - Image optimization with ImageMagick
 - Custom scheduled posting system via GitHub Actions
 
+## Blog Content Guidelines
+
+### Blog Post Structure
+- **Front matter fields**: All posts should include `layout: post`, `title`, `date`, `description`, `tags`, `categories`
+- **Image fields**: Use `image` for general post images. For blog thumbnails, the system uses `thumbnail` field with `image` as fallback
+- **OpenGraph images**: Use `og_image` for social media previews (recommended: 1200×629 pixels, 1.91:1 aspect ratio)
+- **Comments**: Enable with `giscus_comments: true`
+
+### Blog Layout System
+- **Thumbnail logic**: Blog list automatically shows thumbnails using `thumbnail` field, falling back to `image` field
+- **Layout proportions**: Posts with images use 67%/33% content/thumbnail split
+- **Image sizing**: Thumbnails are optimized for 1.91:1 aspect ratio images at 120px height
+
+### Content Tone Guidelines
+- **Balance**: Maintain casual, helpful tone without excessive humor
+- **Technical focus**: Humor should enhance understanding, not distract from content
+- **Consistency**: Keep metaphors and jokes relevant to the technical problem being solved
+
+## Theme Customization
+
+### al-folio Theme Integration
+- Based on al-folio academic theme with custom modifications
+- Uses Jekyll Scholar for publication management
+- Includes Bootstrap for responsive grid layouts
+- Supports MathJax for mathematical notation
+
+### Layout Templates
+- `_layouts/post.liquid`: Blog post template with thumbnail support
+- `_layouts/default.liquid`: Base template for all pages
+- `_pages/blog.md`: Blog listing page with pagination and thumbnail display
+
 ## Important Files
 - `_config.yml`: Main site configuration
 - `Gemfile`: Ruby dependencies
