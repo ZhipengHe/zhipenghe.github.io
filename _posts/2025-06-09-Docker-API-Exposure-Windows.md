@@ -6,6 +6,7 @@ description: This guide shows how to expose Docker's API (port 2375) to your Tai
 tags: Docker Tailscale Proxy Windows WSL2
 categories: Self-hosted
 image: /assets/img/posts/Docker-Desktop-Setting-Windows.png
+og_image: /assets/img/posts/Docker-Desktop-Setting-Windows.png
 giscus_comments: true
 related_posts: true
 toc:

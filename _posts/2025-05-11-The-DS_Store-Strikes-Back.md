@@ -6,6 +6,7 @@ description: "A long time ago, on a remote server far, far away..."
 tags: macOS Linux Aqua
 categories: HPC
 image: /assets/img/posts/DS_Store-meme.png
+og_image: /assets/img/posts/DS_Store-meme.png
 giscus_comments: true
 related_posts: true
 toc:

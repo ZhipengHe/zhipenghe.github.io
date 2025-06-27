@@ -6,6 +6,7 @@ description: Jekyll's LiveReload breaks with HTTPS reverse proxies in OrbStack d
 tags: Jekyll OrbStack Docker WebSocket macOS
 categories: WebDev
 image: /assets/img/posts/OrbStack-Setting-Domain.png
+og_image: /assets/img/posts/OrbStack-Setting-Domain.png
 giscus_comments: true
 related_posts: true
 code_diff: true

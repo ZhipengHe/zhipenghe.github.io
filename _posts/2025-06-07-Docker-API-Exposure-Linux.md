@@ -6,6 +6,7 @@ description: This guide shows how to expose Docker's API (port 2376) to your Tai
 tags: Docker Tailscale Proxy Linux
 categories: Self-hosted
 image: /assets/img/posts/Docker-API-Exposure-Linux.png
+og_image: /assets/img/posts/Docker-API-Exposure-Linux.png
 giscus_comments: true
 related_posts: true
 toc:

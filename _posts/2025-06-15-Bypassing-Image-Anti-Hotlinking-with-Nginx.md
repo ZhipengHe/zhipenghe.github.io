@@ -6,6 +6,7 @@ description: A guide on implementing an Nginx reverse proxy to solve image hotli
 tags: Linux Nginx Glance Proxy
 categories: WebDev Self-hosted
 image: /assets/img/posts/june-15-pm0404.png
+og_image: /assets/img/posts/june-15-pm0404.png
 giscus_comments: true
 related_posts: true
 toc:

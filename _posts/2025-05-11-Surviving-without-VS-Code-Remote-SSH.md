@@ -6,6 +6,7 @@ description: 'Or: "They took away my extension, but not my will to code."'
 tags: Aqua VSCode SSH
 categories: HPC
 image: /assets/img/posts/VSCode-Remote-SSH-Error.png
+og_image: /assets/img/posts/VSCode-Remote-SSH-Error.png
 giscus_comments: true
 related_posts: true
 toc:
