@@ -51,7 +51,7 @@ Then, you can connect to the HPC by running `ssh aqua`. Also, you can use `aqua`
 
 ## 🧩 1. Fake it with SSH-mounted folders
 
-### 🧀 Option A: Mount via Finder — the cheese board approach
+### 🧀 Option A: Mount via Finder
 
 > Here's a quick guide for macOS users. Please refer to the [QUT Aqua documentation](https://docs.eres.qut.edu.au/hpc-transferring-files-tofrom-hpc#using-file-explorer-or-finder-to-mount-a-drive-to-the-hpc) for other OS.
 
@@ -68,13 +68,13 @@ Then, you can connect to the HPC by running `ssh aqua`. Also, you can use `aqua`
 
 #### But ... is this method elegant?
 
-You've mounted an SMB share to your Finder. Congratulations! You've just volunteered for the following comedy of errors:
+You've mounted an SMB share to your Finder. While this works, there are some significant limitations:
 
-1. **Git? More like "Get Lost"** - Your carefully crafted version control system now has all the functionality of a chocolate teapot. Want to commit changes? Sorry, Git is too sophisticated for your peasant SMB connection. It's like bringing a quantum physicist to a kindergarten counting class.
-2. **VS Code's Terminal: The Phantom Feature** - That beautiful integrated terminal in VS Code? It now stares at you like a confused puppy. `Command not found` becomes your new error mantra. It's there... but also not there, like your motivation on Monday mornings.
-3. **The Mysterious Disconnection** - Nothing says "surprise vacation" like your SMB connection randomly dropping when you're in the middle of important work. It's like having a co-worker who pulls the fire alarm whenever they're bored.
-4. **HPC Disruption: The Digital Hostage Situation** - Ah, you've put ALL your files on the server! So when the High-Performance Computing cluster decides to have its quarterly existential crisis (or weekly, who's counting?), your work becomes as accessible as your childhood memories. Your options? Make coffee, stare wistfully out the window.
-5. **The .DS_Store Epidemic: Exclusive for macOS** - Ah, macOS and its infamous `.DS_Store` files! Your Mac scatters these digital breadcrumbs in every folder you visit like an overzealous tourist taking selfies at landmarks. The HPC server, meanwhile, treats them with the same enthusiasm as finding glitter in its keyboard – "Thanks for the desktop settings I absolutely didn't ask for and can't use!"
+1. **Git Limitations** - Your version control system becomes severely limited over SMB. Git operations that work fine locally will fail or behave unpredictably through the mounted share.
+2. **VS Code Terminal Issues** - The integrated terminal in VS Code won't work properly with mounted SMB shares. You'll get `Command not found` errors for most terminal operations.
+3. **Connection Stability** - SMB connections can drop unexpectedly, especially during longer work sessions or when the network is unstable.
+4. **HPC Dependency** - Since all your files live on the server, any HPC maintenance or downtime makes your work completely inaccessible.
+5. **The .DS_Store Problem (macOS)** - Your Mac will create `.DS_Store` files in every folder you visit through Finder. These desktop service files clutter the HPC filesystem and serve no purpose on the server.
 
 <div class="text-center mt-3">
     {% include figure.liquid loading="eager" path="assets/img/posts/DS_Store-meme.png" class="img-fluid rounded z-depth-1 w-50" %}

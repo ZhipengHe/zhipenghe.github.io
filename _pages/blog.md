@@ -122,10 +122,11 @@ pagination:
 
     <li>
 
-{% if post.thumbnail %}
+{% assign post_image = post.thumbnail | default: post.image %}
+{% if post_image %}
 
 <div class="row">
-          <div class="col-sm-9">
+          <div class="col-sm-8">
 {% endif %}
         <h3>
         {% if post.redirect == blank %}
@@ -174,12 +175,12 @@ pagination:
           {% endif %}
     </p>
 
-{% if post.thumbnail %}
+{% if post_image %}
 
 </div>
 
-  <div class="col-sm-3">
-    <img class="card-img" src="{{ post.thumbnail | relative_url }}" style="object-fit: cover; height: 90%" alt="image">
+  <div class="col-sm-4">
+    <img class="card-img" src="{{ post_image | relative_url }}" style="object-fit: cover; width: 100%;" alt="image">
   </div>
 </div>
 {% endif %}

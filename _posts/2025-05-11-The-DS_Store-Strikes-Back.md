@@ -15,6 +15,10 @@ toc:
 
 > _A long time ago, on a remote server far, far away..._
 
+When working with remote servers from macOS, you'll inevitably encounter the dark side of the Force: hidden system files that follow your every move. These invisible menaces can break deployment scripts, bloat repositories, and generally cause chaos in your otherwise pristine remote environments.
+
+---
+
 ## EPISODE V: THE .DS_STORE STRIKES BACK
 
 <!-- prettier-ignore -->
@@ -97,9 +101,9 @@ When you copy files to a remote server, macOS creates mysterious `._*` files. Th
         - FAT, exFAT, NTFS drives
         - Some WebDAV volumes
 
-3.  **Best Available Solutions :question:**
+3.  **The Harsh Reality**
 
-    **_Just kidding, there are no best available solutions for this problem._** That's why I said mount the remote server as a local drive by Finder is not an elegant solution (Check [this](/blog/2025/Surviving-without-VS-Code-Remote-SSH/#but--is-this-method-elegant).
+    **_Just kidding, there are no best available solutions for this problem._** That's why using Finder to mount remote servers as local drives is not an elegant solution (Check [this](/blog/2025/Surviving-without-VS-Code-Remote-SSH/#but--is-this-method-elegant).
 
 4.  **For Git Users**
 
