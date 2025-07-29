@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
+        },{id: "nav-slides",
+          title: "slides",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/https:/slides.zhipenghe.me/";
+          },
         },{id: "nav-vitae",
           title: "vitae",
           description: "Course of Life",
