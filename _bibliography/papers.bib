@@ -24,9 +24,11 @@
 	pages = {108773},
 	title = {Building interpretable models for business process prediction using shared and specialised attention mechanisms},
 	year = {2022},
+	volume = {248},
 	selected=true,
 	abbr={KBS},
-	html = {https://doi.org/10.1016/j.knosys.2022.108773}
+	code = {https://github.com/ZhipengHe/Shared-and-Specialised-Attention-based-Interpretable-Models},
+	
 }
 
 @article{Physionet2022,
@@ -36,10 +38,10 @@
 	journal = {Physionet},
 	year = {2022},
 	doi = {10.13026/64aq-jw11},
-	html = {https://doi.org/10.13026/64aq-jw11},
 	selected = false,
 	abbr={MIMIC},
-	note = {Version 1.0.0}
+	note = {Version 1.0.0},
+	code = {https://github.com/ZhipengHe/MIMIC-IV-event-log-extraction-for-ED},
 }
 
 @article{ISWA2025,
@@ -49,12 +51,12 @@
 	keywords = {Adversarial examples, Imperceptibility, Machine learning models, Robustness, Tabular data},
 	pages = {200461},
 	doi = {10.1016/j.iswa.2024.200461},
-	html = {https://doi.org/10.1016/j.iswa.2024.200461},
 	journal = {Intelligent Systems with Applications},
 	year = {2025},
 	selected = true,
 	abbr={ISWA},
-	poster = {https://slides.zhipenghe.me/2024-12-ADSN.pdf}
+	poster = {https://slides.zhipenghe.me/2024-12-ADSN.pdf},
+	code = {https://github.com/ZhipengHe/Imperceptibility-of-Tabular-Adversarial-attack},
 }
 
 @article{TabAttackBench2025,
@@ -63,21 +65,35 @@
 	title = {TabAttackBench: A Benchmark for Adversarial Attacks on Tabular Data},
 	keywords = {Adversarial attack, Tabular data, Benchmark, Machine learning, Robustness},
 	arxiv = {2505.21027},
-	html = {https://arxiv.org/abs/2505.21027},
 	journal = {arXiv preprint arXiv:2505.21027},
 	year = {2025},
 	selected = false,
 	abbr={arXiv},
+	code = {https://github.com/ZhipengHe/TabAttackBench},
+	note = {Under Review},
 }
 
 @article{MIMICEL2025,
 	abstract = {The global issue of overcrowding in emergency departments (ED) necessitates the analysis of patient flow through ED to enhance efficiency and alleviate overcrowding. However, traditional analytical methods are time-consuming and costly. The healthcare industry is embracing process mining tools to analyse healthcare processes and patient flows. Process mining aims to discover, monitor, and enhance processes by obtaining knowledge from event log data. However, the availability of event logs is a prerequisite for applying process mining techniques. Hence, this paper aims to generate an event log for analysing processes in ED. In this study, we extract an event log from the MIMIC-IV-ED dataset and name it MIMICEL. MIMICEL captures the process of patient journey in ED, allowing for analysis of patient flows and improving ED efficiency. We present analyses conducted using MIMICEL to demonstrate the utility of the dataset. The curation of MIMICEL facilitates extensive use of MIMIC-IV-ED data for ED analysis using process mining techniques, while also providing the process mining research communities with a valuable dataset for study.},
-	author = {Jia Wei and Chun Ouyang and  Bemali Wickramanayake and Zhipeng He and Keshara Perera and Catarina Moreira},
+	author = {Jia Wei and Chun Ouyang and Bemali Wickramanayake and Zhipeng He and Keshara Perera and Catarina Moreira},
 	title = {Curation and Analysis of MIMICEL - An Event Log for MIMIC-IV Emergency Department},
 	arxiv = {2505.19389},
-	html = {https://arxiv.org/abs/2505.19389},
 	journal = {arXiv preprint arXiv:2505.19389},
 	year = {2025},
 	selected = false,
 	abbr={MIMIC},
+	code = {https://github.com/ZhipengHe/MIMIC-IV-event-log-extraction-for-ED},
+}
+
+@article{VAE-TabAttack2025,
+	abstract = {Adversarial attacks on tabular data present fundamental challenges distinct from image or text domains due to the heterogeneous nature of mixed categorical and numerical features. Unlike images where pixel perturbations maintain visual similarity, tabular data lacks intuitive similarity metrics, making it difficult to define \emph{imperceptible} modifications. Additionally, traditional gradient-based methods prioritise $\ell_p$-norm constraints, often producing adversarial examples that deviate from the original data distributions, making them detectable. We propose a latent space perturbation framework using a mixed-input Variational Autoencoder (VAE) to generate imperceptible adversarial examples. The proposed VAE integrates categorical embeddings and numerical features into a unified latent manifold, enabling perturbations that preserve statistical consistency. We specify \emph{In-Distribution Success Rate} (IDSR) to measure the proportion of adversarial examples that remain statistically indistinguishable from the input distribution. Evaluation across six publicly available datasets and three model architectures  demonstrates that our method achieves substantially lower outlier rates and more consistent performance compared to traditional input-space attacks and other VAE-based methods adapted from image domain approaches. Our comprehensive analysis includes hyperparameter sensitivity, sparsity control mechanisms, and generative architectural comparisons, revealing that VAE-based attacks depend critically on reconstruction quality but offer superior practical utility when sufficient training data is available. This work highlights the importance of on-manifold perturbations for realistic adversarial attacks on tabular data, offering a robust approach for practical deployment.},
+	author = {He, Zhipeng and Stevens, Alexander and Ouyang, Chun and De Smedt, Johannes and Barros, Alistair and Moreira, Catarina},
+	title = {Crafting Imperceptible On-Manifold Adversarial Attacks for Tabular Data},
+	keywords = {Adversarial attack, Variational Autoencoder, Tabular data, Robustness},
+	arxiv = {2507.10998},
+	journal = {arXiv preprint arXiv:2507.10998},
+	year = {2025},
+	selected = false,
+	abbr={arXiv},
+	code = {https://github.com/ZhipengHe/VAE-TabAttack},
 }

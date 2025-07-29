@@ -28,7 +28,7 @@
       department: School of Information Systems
       institution: Queensland University of Technology
       description:
-        - 'Co-advised by <a href="https://staff.qut.edu.au/staff/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a>, <a href="https://www.qut.edu.au/about/our-people/academic-profiles/alistair.barros" target="_blank"><b>Prof. Alistair Barros</b></a> and <a href="https://staff.qut.edu.au/staff/catarina.pintomoreira" target="_blank"><b>Dr. Catarina Moreira</b></a>'
+        - 'Co-advised by <a href="https://www.qut.edu.au/about/our-people/academic-profiles/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a> (Principal Supervisor), <a href="https://www.qut.edu.au/about/our-people/academic-profiles/alistair.barros" target="_blank"><b>Prof. Alistair Barros</b></a> (Associate Supervisor) and <a href="https://profiles.uts.edu.au/Catarina.PintoMoreira" target="_blank"><b>A/Prof. Catarina Moreira</b></a> (External Supervisor @UTS)'
         - "Awarded QUT Postgraduate Research Award (International)"
         - "Awarded QUT HDR Tuition Fee Sponsorship"
     - title: Bachelor of Information Technology (Honours), First Class Honours
@@ -37,7 +37,7 @@
       department: School of Information Systems
       institution: Queensland University of Technology
       description:
-        - 'Co-advised by <a href="https://staff.qut.edu.au/staff/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a> and <a href="https://staff.qut.edu.au/staff/catarina.pintomoreira" target="_blank"><b>Dr. Catarina Moreira</b></a>'
+        - 'Co-advised by <a href="https://www.qut.edu.au/about/our-people/academic-profiles/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a> and <a href="https://profiles.uts.edu.au/Catarina.PintoMoreira" target="_blank"><b>A/Prof. Catarina Moreira</b></a>'
         - "Graduated with 6.625 out of 7 GPA"
         - "Awarded QUT International Merit Scholarship"
     - title: Bachelor of Information Technology (Information Systems)
@@ -101,7 +101,7 @@
       institution: Queensland University of Technology
       description:
         - "Title: Building Robust Predictive Systems for Tabular Data"
-        - 'Co-advised by <a href="https://staff.qut.edu.au/staff/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a>, <a href="https://www.qut.edu.au/about/our-people/academic-profiles/alistair.barros" target="_blank"><b>Prof. Alistair Barros</b></a> and <a href="https://staff.qut.edu.au/staff/catarina.pintomoreira" target="_blank"><b>Dr. Catarina Moreira</b></a>'
+        - 'Co-advised by <a href="https://www.qut.edu.au/about/our-people/academic-profiles/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a> (Principal Supervisor), <a href="https://www.qut.edu.au/about/our-people/academic-profiles/alistair.barros" target="_blank"><b>Prof. Alistair Barros</b></a> (Associate Supervisor) and <a href="https://profiles.uts.edu.au/Catarina.PintoMoreira" target="_blank"><b>A/Prof. Catarina Moreira</b></a> (External Supervisor @UTS)'
         - "The focus of this research will be on addressing challenges related to adversarial robustness in tabular data. To accomplish this, the research will investigate cutting-edge attack techniques and analyse the characteristics of successful attacks on structured data. Furthermore, the study will propose an evaluation framework to benchmark these characteristics, aiming to develop defense mechanisms that ultimately enhance the robustness of machine learning models against adversarial attacks in tabular data."
     - title: "Senior Research Assistant"
       year: 2025.04 - PRESENT
@@ -141,7 +141,7 @@
       institution: Queensland University of Technology
       description:
         - "Title: Investigating the Impact of Event Logs on Deep Learning-based Process Prediction Performance"
-        - 'Co-advised by <a href="https://staff.qut.edu.au/staff/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a> and <a href="https://staff.qut.edu.au/staff/catarina.pintomoreira" target="_blank"><b>Dr. Catarina Moreira</b></a>'
+        - 'Co-advised by <a href="https://www.qut.edu.au/about/our-people/academic-profiles/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a> and <a href="https://profiles.uts.edu.au/Catarina.PintoMoreira" target="_blank"><b>A/Prof. Catarina Moreira</b></a>'
         - |
           Focusing on investigating and analysing the potential influence of specific characteristics of event logs when predicting next business process activity using deep learning techniques <br/>
           <ul>

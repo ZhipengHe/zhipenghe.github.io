@@ -29,3 +29,19 @@
 "barros":
   - firstname: ["Alistair", "A."]
     url: https://www.qut.edu.au/about/our-people/academic-profiles/alistair.barros
+
+"stevens":
+  - firstname: ["Alexander", "A."]
+    url: https://scholar.google.com/citations?user=fNeFT5EAAAAJ
+
+"de smedt":
+  - firstname: ["Johannes", "J."]
+    url: https://scholar.google.com/citations?user=Hv2zeMIAAAAJ
+
+"wen":
+  - firstname: ["Lijie", "L."]
+    url: https://scholar.google.com/citations?user=f3C0jUIAAAAJ
+
+"liu":
+  - firstname: ["Cong", "C."]
+    url: https://scholar.google.com/citations?user=TjQYB-IAAAAJ
