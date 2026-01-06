@@ -173,6 +173,8 @@
       {% capture entrypages %}{{ ", " }}{{ entry.eid }}{% endcapture %}
     {% elsif entry.pages %}
       {% capture entrypages %}{{ ", " }}{{ entry.pages }}{% endcapture %}
+    {% else %}
+      {% assign entrypages = '' %}
     {% endif %}
     {% if entry.location %}
       {% capture entrytype %}{{ entrytype }}{{ ", " }}{{ entry.location }}{% endcapture %}

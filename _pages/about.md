@@ -38,10 +38,14 @@ Eager to contribute to team success through challenging work, attention to detai
   - BInfTech Honours, First Class, 2021
   - BInfTech in Information System, 2020
 - Jinling Institute of Technology, China
-  - B.E. in Software Engineering, 2016 - 2019
+  - B.E. in Software Engineering, 2016 - 2020
 
 ## honors & awards
 
+- 2025 QUT Faculty of Science High Achiever HDR Student Award
+- 2025 QUT School of Information Systems Best HDR Championship
+- 2025 QUT School of Information Systems HDR Accomplishment Award
+- 2024 QUT School of Information Systems Doctoral Consortium Outstanding Presentation Award
 - 2022 - 2025 QUT Postgraduate Research Award (QUTPRA) (International)
 - 2022 - 2025 QUT HDR Tuition Fee Scholarship
 - 2021 QUT International Merit Scholarship

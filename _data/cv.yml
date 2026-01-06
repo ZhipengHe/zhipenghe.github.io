@@ -61,7 +61,19 @@
 - title: Honors and Awards
   type: time_table
   contents:
-    - title: QUT IS DC Outstanding Presentation Award
+    - title: QUT Faculty of Science High Achiever HDR Student
+      year: 2025
+      description:
+        - Awarded for demonstrating sustained high achievement in research and esteem measures as a current HDR candidate at the QUT Faculty of Science.
+    - title: QUT School of Information Systems Best HDR Championship
+      year: 2025
+      description:
+        - Awarded for outstanding leadership, advocacy and impactful research within the HDR community within the QUT School of Information Systems in 2025
+    - title: QUT School of Information Systems HDR Accomplishment Award
+      year: 2025
+      description:
+        - Awarded for innovative, high-quality research with strong publications as a current HDR candidate at the QUT School of Information Systems in 2025
+    - title: QUT School of Information Systems Doctoral Consortium Outstanding Presentation Award
       year: 2024
       description:
         - Awarded for the outstanding presentation at the QUT School of Information Systems Doctoral Consortium in 2024
@@ -104,7 +116,7 @@
         - 'Co-advised by <a href="https://www.qut.edu.au/about/our-people/academic-profiles/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a> (Principal Supervisor), <a href="https://www.qut.edu.au/about/our-people/academic-profiles/alistair.barros" target="_blank"><b>Prof. Alistair Barros</b></a> (Associate Supervisor) and <a href="https://profiles.uts.edu.au/Catarina.PintoMoreira" target="_blank"><b>A/Prof. Catarina Moreira</b></a> (External Supervisor @UTS)'
         - "The focus of this research will be on addressing challenges related to adversarial robustness in tabular data. To accomplish this, the research will investigate cutting-edge attack techniques and analyse the characteristics of successful attacks on structured data. Furthermore, the study will propose an evaluation framework to benchmark these characteristics, aiming to develop defense mechanisms that ultimately enhance the robustness of machine learning models against adversarial attacks in tabular data."
     - title: "Senior Research Assistant"
-      year: 2025.04 - PRESENT
+      year: 2025.04 - 2025.09
       location: Brisbane, Australia
       department: School of Information Systems
       institution: Queensland University of Technology
