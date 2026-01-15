@@ -139,8 +139,11 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-tabattackbench-a-benchmark-for-adversarial-attacks-on-tabular-data-has-been-accepted-by-d1-journal-expert-systems-with-applications",
           title: '🎉 Our paper “TabAttackBench: A Benchmark for Adversarial Attacks on Tabular Data” has...',
           description: "",
-          section: "News",},{id: "news-receive-the-best-hdr-championship-2025-and-hdr-accomplishment-award-2025-from-the-qut-school-of-information-systems",
+          section: "News",},{id: "news-receive-the-best-hdr-championship-2025-and-hdr-accomplishment-award-2025-from-qut-school-of-information-systems",
           title: '🎉 Receive the Best HDR Championship 2025 and HDR Accomplishment Award 2025 from...',
+          description: "",
+          section: "News",},{id: "news-receive-the-high-achiever-hdr-student-award-december-2025-from-qut-faculty-of-science",
+          title: '🎉 Receive the High Achiever HDR Student Award (December 2025) from QUT Faculty...',
           description: "",
           section: "News",},{
         id: 'social-dblp',
