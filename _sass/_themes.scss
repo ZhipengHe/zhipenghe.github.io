@@ -89,7 +89,7 @@ html[data-theme="dark"] {
   --global-footer-text-color: #{$grey-color-dark};
   --global-footer-link-color: #{$black-color};
   --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
+  --global-divider-color: rgba(255, 255, 255, 0.1);
   --global-card-bg-color: #{$grey-900};
   --global-back-to-top-bg-color: rgba(
     #{color.channel($white-color, "red", $space: rgb)},
@@ -113,6 +113,14 @@ html[data-theme="dark"] {
   --global-danger-block-bg: #600;
   --global-danger-block-text: #ffb9b9;
   --global-danger-block-title: #ffe0e0;
+
+  .cv {
+    .card {
+      box-shadow:
+        0 2px 5px 0 rgba(255, 255, 255, 0.16),
+        0 2px 10px 0 rgba(255, 255, 255, 0.12);
+    }
+  }
 
   .only-light {
     display: none;

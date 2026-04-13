@@ -22,8 +22,7 @@
     - [Updating the bundler itself](#updating-the-bundler-itself)
     - [Updating all dependencies](#updating-all-dependencies)
   - [Upgrading from a previous version](#upgrading-from-a-previous-version)
-
-<!--te-->
+  <!--te-->
 
 ## Recommended Approach
 
