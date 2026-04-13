@@ -153,6 +153,13 @@ ninja.data = [{
           window.open("https://dblp.org/pid/214/4253-2.html", "_blank");
         },
       },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%7A%69%70%70%6F.%68%65@%71%75%74.%65%64%75.%61%75", "_blank");
+        },
+      },{
         id: 'social-github',
         title: 'GitHub',
         section: 'Socials',
