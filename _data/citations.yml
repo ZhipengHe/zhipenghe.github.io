@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-04-13'
+  last_updated: '2026-04-24'
 papers:
   oXqD4tMAAAAJ:IjCSPb-OGe4C:
     citations: 2
     title: 'TabAttackBench: A benchmark for adversarial attacks on tabular data'
     year: '2025'
   oXqD4tMAAAAJ:UeHWp8X0CEIC:
-    citations: 13
+    citations: 15
     title: 'Investigating imperceptibility of adversarial attacks on tabular data: An empirical analysis'
     year: '2025'
   oXqD4tMAAAAJ:Y0pCki6q_DkC:
@@ -22,7 +22,7 @@ papers:
     title: Investigating the Impact of Event Logs on Deep Learning-based Process Prediction Performance
     year: '2021'
   oXqD4tMAAAAJ:u5HHmVD_uO8C:
-    citations: 66
+    citations: 65
     title: Building interpretable models for business process prediction using shared and specialised attention mechanisms
     year: '2022'
   oXqD4tMAAAAJ:ufrVoPGSRksC:
