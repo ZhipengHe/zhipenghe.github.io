@@ -1,6 +1,10 @@
 metadata:
-  last_updated: '2026-04-29'
+  last_updated: '2026-05-11'
 papers:
+  oXqD4tMAAAAJ:8k81kl-MbHgC:
+    citations: 0
+    title: Building Adversarially Robust Predictive Systems for Tabular Data
+    year: '2026'
   oXqD4tMAAAAJ:IjCSPb-OGe4C:
     citations: 3
     title: 'TabAttackBench: A benchmark for adversarial attacks on tabular data'
@@ -14,7 +18,7 @@ papers:
     title: Crafting imperceptible on-manifold adversarial attacks for tabular data
     year: '2026'
   oXqD4tMAAAAJ:d1gkVwhDpl0C:
-    citations: 10
+    citations: 12
     title: 'MIMICEL: MIMIC-IV event log for emergency department'
     year: '2022'
   oXqD4tMAAAAJ:eQOLeE2rZwMC:
