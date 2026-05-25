@@ -1,6 +1,10 @@
 metadata:
-  last_updated: '2026-05-11'
+  last_updated: '2026-05-25'
 papers:
+  oXqD4tMAAAAJ:3fE2CSJIrl8C:
+    citations: 0
+    title: 'Deep Time-Series Models Meet Volatility: Multi-Horizon Electricity Price Forecasting in the Australian National Electricity Market'
+    year: '2026'
   oXqD4tMAAAAJ:8k81kl-MbHgC:
     citations: 0
     title: Building Adversarially Robust Predictive Systems for Tabular Data
@@ -9,16 +13,20 @@ papers:
     citations: 3
     title: 'TabAttackBench: A benchmark for adversarial attacks on tabular data'
     year: '2025'
+  oXqD4tMAAAAJ:MXK_kJrjxJIC:
+    citations: 0
+    title: TabAttackBench
+    year: '2026'
   oXqD4tMAAAAJ:UeHWp8X0CEIC:
     citations: 16
     title: 'Investigating imperceptibility of adversarial attacks on tabular data: An empirical analysis'
     year: '2025'
   oXqD4tMAAAAJ:Y0pCki6q_DkC:
-    citations: 2
+    citations: 3
     title: Crafting imperceptible on-manifold adversarial attacks for tabular data
     year: '2026'
   oXqD4tMAAAAJ:d1gkVwhDpl0C:
-    citations: 12
+    citations: 13
     title: 'MIMICEL: MIMIC-IV event log for emergency department'
     year: '2022'
   oXqD4tMAAAAJ:eQOLeE2rZwMC:
