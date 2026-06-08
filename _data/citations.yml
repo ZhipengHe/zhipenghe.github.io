@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-25'
+  last_updated: '2026-06-08'
 papers:
   oXqD4tMAAAAJ:3fE2CSJIrl8C:
     citations: 0
@@ -13,12 +13,8 @@ papers:
     citations: 3
     title: 'TabAttackBench: A benchmark for adversarial attacks on tabular data'
     year: '2025'
-  oXqD4tMAAAAJ:MXK_kJrjxJIC:
-    citations: 0
-    title: TabAttackBench
-    year: '2026'
   oXqD4tMAAAAJ:UeHWp8X0CEIC:
-    citations: 16
+    citations: 17
     title: 'Investigating imperceptibility of adversarial attacks on tabular data: An empirical analysis'
     year: '2025'
   oXqD4tMAAAAJ:Y0pCki6q_DkC:
