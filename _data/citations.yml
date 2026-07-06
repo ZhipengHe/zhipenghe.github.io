@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-22'
+  last_updated: '2026-07-06'
 papers:
   oXqD4tMAAAAJ:3fE2CSJIrl8C:
     citations: 0
@@ -10,15 +10,15 @@ papers:
     title: Building Adversarially Robust Predictive Systems for Tabular Data
     year: '2026'
   oXqD4tMAAAAJ:IjCSPb-OGe4C:
-    citations: 3
+    citations: 5
     title: 'TabAttackBench: A benchmark for adversarial attacks on tabular data'
     year: '2025'
   oXqD4tMAAAAJ:UeHWp8X0CEIC:
-    citations: 17
+    citations: 18
     title: 'Investigating imperceptibility of adversarial attacks on tabular data: An empirical analysis'
     year: '2025'
   oXqD4tMAAAAJ:Y0pCki6q_DkC:
-    citations: 3
+    citations: 4
     title: Crafting imperceptible on-manifold adversarial attacks for tabular data
     year: '2026'
   oXqD4tMAAAAJ:d1gkVwhDpl0C:
