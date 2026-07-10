@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-06'
+  last_updated: '2026-07-10'
 papers:
   oXqD4tMAAAAJ:3fE2CSJIrl8C:
     citations: 0
@@ -29,6 +29,10 @@ papers:
     citations: 0
     title: Investigating the Impact of Event Logs on Deep Learning-based Process Prediction Performance
     year: '2021'
+  oXqD4tMAAAAJ:kNdYIx-mwKoC:
+    citations: 2
+    title: Intelligent Systems with Applications
+    year: '2015'
   oXqD4tMAAAAJ:u5HHmVD_uO8C:
     citations: 67
     title: Building interpretable models for business process prediction using shared and specialised attention mechanisms
