@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-10'
+  last_updated: '2026-07-29'
 papers:
   oXqD4tMAAAAJ:3fE2CSJIrl8C:
     citations: 0
@@ -10,9 +10,9 @@ papers:
     title: Building Adversarially Robust Predictive Systems for Tabular Data
     year: '2026'
   oXqD4tMAAAAJ:IjCSPb-OGe4C:
-    citations: 5
+    citations: 7
     title: 'TabAttackBench: A benchmark for adversarial attacks on tabular data'
-    year: '2025'
+    year: '2026'
   oXqD4tMAAAAJ:UeHWp8X0CEIC:
     citations: 18
     title: 'Investigating imperceptibility of adversarial attacks on tabular data: An empirical analysis'
@@ -22,19 +22,15 @@ papers:
     title: Crafting imperceptible on-manifold adversarial attacks for tabular data
     year: '2026'
   oXqD4tMAAAAJ:d1gkVwhDpl0C:
-    citations: 13
+    citations: 14
     title: 'MIMICEL: MIMIC-IV event log for emergency department'
     year: '2022'
   oXqD4tMAAAAJ:eQOLeE2rZwMC:
     citations: 0
     title: Investigating the Impact of Event Logs on Deep Learning-based Process Prediction Performance
     year: '2021'
-  oXqD4tMAAAAJ:kNdYIx-mwKoC:
-    citations: 2
-    title: Intelligent Systems with Applications
-    year: '2015'
   oXqD4tMAAAAJ:u5HHmVD_uO8C:
-    citations: 67
+    citations: 68
     title: Building interpretable models for business process prediction using shared and specialised attention mechanisms
     year: '2022'
   oXqD4tMAAAAJ:ufrVoPGSRksC:
