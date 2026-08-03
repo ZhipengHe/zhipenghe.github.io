@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-29'
+  last_updated: '2026-08-03'
 papers:
   oXqD4tMAAAAJ:3fE2CSJIrl8C:
     citations: 0
@@ -21,8 +21,12 @@ papers:
     citations: 4
     title: Crafting imperceptible on-manifold adversarial attacks for tabular data
     year: '2026'
+  oXqD4tMAAAAJ:Zph67rFs4hoC:
+    citations: 0
+    title: Intelligent Systems with Applications
+    year: Unknown Year
   oXqD4tMAAAAJ:d1gkVwhDpl0C:
-    citations: 14
+    citations: 13
     title: 'MIMICEL: MIMIC-IV event log for emergency department'
     year: '2022'
   oXqD4tMAAAAJ:eQOLeE2rZwMC:
@@ -34,8 +38,8 @@ papers:
     title: Building interpretable models for business process prediction using shared and specialised attention mechanisms
     year: '2022'
   oXqD4tMAAAAJ:ufrVoPGSRksC:
-    citations: 1
-    title: Multi-Horizon Electricity Price Forecasting with Deep Learning in the Australian National Electricity Market
+    citations: 0
+    title: 'Deep Time-Series Models Meet Volatility: Multi-Horizon Electricity Price Forecasting in the Australian National Electricity Market'
     year: '2026'
   oXqD4tMAAAAJ:zYLM7Y9cAGgC:
     citations: 0
