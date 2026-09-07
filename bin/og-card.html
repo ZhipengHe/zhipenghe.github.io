@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Open Graph card</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Nunito+Sans:wght@400;600&family=Ma+Shan+Zheng&display=swap"
+    />
+    <style>
+      html,
+      body {
+        margin: 0;
+        background: #fff;
+      }
+      .card {
+        width: 1200px;
+        height: 630px;
+        box-sizing: border-box;
+        padding: 64px 88px 60px;
+        background: #fff;
+        color: #1b1f24;
+        font-family: "Nunito Sans", "Noto Sans SC", sans-serif;
+        display: flex;
+        flex-direction: column;
+      }
+      .brand {
+        flex: none;
+        display: flex;
+        align-items: baseline;
+        gap: 18px;
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 1;
+      }
+      .cjk {
+        font-family: "Ma Shan Zheng", "Noto Serif SC", serif;
+        letter-spacing: 0.08em;
+      }
+      .brand .cjk {
+        font-size: 30px;
+      }
+      .rule {
+        flex: none;
+        width: 64px;
+        height: 3px;
+        background: #b8352a;
+        margin: 18px 0 0;
+      }
+      .main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 24px 0 30px;
+      }
+      .title-row {
+        display: flex;
+        align-items: baseline;
+        gap: 28px;
+        flex-wrap: wrap;
+      }
+      h1 {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 600;
+        font-size: 88px;
+        line-height: 1.08;
+        margin: 0;
+        padding-bottom: 0.12em;
+        letter-spacing: -0.015em;
+        max-width: 1000px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      h1.long {
+        font-size: 72px;
+      }
+      h1.xlong {
+        font-size: 60px;
+      }
+      .title-row .cjk {
+        font-size: 64px;
+        color: #1b1f24;
+      }
+      .desc {
+        margin: 26px 0 0;
+        font-size: 28px;
+        line-height: 1.4;
+        color: #6b6f76;
+        max-width: 940px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .foot {
+        flex: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        font-size: 24px;
+        color: #6b6f76;
+      }
+      /* The homepage card has no site-name row: the name is the title, so the
+         rule moves beneath it and the description gets a third line. */
+      .home .brand,
+      .home .rule {
+        display: none;
+      }
+      .home .rule-home {
+        display: block;
+      }
+      .rule-home {
+        display: none;
+        width: 64px;
+        height: 3px;
+        background: #b8352a;
+        margin: 26px 0 0;
+      }
+      .home .desc {
+        -webkit-line-clamp: 3;
+      }
+      [hidden] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card" id="card">
+      <div class="brand">Zhipeng He <span class="cjk">何志鹏</span></div>
+      <div class="rule"></div>
+      <div class="main">
+        <div class="title-row">
+          <h1 id="title"></h1>
+          <span class="cjk" id="cjk" hidden></span>
+        </div>
+        <div class="rule-home"></div>
+        <p class="desc" id="desc"></p>
+      </div>
+      <div class="foot"><span id="meta"></span><span>zhipenghe.me</span></div>
+    </div>
+  </body>
+</html>

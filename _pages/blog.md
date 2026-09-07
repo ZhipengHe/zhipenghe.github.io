@@ -2,6 +2,7 @@
 layout: default
 permalink: /blog/
 title: blog
+description: Notes on machine learning, self-hosting and the tools in between.
 nav: true
 nav_order: 2
 pagination:
