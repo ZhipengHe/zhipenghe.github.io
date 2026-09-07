@@ -109,3 +109,54 @@ layout: default
     {% endif %}
   </article>
 </div>
+
+{% comment %}
+  Person schema for the homepage. The theme emits a generic WebSite block in the
+  head; this block tells search engines and AI assistants who the site is about,
+  what the current role is, and which external profiles are the same person.
+{% endcomment %}
+{% assign topics = site.keywords | split: ', ' %}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "{{ site.url }}{{ site.baseurl }}/#person",
+    "name": "{{ site.first_name }} {{ site.last_name }}",
+    "alternateName": ["{{ site.nickname }} {{ site.last_name }}", "{{ site.cn_name }}"],
+    "givenName": "{{ site.first_name }}",
+    "familyName": "{{ site.last_name }}",
+    "url": "{{ site.url }}{{ site.baseurl }}/",
+    "image": "{{ site.url }}{{ site.baseurl }}/assets/img/{{ page.profile.image }}",
+    "email": "mailto:{{ site.email }}",
+    "jobTitle": "Postdoctoral Fellow",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Queensland University of Technology",
+      "alternateName": "QUT",
+      "url": "https://www.qut.edu.au/",
+      "department": {
+        "@type": "Organization",
+        "name": "School of Mechanical, Medical and Process Engineering"
+      }
+    },
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Queensland University of Technology",
+        "url": "https://www.qut.edu.au/"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Jinling Institute of Technology"
+      }
+    ],
+    "knowsAbout": [{% for topic in topics %}"{{ topic }}"{% unless forloop.last %}, {% endunless %}{% endfor %}],
+    "sameAs": [
+      "https://orcid.org/{{ site.data.socials.orcid_id }}",
+      "https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}",
+      "https://github.com/{{ site.data.socials.github_username }}",
+      "https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}",
+      "{{ site.data.socials.dblp_url }}"
+    ]
+  }
+</script>

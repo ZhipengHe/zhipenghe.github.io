@@ -1,0 +1,10 @@
+### {{ entry.title }}{% if entry.selected == "true" %} (selected){% endif %}
+
+- Authors: {{ entry.author }}
+- Venue: {% if entry.journal %}{{ entry.journal }}{% elsif entry.booktitle %}{{ entry.booktitle }}{% elsif entry.school %}{{ entry.school }}{% endif %}{% if entry.volume %}, volume {{ entry.volume }}{% endif %}{% if entry.number %}, issue {{ entry.number }}{% endif %}{% if entry.pages %}, pages {{ entry.pages }}{% endif %}{% if entry.eid %}, article {{ entry.eid }}{% endif %}, {{ entry.year }}{% if entry.note %} ({{ entry.note }}){% endif %}{% if entry.doi %}
+- DOI: https://doi.org/{{ entry.doi }}{% endif %}{% if entry.arxiv %}
+- arXiv: https://arxiv.org/abs/{{ entry.arxiv }}{% endif %}{% if entry.code %}
+- Code: {{ entry.code }}{% endif %}{% if entry.pdf %}
+- PDF: {{ entry.pdf | prepend: "/assets/pdf/" | absolute_url }}{% endif %}{% if entry.keywords %}
+- Keywords: {{ entry.keywords }}{% endif %}
+- Abstract: {{ entry.abstract }}

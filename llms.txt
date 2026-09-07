@@ -1,0 +1,50 @@
+---
+permalink: /llms.txt
+sitemap: false
+---
+﻿# {{ site.first_name }} {{ site.last_name }} ({{ site.cn_name }})
+
+> Personal academic website of {{ site.first_name }} "{{ site.nickname }}" {{ site.last_name }} ({{ site.cn_name }}), School of Mechanical, Medical and Process Engineering, Queensland University of Technology (QUT), Brisbane, Australia. {{ site.description }}
+
+Zhipeng He completed his PhD at QUT in 2026 with the thesis "Building Adversarially Robust Predictive Systems for Tabular Data", supervised by Chun Ouyang, Alistair Barros and Catarina Moreira. He now works on AI-To-Data, a decentralised privacy-preserving AI framework for learning from multi-institute, multi-modality medical data, with Laith Alzubaidi. Alongside research he builds LLM-based agent systems as an independent full-stack AI engineer.
+
+Research topics: {{ site.keywords }}.
+
+## Pages
+
+- [About]({{ site.url }}{{ site.baseurl }}/): biography, research focus, news and selected publications
+{% assign nav_pages = site.pages | where: "nav", true | sort: "nav_order" -%}
+{% for p in nav_pages -%}
+{% unless p.url contains "/page/" -%}
+- [{{ p.title | capitalize }}]({{ p.url | remove: "index.html" | absolute_url }}){% if p.description %}: {{ p.description | strip_html | strip }}{% endif %}
+{% endunless -%}
+{% endfor %}
+## Publications
+
+Full list with abstracts; entries marked (selected) are the ones highlighted on the homepage.
+
+{% capture bib %}{% bibliography --template llms_bib --group_by none %}{% endcapture %}
+{{ bib | strip_html | strip }}
+
+## Blog posts
+{% for post in site.posts -%}
+- [{{ post.title }}]({{ post.url | absolute_url }}) ({{ post.date | date: "%-d %b %Y" }}){% if post.description %}: {{ post.description | strip_html | strip }}{% endif %}
+{% endfor %}
+## Recent news
+{% assign news = site.news | reverse -%}
+{% for item in news limit: 10 -%}
+- {{ item.date | date: "%-d %b %Y" }}: {{ item.content | markdownify | strip_html | strip }}
+{% endfor %}
+## Profiles
+
+- ORCID: https://orcid.org/{{ site.data.socials.orcid_id }}
+- Google Scholar: https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}
+- GitHub: https://github.com/{{ site.data.socials.github_username }}
+- LinkedIn: https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}
+- DBLP: {{ site.data.socials.dblp_url }}
+- Email: {{ site.email }}
+
+## Machine-readable
+
+- Sitemap: {{ "/sitemap.xml" | absolute_url }}
+- RSS feed: {{ "/feed.xml" | absolute_url }}

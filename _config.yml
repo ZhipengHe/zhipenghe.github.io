@@ -8,7 +8,7 @@ last_name: He
 nickname: Zippo
 cn_name: 何志鹏
 email: zippo.he@qut.edu.au
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
+description: >- # folded, without a trailing newline: the theme puts this inside JSON-LD and meta tags verbatim
   Postdoctoral Fellow at QUT working on privacy-preserving federated AI for healthcare, adversarial robustness for tabular data, and machine learning for energy systems.
 footer_text:
 keywords: Privacy-Preserving AI, Federated Learning, Adversarial Attacks, Robust ML, Reinforcement Learning, Explainable AI # add your own keywords or leave empty
