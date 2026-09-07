@@ -1,5 +1,7 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
+# Vendored and generated assets are not ours to reformat.
+exclude: ^(assets/js/|assets/css/|assets/plotly/|_sass/font-awesome/|_sass/tabler-icons/|lighthouse_results/|_site/|\.jekyll-cache/)
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.3.0
@@ -8,3 +10,10 @@ repos:
       - id: end-of-file-fixer
       - id: check-yaml
       - id: check-added-large-files
+  - repo: local
+    hooks:
+      - id: prettier
+        name: prettier
+        entry: node_modules/.bin/prettier --write --ignore-unknown
+        language: system
+        types: [text]
