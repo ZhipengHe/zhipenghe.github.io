@@ -1,17 +1,12 @@
 // Site-specific styles layered on top of the al_folio_core defaults.
 
-// The vitae page keeps the legacy al-folio CV layout (_layouts/cv.liquid and
-// _includes/cv/), whose markup relies on Bootstrap list-group classes that the
-// v1 Tailwind runtime no longer ships. Reset the list markers those classes used
-// to remove so entries do not render with stray bullets.
+// The CV plugin's entry lists use Bootstrap list-group classes. With Tailwind
+// preflight disabled, the browser's default list markers show beside each
+// entry, so reset them here.
 .cv ul.list-group {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
-}
-
-.cv ul.list-group > li.list-group-item {
-  padding: 0.75rem 0;
 }
 
 footer.fixed-bottom {
