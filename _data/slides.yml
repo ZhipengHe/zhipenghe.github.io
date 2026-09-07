@@ -1,0 +1,85 @@
+# Presentations and slide decks, newest first.
+# Decks are hosted at https://slides.zhipenghe.me/; `slides`, `pdf` and `notes` are paths relative to that site.
+base_url: https://slides.zhipenghe.me/
+
+items:
+  - title: PhD Final Seminar 2025
+    type: Talk
+    year: 2025
+    date: Oct 2025
+    venue: QUT, Brisbane, Australia
+    description: Presentation at my PhD Final Seminar (PhD Year 4)
+    slides: 2025-PhD-Final-Seminar/
+  - title: QUT Research Showcase 2025
+    type: Poster
+    year: 2025
+    date: Aug 2025
+    venue: QUT, Brisbane, Australia
+    description: Research poster at QUT Maths & IT Research Showcase (PhD Year 4)
+    pdf: 2025-08-Research-Showcase.pdf
+  - title: ADSN Conference 2024
+    type: Poster
+    year: 2024
+    date: Dec 2024
+    venue: Perth, Australia
+    description: Research poster on the Imperceptibility of Adversarial Attacks on Tabular Data
+    pdf: 2024-12-ADSN.pdf
+  - title: IS Doctoral Consortium 2024
+    type: Talk
+    year: 2024
+    date: Nov 2024
+    venue: QUT, Brisbane, Australia
+    description: Presentation at QUT IS School Doctoral Consortium (PhD Year 3)
+    pdf: 2024-11-ISDC.pdf
+  - title: IS Doctoral Consortium 2023
+    type: Talk
+    year: 2023
+    date: Dec 2023
+    venue: QUT, Brisbane, Australia
+    description: Presentation at QUT IS School Doctoral Consortium (PhD Year 2)
+    slides: 2023-IS-DC/
+    notes: 2023-IS-DC/slides-speaker.html
+  - title: PhD Confirmation
+    type: Talk
+    year: 2023
+    date: Mar 2023
+    venue: QUT, Brisbane, Australia
+    description: Presentation at my PhD Confirmation Seminar (PhD Year 1)
+    slides: 2023-PhD-Confirmation/
+    notes: 2023-PhD-Confirmation/slides-speaker.html
+  - title: Intro Myself to XAMI Lab
+    type: Talk
+    year: 2021
+    date: Oct 2021
+    venue: QUT, Brisbane, Australia
+    description: A brief introduction to myself in the first meeting of XAMI Lab (Honours Year)
+    slides: 2021-My-Profile/
+  - title: MIMIC-III Eventlog Analysis
+    type: Talk
+    year: 2021
+    date: Jul 2021
+    venue: QUT, Brisbane, Australia
+    description: Presentation of papers about MIMIC-III eventlog analysis (Honours Year)
+    slides: 2021-MIMIC-III-eventlog/
+  - title: AMSI Winter School 2021
+    type: Talk
+    year: 2021
+    date: Jul 2021
+    venue: Virtual Conference
+    description: Participant talk of my Honours research at AMSI Winter School 2021 (Honours Year)
+    pdf: 2021-07-AMSI.pdf
+  - title: QUT VRES 2021
+    type: Poster
+    year: 2021
+    date: Feb 2021
+    venue: QUT, Brisbane, Australia
+    description: Poster presentation at QUT Vacation Research Experience Scheme
+    pdf: 2021-02-VRES.pdf
+  - title: How I Craft Slides
+    type: Draft
+    year: Drafts
+    date: Work in Progress
+    venue: ""
+    description: Methodology and best practices for creating effective academic presentations
+    slides: How-I-Craft-Slides/
+    notes: How-I-Craft-Slides/slides-speaker.html
