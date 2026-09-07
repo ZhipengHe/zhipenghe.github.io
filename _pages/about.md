@@ -5,14 +5,12 @@ permalink: /
 subtitle: >
   <b><em>Postdoctoral Fellow</em></b><br>
   School of Mechanical, Medical and Process Engineering<br>
-  <a href="https://www.qut.edu.au/">Queensland University of Technology</a>
+  <a href="https://www.qut.edu.au/">Queensland University of Technology (QUT)</a>, Brisbane, Australia
 
 profile:
   align: right
   image: zhipenghe-photo.jpeg
   image_circular: false # square portrait with rounded corners
-  more_info: >
-    <p>Gardens Point, Brisbane</p>
 
 focus:
   - title: Healthcare AI
