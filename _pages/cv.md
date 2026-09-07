@@ -6,7 +6,7 @@ description: >
   <em>Course of Life</em>
 nav: true
 nav_order: 8
-cv_pdf: long-cv-en.pdf
+cv_pdf: /assets/pdf/long-cv-en.pdf
 toc:
   sidebar: left
 ---
