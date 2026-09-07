@@ -122,7 +122,7 @@ og_image: /assets/img/og/index.png # The site-wide (default for all links) Open 
 analytics:
   # For Google Analytics, see https://support.google.com/analytics/answer/10447272?hl=en&ref_topic=14088998&sjid=5129943941510317771-SA#zippy=%2Cgoogle-sites
   # and follow the instructions for Google Sites. You will need to create a Google Analytics property and copy the Google tag ID.
-  google: UA-212459996-1 # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
+  google: # your Google Analytics measurement ID (format: G-XXXXXXXXXX); analytics run through Cloudflare Web Analytics, injected at the edge
   cronitor: # cronitor RUM analytics site ID (format: XXXXXXXXX)
   pirsch: # your Pirsch analytics site ID (length 32 characters)
   openpanel: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
@@ -320,7 +320,7 @@ jekyll-minifier:
   # breaking every spacing/positioning utility (e.g. .fixed-top -> broken navbar). Disable it.
   compress_css: false
   # JS minification is delegated to jekyll-terser (compress_javascript above is false).
-  exclude: ["robots.txt"]
+  exclude: ["robots.txt", "llms.txt"] # plain-text files whose line breaks are the format
 
 # -----------------------------------------------------------------------------
 # Terser
