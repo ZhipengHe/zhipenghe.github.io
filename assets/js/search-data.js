@@ -32,10 +32,10 @@ ninja.data = [{
           },
         },{id: "nav-slides",
           title: "slides",
-          description: "",
+          description: "Slides and posters from my talks, hosted at slides.zhipenghe.me",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/https:/slides.zhipenghe.me/";
+            window.location.href = "/slides/";
           },
         },{id: "nav-vitae",
           title: "vitae",
