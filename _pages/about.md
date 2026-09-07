@@ -34,7 +34,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Postdoctoral Fellow at QUT, where I work on AI-To-Data, a decentralised privacy-preserving AI framework for learning from multi-institute, multi-modality medical data. My current work focuses on making such systems adaptable and scalable across distributed hospital sites while preserving patient privacy.
+I am a Postdoctoral Fellow at QUT, where I work on AI-To-Data, a decentralised privacy-preserving AI framework for learning from multi-institute, multi-modality medical data. My current work, with [Dr Laith Alzubaidi](https://www.qut.edu.au/about/our-people/academic-profiles/l.alzubaidi), focuses on making such systems adaptable and scalable across distributed hospital sites while preserving patient privacy.
 
 I completed my PhD in 2026 at the QUT School of Information Systems, supervised by [A/Prof. Chun Ouyang](https://www.qut.edu.au/about/our-people/academic-profiles/c.ouyang), [Prof. Alistair Barros](https://www.qut.edu.au/about/our-people/academic-profiles/alistair.barros) and [A/Prof. Catarina Moreira](https://profiles.uts.edu.au/Catarina.PintoMoreira). My thesis, [_Building Adversarially Robust Predictive Systems for Tabular Data_](https://doi.org/10.5204/thesis.eprints.264638), studied how adversarial attacks behave on structured data and how to evaluate their imperceptibility. My interests span robust and trustworthy machine learning, federated and privacy-preserving learning, and machine learning for energy systems.
 
