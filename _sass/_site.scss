@@ -7,6 +7,32 @@
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
+
+  // Restore the divider between entries that Bootstrap's list-group used to draw.
+  > li.list-group-item {
+    padding: 0.75rem 0;
+    border-top: 1px solid var(--global-divider-color);
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+}
+
+// al_folio_core 1.0.15 styles every table without the .table class with cell
+// padding and borders. That rule outranks the CV plugin's own reset for the
+// small date/location tables beside each entry, drawing a box around the badge.
+.cv table.table-cv {
+  background-color: transparent !important;
+  width: auto;
+  margin: 0 auto;
+
+  td,
+  th {
+    padding: 1px;
+    border: none;
+    font-size: inherit;
+  }
 }
 
 footer.fixed-bottom {
