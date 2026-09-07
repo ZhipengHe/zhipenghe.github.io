@@ -40,6 +40,8 @@ I completed my PhD in 2026 at the QUT School of Information Systems, supervised 
 
 Alongside my research, I work as an independent full-stack AI engineer, designing and building LLM-based agent systems that automate business workflows and connect data, tools and people.
 
+<!-- focus -->
+
 ## education
 
 - Queensland University of Technology, Australia

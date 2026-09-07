@@ -36,7 +36,13 @@ layout: default
   </div>
 
   <article>
-    <div class="clearfix">{{ content }}</div>
+    {% comment %}
+      The page body splits at the focus marker: the bio renders first, then the
+      research focus strip, and the remaining sections (education, honors)
+      move below the news and publications.
+    {% endcomment %}
+    {% assign content_parts = content | split: '<!-- focus -->' %}
+    <div class="clearfix">{{ content_parts[0] }}</div>
 
     <!-- Research focus -->
     {% if page.focus %}
@@ -78,6 +84,11 @@ layout: default
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
       </h2>
       {% include selected_papers.liquid %}
+    {% endif %}
+
+    <!-- Remaining page sections (education, honors) -->
+    {% if content_parts.size > 1 %}
+      <div class="clearfix about-credentials">{{ content_parts[1] }}</div>
     {% endif %}
 
     <!-- Social -->
