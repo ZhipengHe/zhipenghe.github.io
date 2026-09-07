@@ -2,107 +2,79 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Project Overview
+@AGENTS.md
 
-This is a Jekyll-based academic website built on the al-folio theme, deployed to GitHub Pages. The site features a blog, publications, CV, projects, and other academic content.
+`AGENTS.md` (imported above) is the **authoritative** agent entry point: change routing, the stop sign for gem-owned paths, the three silent failure modes, and the validated command set. Keep it short and ecosystem-neutral. Cross-repo architecture — the wrapper/tag/gem delegation table, feature gating, the v1 config contract, local overrides — lives in [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md); area-to-gem ownership lives in [`docs/BOUNDARIES.md`](docs/BOUNDARIES.md).
 
-## Development Commands
+**Read those three before editing anything.** Everything below is Claude-specific or longer-form operational detail that does not belong in the short entry point. Do not restate facts from those files here — link to them.
 
-### Local Development
+## Daily dev loop
 
-#### Docker Compose (Recommended)
 ```bash
-# Start development server with live reload
-docker compose up
-
-# Use slim version (faster startup)
-docker compose -f docker-compose-slim.yml up
-
-# Build for production
-docker compose run jekyll bundle exec jekyll build --config _config.yml
-
-# Access site at http://localhost:8080
+bundle install                                # ruby gems
+bundle exec jekyll serve                      # dev server → http://localhost:4000/al-folio/  (NOTE baseurl)
+bundle exec jekyll build --baseurl /al-folio  # production-style build to _site/
+bash test/integration_distill.sh              # run ONE integration test (any of the seven in test/)
+npm run test:visual:update                    # refresh playwright snapshots after intentional UI change
+bundle exec al-folio upgrade apply --safe     # deterministic codemods (font-weight-* → font-*, remote→local URLs)
+bundle exec al-folio upgrade overrides diff <path>    # then `overrides accept <path>` to acknowledge an override
 ```
 
-#### Native Ruby (Alternative)
-```bash
-# Install dependencies
-bundle install
+## Optional toolchains
 
-# Serve site locally with live reload
-bundle exec jekyll serve --livereload
+- **Jupyter posts.** `bin/setup-python-deps` installs _only_ `jupyter` and `nbconvert` (via `pip --user --break-system-packages`) for `jekyll-jupyter-notebook`. It does **not** read `requirements.txt`. Missing `jupyter-nbconvert` is warn-and-continue; notebook rendering is skipped.
+- **Everything else Python.** [`requirements.txt`](requirements.txt) is the fuller list and must be installed separately (`python3 -m pip install -r requirements.txt`): `rendercv[full]` for CV rendering, `scholarly` for `bin/update_scholar_citations.py`, plus `nbconvert` and `pyyaml`.
+- **Responsive images.** `imagemagick.enabled: true` needs ImageMagick `convert` on `PATH`.
+- **Manual deploy.** `bin/deploy` is the manual `gh-pages` build + purgecss + force-push path; CI normally deploys. `purgecss` is not a devDependency — install it with `npm install -g purgecss`.
 
-# Build for production
-export JEKYLL_ENV=production
-bundle exec jekyll build
+## Docker serving model (v1-specific)
 
-# Purge unused CSS (after build)
-purgecss -c purgecss.config.js
-```
+`docker compose up -d` bind-mounts the repo to `/srv/jekyll` and runs `bin/entry_point.sh`, which serves with `--force_polling --destination /tmp/_site`. The build output deliberately goes to **container-local `/tmp/_site`, not the bind-mounted `_site`** — writing `_site` back across the host bind mount caused write deadlocks. The container also `inotifywait`s `_config.yml` and restarts Jekyll on change (config edits aren't hot-reloaded by `--watch`). Verify with the `/al-folio` baseurl: `curl -fsS http://127.0.0.1:8080/al-folio/`. `docker-compose-slim.yml` pulls a prebuilt `:slim` image instead of building locally.
 
-### Content Management
-```bash
-# Format code with Prettier
-npx prettier --write .
+## CI gates and the style contract
 
-# Add new blog post
-# Create file in _posts/ with format: YYYY-MM-DD-title.md
+`npm run lint:style-contract` (`test/style_contract.js`) is the automated enforcement of the thin-starter boundary and will fail CI if you cross it. Beyond the forbidden paths listed in `AGENTS.md`, it also asserts that `_config.yml` keeps `theme: al_folio_core` and the required plugins, that the `third_party_libraries` SRI pins are present, and that the `al_math` Gemfile pin stays on a released version rather than a git branch.
 
-# Schedule future posts
-# Create file in _scheduled/ with format: YYYY-MM-DD-title.md
-# The GitHub Action will automatically move scheduled posts to _posts/ daily at 18:00 UTC
-```
+Other gates:
 
-## Architecture & Structure
+- `unit-tests.yml` — style contract plus all seven `test/integration_*.sh` scripts (`comments`, `plugin_toggles`, `distill`, `bootstrap_compat`, `upgrade_cli`, `css_minify`, `new_plugins`).
+- `visual-regression.yml` — Playwright on chromium + webkit, diffing the candidate build against a `v0.16.3` baseline worktree served on `:4100` via `BASELINE_URL`.
+- `upgrade-check.yml` — `bundle exec al-folio upgrade audit`.
+- `prettier.yml` — Prettier with `@shopify/prettier-plugin-liquid` and `printWidth: 150`. Run `npm run lint:prettier` before pushing; `npx prettier . --write` fixes.
+- `update-tocs.yml` — regenerates `<!--ts-->…<!--te-->` blocks in changed root and `docs/` Markdown files. If you add or rename a heading, expect a follow-up auto-commit on `main`.
 
-### Core Directories
-- `_posts/`: Published blog posts
-- `_scheduled/`: Future posts (moved to _posts/ automatically by GitHub Actions)
-- `_pages/`: Static pages (about, CV, publications, etc.)
-- `_layouts/`: Page templates
-- `_includes/`: Reusable components
-- `_sass/`: Styling
-- `_config.yml`: Main configuration
-- `assets/`: Static assets (images, PDFs, etc.)
+## Gem version pins
 
-### Key Features
-- **Scheduled Publishing**: Posts in `_scheduled/` are automatically published by GitHub Actions daily
-- **Multi-format Support**: Supports Markdown, Jupyter notebooks, and Distill-style posts
-- **Publication Management**: Uses Jekyll Scholar with BibTeX files in `_bibliography/`
-- **Responsive Images**: Automatic WebP conversion with multiple sizes
-- **Dark/Light Theme**: Built-in theme switching
+`Gemfile` pins every `al-*` gem to an exact released version in `group :al_folio_plugins`, and `_config.yml` lists the same gems under `plugins:`. Read the current pins from the `Gemfile` rather than trusting any version quoted in prose — including here. To test a gem fix against this site, repoint the `Gemfile` at a sibling checkout (`path:`, `git:`, or `branch:`) and `bundle install`; see [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md#working-on-a-gem-alongside-the-starter). Revert the pin before committing.
 
-### Content Types
-- **Blog Posts**: Standard markdown in `_posts/` with YAML frontmatter
-- **Publications**: Managed via `_bibliography/papers.bib`
-- **Projects**: Collection in `_projects/`
-- **News**: Collection in `_news/`
+## This site
 
-### Deployment
-- **Production**: Automatic deployment via GitHub Actions on push to master
-- **Staging**: Pull requests trigger preview builds
-- **CDN**: Uses Jekyll plugins for optimized asset delivery
+This repository is Zhipeng He's personal academic website (zhipenghe.me), built on the al-folio v1.x starter above and deployed to GitHub Pages on push to `master`.
 
-### Custom Plugins & Extensions
-- Jekyll Scholar for publications
-- Jekyll Archives for categorization
-- Image optimization with ImageMagick
-- Custom scheduled posting system via GitHub Actions
+- Content lives in `_pages`, `_posts`, `_scheduled` (moved to `_posts` daily by `.github/workflows/schedule-posts.yml`), `_news`, `_bibliography/papers.bib`, and `_data` (`cv.yml`, `slides.yml`, `repositories.yml`, `socials.yml`).
+- Local overrides of gem-owned files are tracked in `.al-folio-overrides.yml`; after any `bundle update`, run `bundle exec al-folio upgrade overrides audit` and review anything reported stale.
+- The vitae page uses the legacy al-folio `_data/cv.yml` section format rendered by the local `_layouts/cv.liquid` and `_includes/cv/` overrides, not RenderCV.
+- Slides are hosted separately at slides.zhipenghe.me (private repo `my-slide-repo`); `_data/slides.yml` only lists them.
+- The downloadable CV PDF is built on Overleaf and copied to `assets/pdf/long-cv-en.pdf`.
+- Formatting runs through pre-commit (`pre-commit install` once per clone); CI runs Prettier from the lockfile.
 
 ## Blog Content Guidelines
 
 ### Blog Post Structure
+
 - **Front matter fields**: All posts should include `layout: post`, `title`, `date`, `description`, `tags`, `categories`
 - **Image fields**: Use `image` for general post images. For blog thumbnails, the system uses `thumbnail` field with `image` as fallback
 - **OpenGraph images**: Use `og_image` for social media previews (recommended: 1200×629 pixels, 1.91:1 aspect ratio)
 - **Comments**: Enable with `giscus_comments: true`
 
 ### Blog Layout System
+
 - **Thumbnail logic**: Blog list automatically shows thumbnails using `thumbnail` field, falling back to `image` field
 - **Layout proportions**: Posts with images use 67%/33% content/thumbnail split
 - **Image sizing**: Thumbnails are optimized for 1.91:1 aspect ratio images at 120px height
 
 ### Content Tone Guidelines
+
 - **Balance**: Maintain casual, helpful tone without excessive humor
 - **Technical focus**: Humor should enhance understanding, not distract from content
 - **Consistency**: Keep metaphors and jokes relevant to the technical problem being solved
@@ -110,17 +82,20 @@ npx prettier --write .
 ## Theme Customization
 
 ### al-folio Theme Integration
+
 - Based on al-folio academic theme with custom modifications
 - Uses Jekyll Scholar for publication management
 - Includes Bootstrap for responsive grid layouts
 - Supports MathJax for mathematical notation
 
 ### Layout Templates
+
 - `_layouts/post.liquid`: Blog post template with thumbnail support
 - `_layouts/default.liquid`: Base template for all pages
 - `_pages/blog.md`: Blog listing page with pagination and thumbnail display
 
 ## Important Files
+
 - `_config.yml`: Main site configuration
 - `Gemfile`: Ruby dependencies
 - `package.json`: Node.js dependencies for Prettier
