@@ -75,11 +75,3 @@ items:
     venue: QUT, Brisbane, Australia
     description: Poster presentation at QUT Vacation Research Experience Scheme
     pdf: 2021-02-VRES.pdf
-  - title: How I Craft Slides
-    type: Draft
-    year: Drafts
-    date: Work in Progress
-    venue: ""
-    description: Methodology and best practices for creating effective academic presentations
-    slides: How-I-Craft-Slides/
-    notes: How-I-Craft-Slides/slides-speaker.html
