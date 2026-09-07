@@ -1,5 +1,495 @@
 // Site-specific styles layered on top of the al_folio_core defaults.
 
+@use "sass:map";
+
+// ---------------------------------------------------------------------------
+// Palettes. One of ten is drawn per visit by the inline script at the top of
+// _includes/header.liquid, which sets data-palette on <html> before the body
+// renders. Each palette maps onto the core --global-* tokens, so every
+// component picks it up; the first palette doubles as the no-script default.
+// ---------------------------------------------------------------------------
+
+$palettes: (
+  1: (
+    light: (
+      bg: #ffffff,
+      fg: #1b1f24,
+      muted: #6b6f76,
+      accent: #b8352a,
+      divider: rgba(27, 31, 36, 0.13),
+      footer-bg: #1b1f24,
+      footer-fg: #c9cdd3,
+    ),
+    dark: (
+      bg: #14171c,
+      fg: #d9dce1,
+      muted: #8c9199,
+      accent: #e0604f,
+      divider: #2c3138,
+      card: #1a1e24,
+      footer-bg: #0e1013,
+      footer-fg: #8c9199,
+    ),
+  ),
+  2: (
+    light: (
+      bg: #ffffff,
+      fg: #171a26,
+      muted: #666a78,
+      accent: #2b4c8c,
+      divider: rgba(23, 26, 38, 0.13),
+      footer-bg: #171a26,
+      footer-fg: #c6c9d3,
+    ),
+    dark: (
+      bg: #13151d,
+      fg: #d8dae3,
+      muted: #8b8f9f,
+      accent: #86a6e6,
+      divider: #2b2e3b,
+      card: #191c26,
+      footer-bg: #0d0f15,
+      footer-fg: #8b8f9f,
+    ),
+  ),
+  3: (
+    light: (
+      bg: #fbfcfa,
+      fg: #1c2422,
+      muted: #667370,
+      accent: #3a7d6b,
+      divider: rgba(28, 36, 34, 0.13),
+      footer-bg: #1c2422,
+      footer-fg: #c5cfcb,
+    ),
+    dark: (
+      bg: #131917,
+      fg: #d6ddda,
+      muted: #869590,
+      accent: #7fc2ad,
+      divider: #28322f,
+      card: #182120,
+      footer-bg: #0d1211,
+      footer-fg: #869590,
+    ),
+  ),
+  4: (
+    light: (
+      bg: #ffffff,
+      fg: #202124,
+      muted: #6d6a64,
+      accent: #b86e12,
+      divider: rgba(32, 33, 36, 0.13),
+      footer-bg: #202124,
+      footer-fg: #cfcbc4,
+    ),
+    dark: (
+      bg: #161615,
+      fg: #dcd9d2,
+      muted: #96928a,
+      accent: #f0a73f,
+      divider: #2f2e2b,
+      card: #1d1c1a,
+      footer-bg: #0f0f0e,
+      footer-fg: #96928a,
+    ),
+  ),
+  5: (
+    light: (
+      bg: #ffffff,
+      fg: #221a24,
+      muted: #6f6673,
+      accent: #6b2d5c,
+      divider: rgba(34, 26, 36, 0.13),
+      footer-bg: #221a24,
+      footer-fg: #cfc5cf,
+    ),
+    dark: (
+      bg: #17131a,
+      fg: #dcd5dc,
+      muted: #968b98,
+      accent: #c98ab8,
+      divider: #2f2932,
+      card: #1e1922,
+      footer-bg: #100d12,
+      footer-fg: #968b98,
+    ),
+  ),
+  6: (
+    light: (
+      bg: #fafcfc,
+      fg: #16232a,
+      muted: #5f6f77,
+      accent: #0f7c8c,
+      divider: rgba(22, 35, 42, 0.13),
+      footer-bg: #16232a,
+      footer-fg: #c2ced3,
+    ),
+    dark: (
+      bg: #121a1e,
+      fg: #d5dde0,
+      muted: #86969c,
+      accent: #5fc1cf,
+      divider: #27333a,
+      card: #172126,
+      footer-bg: #0c1215,
+      footer-fg: #86969c,
+    ),
+  ),
+  7: (
+    light: (
+      bg: #f7f4ee,
+      fg: #2a241c,
+      muted: #75695a,
+      accent: #c8402e,
+      divider: rgba(42, 36, 28, 0.14),
+      card: #fbf9f5,
+      footer-bg: #2a241c,
+      footer-fg: #d6cfc3,
+    ),
+    dark: (
+      bg: #1b1815,
+      fg: #e3ddd3,
+      muted: #9a9082,
+      accent: #ec6a52,
+      divider: #34302a,
+      card: #221e1a,
+      footer-bg: #110f0d,
+      footer-fg: #9a9082,
+    ),
+  ),
+  8: (
+    light: (
+      bg: #ffffff,
+      fg: #14213d,
+      muted: #5f6a82,
+      accent: #e4572e,
+      divider: rgba(20, 33, 61, 0.13),
+      footer-bg: #14213d,
+      footer-fg: #c9cfdc,
+    ),
+    dark: (
+      bg: #0f1626,
+      fg: #d6dbe6,
+      muted: #8791a6,
+      accent: #ff7a52,
+      divider: #26304a,
+      card: #151d30,
+      footer-bg: #0a0f1b,
+      footer-fg: #8791a6,
+    ),
+  ),
+  9: (
+    light: (
+      bg: #ffffff,
+      fg: #111111,
+      muted: #6a6a6a,
+      accent: #111111,
+      divider: rgba(0, 0, 0, 0.14),
+      footer-bg: #111111,
+      footer-fg: #c8c8c8,
+      underline: #c0392b,
+    ),
+    dark: (
+      bg: #121212,
+      fg: #e4e4e4,
+      muted: #929292,
+      accent: #e4e4e4,
+      divider: #2e2e2e,
+      card: #191919,
+      footer-bg: #0a0a0a,
+      footer-fg: #929292,
+      underline: #e0604f,
+    ),
+  ),
+  10: (
+    light: (
+      bg: #ffffff,
+      fg: #2b3440,
+      muted: #6b7480,
+      accent: #a8860a,
+      divider: rgba(43, 52, 64, 0.13),
+      footer-bg: #2b3440,
+      footer-fg: #cdd2d9,
+    ),
+    dark: (
+      bg: #15181c,
+      fg: #d9dde3,
+      muted: #8e959f,
+      accent: #e3c341,
+      divider: #2d3239,
+      card: #1b1f25,
+      footer-bg: #0e1013,
+      footer-fg: #8e959f,
+    ),
+  ),
+);
+
+@mixin palette-tokens($p, $footer-link) {
+  --global-bg-color: #{map.get($p, bg)};
+  --global-card-bg-color: #{map.get($p, card) or map.get($p, bg)};
+  --global-text-color: #{map.get($p, fg)};
+  --global-text-color-light: #{map.get($p, muted)};
+  --global-theme-color: #{map.get($p, accent)};
+  --global-hover-color: #{map.get($p, accent)};
+  --global-divider-color: #{map.get($p, divider)};
+  --global-footer-bg-color: #{map.get($p, footer-bg)};
+  --global-footer-text-color: #{map.get($p, footer-fg)};
+  --global-footer-link-color: #{$footer-link};
+  --site-underline-color: #{map.get($p, underline) or map.get($p, accent)};
+}
+
+@each $n, $modes in $palettes {
+  $light: map.get($modes, light);
+  $dark: map.get($modes, dark);
+
+  @if $n == 1 {
+    :root {
+      @include palette-tokens($light, #ffffff);
+    }
+    html[data-theme="dark"] {
+      @include palette-tokens($dark, map.get($dark, fg));
+    }
+  }
+
+  :root[data-palette="#{$n}"] {
+    @include palette-tokens($light, #ffffff);
+  }
+  html[data-theme="dark"][data-palette="#{$n}"] {
+    @include palette-tokens($dark, map.get($dark, fg));
+  }
+}
+
+// The monochrome palette carries its only colour in link underlines.
+:root[data-palette="9"] .post a:not(.btn) {
+  text-decoration: underline;
+  text-decoration-color: var(--site-underline-color);
+  text-underline-offset: 3px;
+}
+
+// ---------------------------------------------------------------------------
+// Type. Cormorant Garamond for headings, Nunito Sans for reading, and the
+// Chinese name in Ma Shan Zheng brush script with Noto Serif SC as fallback.
+// ---------------------------------------------------------------------------
+
+$font-body:
+  "Nunito Sans",
+  "Noto Sans SC",
+  system-ui,
+  -apple-system,
+  sans-serif;
+$font-head: "Cormorant Garamond", "Noto Serif SC", Georgia, serif;
+$font-brush: "Ma Shan Zheng", "Noto Serif SC", serif;
+
+body {
+  font-family: $font-body;
+  font-weight: 400;
+  font-size: 1.03rem;
+  line-height: 1.62;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.post-title,
+.navbar .navbar-brand {
+  font-family: $font-head;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.4rem;
+
+  .font-weight-bold {
+    font-weight: 700;
+  }
+}
+
+.post h2 {
+  font-size: 1.9rem;
+}
+
+// ---------------------------------------------------------------------------
+// About page: inscription hero, portrait column, research focus strip.
+// ---------------------------------------------------------------------------
+
+.about-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 190px;
+  gap: 0 36px;
+  align-items: start;
+  margin-bottom: 1.5rem;
+}
+
+.about-inscription {
+  display: flex;
+  align-items: stretch;
+  gap: 22px;
+  margin: 0;
+}
+
+.about-spine {
+  display: flex;
+  align-items: center;
+  writing-mode: vertical-rl;
+  font-family: $font-brush;
+  font-size: 2.4rem;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  color: var(--global-text-color);
+  padding-right: 16px;
+  border-right: 1px solid var(--global-theme-color);
+}
+
+.about-spine-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .post-title {
+    font-size: 2.9rem;
+    line-height: 1.02;
+    margin: 0;
+  }
+
+  .desc {
+    color: var(--global-text-color-light);
+    margin: 0.6rem 0 0;
+
+    a {
+      color: var(--global-text-color-light);
+      border-bottom: 1px solid var(--global-divider-color);
+    }
+  }
+}
+
+.about-portrait {
+  img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .more-info {
+    margin-top: 0.6rem;
+    font-size: 0.85rem;
+    line-height: 1.45;
+    color: var(--global-text-color-light);
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.about-focus {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  border-top: 1px solid var(--global-divider-color);
+  padding-top: 18px;
+  margin: 1.5rem 0 2.25rem;
+
+  h3 {
+    font-size: 1.3rem;
+    margin: 0 0 0.25rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.92rem;
+    color: var(--global-text-color-light);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .about-portrait {
+    width: 190px;
+    margin-top: 1rem;
+  }
+
+  .about-focus {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// News as a dated timeline (see _includes/news.liquid).
+// ---------------------------------------------------------------------------
+
+.news-scroll {
+  max-height: 60vw;
+  overflow-y: auto;
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: 96px 18px minmax(0, 1fr);
+  gap: 0 10px;
+  align-items: start;
+  font-size: 0.95rem;
+
+  &:first-child .news-rail::before {
+    top: 8px;
+  }
+
+  &:last-child .news-rail::before {
+    bottom: auto;
+    height: 8px;
+  }
+}
+
+.news-date {
+  color: var(--global-text-color-light);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.92em;
+  padding-top: 2px;
+  white-space: nowrap;
+}
+
+.news-rail {
+  position: relative;
+  height: 100%;
+  min-height: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--global-divider-color);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 4.5px;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--global-theme-color);
+  }
+}
+
+.news-text {
+  padding-bottom: 16px;
+}
+
+// ---------------------------------------------------------------------------
+// CV page fixes.
+// ---------------------------------------------------------------------------
+
 // The CV plugin's entry lists use Bootstrap list-group classes. With Tailwind
 // preflight disabled, the browser's default list markers show beside each
 // entry, so reset them here.
