@@ -22,7 +22,7 @@
 // al_folio_core 1.0.15 styles every table without the .table class with cell
 // padding and borders. That rule outranks the CV plugin's own reset for the
 // small date/location tables beside each entry, drawing a box around the badge.
-.cv table.table-cv {
+.cv table.table-cv:not(.table) {
   background-color: transparent !important;
   width: auto;
   margin: 0 auto;
