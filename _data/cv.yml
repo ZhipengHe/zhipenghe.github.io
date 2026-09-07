@@ -152,7 +152,7 @@
       description:
         - "Attended lectures and tutorials of advanced statistical learning knowledge such as Bayesian Statistics and Markov chain Monte Carlo related methods"
         - "Gained knowledge of generative deep learning models"
-        - 'Presented a <a href="https://slides.zhipenghe.me/old-slides/2021-07-AMSI.pdf" target="_blank"><b>participant talk</b></a> titled <em>Deep Learning-based Business Process Prediction</em> during the winter school'
+        - 'Presented a <a href="https://slides.zhipenghe.me/2021-07-AMSI.pdf" target="_blank"><b>participant talk</b></a> titled <em>Deep Learning-based Business Process Prediction</em> during the winter school'
     - title: "VRES Research Project"
       year: 2020.11 - 2021.02
       location: Brisbane, Australia
@@ -163,7 +163,7 @@
         - 'Advised by <a href="https://staff.qut.edu.au/staff/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a>'
         - "Aimed to address how to visualise organisational analytics results as informed by existing visual analytics design principles"
         - "Proposed an organisational mining visualisation design workflow for selecting appropriate visualisation techniques to generate organisational mining visualisation"
-        - 'A <a href="https://slides.zhipenghe.me/old-slides/2021-02-VRES.pdf" target="_blank"><b>project showcase</b></a> was presented to all the VRES students and supervisors from School of Computer Science and School of Information Systems.'
+        - 'A <a href="https://slides.zhipenghe.me/2021-02-VRES.pdf" target="_blank"><b>project showcase</b></a> was presented to all the VRES students and supervisors from School of Computer Science and School of Information Systems.'
 
 - title: Teaching Experience
   type: time_table
