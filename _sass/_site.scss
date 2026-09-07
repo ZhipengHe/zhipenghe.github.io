@@ -36,8 +36,10 @@
 }
 
 // The CV plugin renders the download link with a Font Awesome glyph; swap in
-// the site's red Acrobat-style PDF image, as on the previous layout.
-.post-header .post-title a.float-right[href$=".pdf"] {
+// the site's red Acrobat-style PDF image, as on the previous layout. Keep this
+// selector free of attribute conditions: PurgeCSS cannot match those and would
+// drop the rule from the deployed stylesheet.
+.post-header .post-title a.float-right {
   display: inline-block;
   width: 60px;
   height: 60px;
