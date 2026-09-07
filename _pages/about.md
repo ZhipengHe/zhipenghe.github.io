@@ -12,9 +12,7 @@ profile:
   image: zhipenghe-photo.jpeg
   image_circular: false # square portrait with rounded corners
   more_info: >
-    <p>Level 7, P Block</p>
-    <p>QUT Gardens Point</p>
-    <p>Brisbane City, QLD 4000</p>
+    <p>Gardens Point, Brisbane</p>
 
 focus:
   - title: Healthcare AI
