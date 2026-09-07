@@ -1,3 +1,23 @@
+<!--
+  Draw one of the ten site palettes for this visit. Runs before the body
+  renders so the first paint already carries the chosen colours; the choice
+  is kept in sessionStorage so every page of the visit shares it.
+-->
+<script>
+  (function () {
+    var palette = null;
+    try {
+      palette = sessionStorage.getItem('site-palette');
+    } catch (e) {}
+    if (!palette) {
+      palette = String(1 + Math.floor(Math.random() * 10));
+      try {
+        sessionStorage.setItem('site-palette', palette);
+      } catch (e) {}
+    }
+    document.documentElement.setAttribute('data-palette', palette);
+  })();
+</script>
 <header>
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">

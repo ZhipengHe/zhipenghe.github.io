@@ -4,16 +4,21 @@ title: about
 permalink: /
 subtitle: >
   <b><em>Postdoctoral Fellow</em></b><br>
-  School of Mechanical, Medical and Process Engineering, <a href="https://www.qut.edu.au/">Queensland University of Technology</a>
+  School of Mechanical, Medical and Process Engineering<br>
+  <a href="https://www.qut.edu.au/">Queensland University of Technology (QUT)</a>, Brisbane, Australia
 
 profile:
   align: right
   image: zhipenghe-photo.jpeg
-  image_circular: true # crops the image to make it circular
-  more_info: >
-    <p>Level 7, P Block</p>
-    <p>QUT Gardens Point</p>
-    <p>Brisbane City, QLD 4000</p>
+  image_circular: false # square portrait with rounded corners
+
+focus:
+  - title: Healthcare AI
+    text: Federated, privacy-preserving learning across hospitals and modalities.
+  - title: Adversarial ML
+    text: Attacks, robustness and imperceptibility on tabular data.
+  - title: Energy ML
+    text: Reinforcement learning for battery storage and electricity price forecasting.
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
@@ -34,6 +39,8 @@ I am a Postdoctoral Fellow at QUT, where I work on AI-To-Data, a decentralised p
 I completed my PhD in 2026 at the QUT School of Information Systems, supervised by [A/Prof. Chun Ouyang](https://www.qut.edu.au/about/our-people/academic-profiles/c.ouyang), [Prof. Alistair Barros](https://www.qut.edu.au/about/our-people/academic-profiles/alistair.barros) and [A/Prof. Catarina Moreira](https://profiles.uts.edu.au/Catarina.PintoMoreira). My thesis, [_Building Adversarially Robust Predictive Systems for Tabular Data_](https://doi.org/10.5204/thesis.eprints.264638), studied how adversarial attacks behave on structured data and how to evaluate their imperceptibility. My interests span robust and trustworthy machine learning, federated and privacy-preserving learning, and machine learning for energy systems.
 
 Alongside my research, I work as an independent full-stack AI engineer, designing and building LLM-based agent systems that automate business workflows and connect data, tools and people.
+
+<!-- focus -->
 
 ## education
 

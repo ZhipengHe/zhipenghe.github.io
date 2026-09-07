@@ -1,0 +1,32 @@
+<div class="news news-timeline">
+  {% if site.news != blank %}
+    {% assign news_size = site.news | size %}
+    <div
+      {% if include.limit and page.announcements.scrollable and news_size > 3 %}
+        class="news-scroll"
+      {% endif %}
+    >
+      {% assign news = site.news | reverse %}
+      {% if include.limit and page.announcements.limit %}
+        {% assign news_limit = page.announcements.limit %}
+      {% else %}
+        {% assign news_limit = news_size %}
+      {% endif %}
+      {% for item in news limit: news_limit %}
+        <div class="news-item">
+          <span class="news-date">{{ item.date | date: '%-d %b %Y' }}</span>
+          <span class="news-rail" aria-hidden="true"></span>
+          <span class="news-text">
+            {% if item.inline %}
+              {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+            {% else %}
+              <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {% endif %}
+          </span>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>No news so far...</p>
+  {% endif %}
+</div>
