@@ -1,6 +1,32 @@
 ---
 ---
 
+@article{ArXiv2026,
+	abstract = {Accurate electricity price forecasting (EPF) is increasingly difficult in markets characterised by extreme volatility, frequent price spikes, and rapid structural shifts. Deep learning (DL) has been increasingly adopted in EPF due to its ability to achieve high forecasting accuracy. Recently, state-of-the-art (SOTA) deep time-series models have demonstrated promising performance across general forecasting tasks. Yet, their effectiveness in highly volatile electricity markets remains underexplored. Moreover, existing EPF studies rarely assess how model accuracy varies across intraday periods, leaving model sensitivity to market conditions unexplored. To address these gaps, this paper proposes an EPF framework that systematically evaluates SOTA deep time-series models using a direct multi-horizon forecasting approach across day-ahead and two-day-ahead settings. We conduct a comprehensive empirical study across all five regions of the Australian National Electricity Market using contemporary, high-volatility data. The results reveal a clear gap between time-series benchmark expectations and observed performance under real-world price volatility: recent deep time-series models often fail to surpass standard DL baselines. All models experience substantial degradation under extreme and negative prices, yet DL baselines often remain competitive. Intraday performance analysis further reveals that all evaluated models are consistently vulnerable to prevailing market conditions, where absolute errors peak during evening ramps, relative errors escalate during midday negative-price periods, and directional accuracy deteriorates sharply during abrupt shifts in price direction. These findings emphasise the need for volatility-aware modelling strategies and richer feature representations to advance EPF.},
+	author = {Mohammed Osman Gani and Zhipeng He and Chun Ouyang and Sara Khalifa},
+	title = {Deep Time-Series Models Meet Volatility: Multi-Horizon Electricity Price Forecasting in the Australian National Electricity Market},
+	arxiv = {2602.01157},
+	journal = {arXiv preprint arXiv:2602.01157},
+	year = {2026},
+	selected = false,
+	abbr={arXiv},
+	bibtex_show = {true},
+}
+
+@phdthesis{PhD2026,
+	abstract = {This thesis develops methods to improve the reliability of machine learning systems that process structured data in domains such as healthcare, finance, and security. It examines how small changes to input records can cause these systems to make incorrect decisions, and establishes new ways to define, measure, and defend against such vulnerabilities. The research proposes a set of properties that describe what makes such changes realistic in structured data, where each field carries specific meaning and constraints. It then benchmarks existing learning methods against these properties and introduces a new technique using generative modelling that produces more realistic test cases.},
+	author = {Zhipeng He},
+	title = {Building Adversarially Robust Predictive Systems for Tabular Data},
+	school = {Queensland University of Technology},
+	address = {Brisbane, Australia},
+	year = {2026},
+	doi = {10.5204/thesis.eprints.264638},
+	selected = false,
+	abbr = {PhD},
+	note = {PhD Thesis},
+	bibtex_show = {true},
+}
+
 @article{ASOC2026,
 	abstract = {Adversarial attacks on tabular data present unique challenges due to the heterogeneous nature of mixed categorical and numerical features. Unlike images where pixel perturbations maintain visual similarity, tabular data lacks intuitive similarity metrics, making it difficult to define imperceptible modifications. Additionally, traditional gradient-based methods prioritise -norm constraints, often producing adversarial examples that deviate from the original data distributions, making them detectable. To address this, we propose a latent-space perturbation framework using a mixed-input Variational Autoencoder (VAE) to generate statistically consistent adversarial examples. The proposed VAE integrates categorical embeddings and numerical features into a unified latent manifold, enabling perturbations that preserve statistical consistency. We introduce In-Distribution Success Rate (IDSR) to jointly evaluate attack effectiveness and distributional alignment. Evaluation across six publicly available datasets and three model architectures demonstrates that our method achieves substantially lower outlier rates and more consistent performance compared to traditional input-space attacks and other VAE-based methods adapted from image domain approaches, achieving substantially lower outlier rates and higher IDSR across six datasets and three model architectures. Our comprehensive analyses of hyperparameter sensitivity, sparsity control, and generative architecture demonstrate that the effectiveness of VAE-based attacks depends strongly on reconstruction quality and the availability of sufficient training data. When these conditions are met, the proposed framework achieves superior practical utility and stability compared with input-space methods. This work underscores the importance of maintaining on-manifold perturbations for generating realistic and robust adversarial examples in tabular domains.},
 	author = {He, Zhipeng and Stevens, Alexander and Ouyang, Chun and De Smedt, Johannes and Barros, Alistair and Moreira, Catarina},
@@ -85,16 +111,16 @@
 	google_scholar_id = {u5HHmVD_uO8C},
 }
 
-@article{Physionet2022,
+@article{Physionet2023,
 	abstract = {In this work, we extract an event log from the MIMIC-IV-ED dataset by adopting a well-established event log generation methodology, and we name this event log MIMICEL. The data tables in the MIMIC-IV-ED dataset relate to each other based on the existing relational database schema, and each table records the individual activities of patients along their journey in the emergency department (ED). While the data tables in the MIMIC-IV-ED dataset catch snapshots of a patient journey in the ED, the extracted event log MIMICEL aims to capture an end-to-end patient journey process. This will enable us to analyse the existing patient flows, thereby improving the efficiency of an ED process.},
 	author = {Jia Wei and Zhipeng He and Chun Ouyang and Catarina Moreira},
 	title = {MIMICEL: MIMIC-IV Event Log for Emergency Department},
-	journal = {Physionet},
-	year = {2022},
-	doi = {10.13026/64aq-jw11},
+	journal = {PhysioNet},
+	year = {2023},
+	doi = {10.13026/c9yj-1t90},
 	selected = false,
 	abbr={MIMIC},
-	note = {Version 1.0.0},
+	note = {Version 2.1.0},
 	code = {https://github.com/ZhipengHe/MIMIC-IV-event-log-extraction-for-ED},
 	bibtex_show = {true},
 	google_scholar_id = {d1gkVwhDpl0C},
