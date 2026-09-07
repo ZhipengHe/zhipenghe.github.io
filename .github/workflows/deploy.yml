@@ -7,6 +7,10 @@ on:
       - main
     paths:
       - "assets/**"
+      - "_sass/**"
+      - "_includes/**"
+      - "_layouts/**"
+      - "_data/**"
       - "_posts/**"
       - "**.bib"
       - "**.html"
@@ -36,6 +40,10 @@ on:
       - main
     paths:
       - "assets/**"
+      - "_sass/**"
+      - "_includes/**"
+      - "_layouts/**"
+      - "_data/**"
       - "_posts/**"
       - "**.bib"
       - "**.html"
