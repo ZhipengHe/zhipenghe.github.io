@@ -1,0 +1,53 @@
+// Site-specific styles layered on top of the al_folio_core defaults.
+
+// The CV plugin's entry lists use Bootstrap list-group classes. With Tailwind
+// preflight disabled, the browser's default list markers show beside each
+// entry, so reset them here.
+.cv ul.list-group {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+
+  // Restore the divider between entries that Bootstrap's list-group used to draw.
+  > li.list-group-item {
+    padding: 0.75rem 0;
+    border-top: 1px solid var(--global-divider-color);
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+}
+
+// al_folio_core 1.0.15 styles every table without the .table class with cell
+// padding and borders. That rule outranks the CV plugin's own reset for the
+// small date/location tables beside each entry, drawing a box around the badge.
+.cv table.table-cv:not(.table) {
+  background-color: transparent !important;
+  width: auto;
+  margin: 0 auto;
+
+  td,
+  th {
+    padding: 1px;
+    border: none;
+    font-size: inherit;
+  }
+}
+
+// The CV plugin renders the download link with a Font Awesome glyph; swap in
+// the site's red Acrobat-style PDF image, as on the previous layout.
+.post-header .post-title a.float-right[href$=".pdf"] {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: url("/assets/img/pdf_icon.svg") no-repeat center / contain;
+
+  i {
+    display: none;
+  }
+}
+
+footer.fixed-bottom {
+  text-align: center;
+}

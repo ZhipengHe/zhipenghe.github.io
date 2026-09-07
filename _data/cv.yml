@@ -1,332 +1,254 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: "HE, Zhipeng"
-    - name: Chinese Name
-      value: 何志鹏
-    - name: Preferred Name
-      value: Zippo
-    - name: Contact
-      value: zippo [dot] he [at] qut [dot] edu [dot] au
-    - name: Languages
-      value: Mandarin Chinese (native), English (proficient)
-
-- title: Research Areas
-  type: list
-  contents:
-    - Privacy-Preserving & Federated Learning for Healthcare
-    - Adversarial Attacks & Robust ML
-    - Reinforcement Learning for Energy Systems
-    - Explainable AI
-
-- title: Education
-  type: time_table
-  contents:
-    - title: Doctor of Philosophy, Ph.D.
-      year: 2022.02 - 2026.04
-      location: Brisbane, Australia
-      department: School of Information Systems
-      institution: Queensland University of Technology
-      description:
-        - 'Thesis: <a href="https://doi.org/10.5204/thesis.eprints.264638" target="_blank"><b>Building Adversarially Robust Predictive Systems for Tabular Data</b></a>'
-        - 'Co-advised by <a href="https://www.qut.edu.au/about/our-people/academic-profiles/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a> (Principal Supervisor), <a href="https://www.qut.edu.au/about/our-people/academic-profiles/alistair.barros" target="_blank"><b>Prof. Alistair Barros</b></a> (Associate Supervisor) and <a href="https://profiles.uts.edu.au/Catarina.PintoMoreira" target="_blank"><b>A/Prof. Catarina Moreira</b></a> (External Supervisor @UTS)'
-        - "Awarded QUT Postgraduate Research Award (International)"
-        - "Awarded QUT HDR Tuition Fee Sponsorship"
-    - title: Bachelor of Information Technology (Honours), First Class Honours
-      year: 2021.02 - 2021.12
-      location: Brisbane, Australia
-      department: School of Information Systems
-      institution: Queensland University of Technology
-      description:
-        - 'Co-advised by <a href="https://www.qut.edu.au/about/our-people/academic-profiles/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a> and <a href="https://profiles.uts.edu.au/Catarina.PintoMoreira" target="_blank"><b>A/Prof. Catarina Moreira</b></a>'
-        - "Graduated with 6.625 out of 7 GPA"
-        - "Awarded QUT International Merit Scholarship"
-    - title: Bachelor of Information Technology (Information Systems)
-      year: 2020.02 - 2020.11
-      location: Brisbane, Australia
-      department: Faculty of Science and Engineering
-      institution: Queensland University of Technology
-      description:
-        - "JIT-QUT Joint Bachelor of IT Program"
-        - "Graduated with 6 out of 7 GPA"
-        - "Awarded QUT International Merit Scholarship"
-    - title: Bachelor of Engineering (Software Engineering)
-      year: 2016.09 - 2020.11
-      location: Nanjing, China
-      department: Faculty of Software Engineering
-      institution: Jinling Institute of Technology
-      description:
-        - "JIT--QUT Joint Bachelor of IT Program"
-        - "Graduated with 87% Weighted Average Mark"
-
-- title: Academic Experience
-  type: time_table
-  contents:
-    - title: "Postdoctoral Fellow"
-      year: 2026.06 - PRESENT
-      location: Brisbane, Australia
-      department: School of Mechanical, Medical and Process Engineering
-      institution: Queensland University of Technology
-      description:
-        - Conduct research on AI-To-Data (ATD), a decentralised privacy-preserving AI framework for multi-institute medical data, advancing it from TRL 3 to TRL 5 under the Australia's Economic Accelerator (AEA) Ignite grant.
-        - Build training and evaluation pipelines to validate ATD at scale across distributed nodes on multi-modality medical datasets.
-        - Manage milestone delivery of the 12-month grant, covering progress tracking, risk management, and reporting to the funder.
-    - title: "Senior Project Officer"
-      year: 2026.06 - PRESENT
-      location: Brisbane, Australia
-      department: Energy Transition Centre & School of Information Systems
-      institution: Queensland University of Technology
-      description:
-        - Conduct research on multi-agent reinforcement learning (MARL) for coordinated optimisation of distributed Battery Energy Storage Systems (BESS) across household and community scales.
-        - Design and implement MARL architectures for cross-scale coordination, balancing household objectives with community-level goals such as grid stability and renewable energy utilisation.
-        - Develop a simulation testbed integrating public energy datasets to empirically evaluate the coordination architectures.
-    - title: "Research Associate"
-      year: 2025.08 - 2025.12
-      location: Brisbane, Australia
-      department: Energy Transition Centre & School of Information Systems
-      institution: Queensland University of Technology
-      description:
-        - Reviewed and synthesised literature on BESS with a focus on operational optimisation across different scales.
-        - Analysed how optimisation approaches and objectives differ across system scales.
-        - Developed a structured framework to summarise and compare existing optimisation methods.
-    - title: "PhD Research Project"
-      year: 2022.02 - 2026.04
-      location: Brisbane, Australia
-      department: School of Information Systems
-      institution: Queensland University of Technology
-      description:
-        - 'Title: <a href="https://doi.org/10.5204/thesis.eprints.264638" target="_blank"><b>Building Adversarially Robust Predictive Systems for Tabular Data</b></a>'
-        - 'Co-advised by <a href="https://www.qut.edu.au/about/our-people/academic-profiles/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a> (Principal Supervisor), <a href="https://www.qut.edu.au/about/our-people/academic-profiles/alistair.barros" target="_blank"><b>Prof. Alistair Barros</b></a> (Associate Supervisor) and <a href="https://profiles.uts.edu.au/Catarina.PintoMoreira" target="_blank"><b>A/Prof. Catarina Moreira</b></a> (External Supervisor @UTS)'
-        - "Addressed adversarial robustness of machine learning models on tabular data. Investigated state-of-the-art attack techniques, characterised what makes attacks on structured data imperceptible, and proposed metrics and a benchmark for evaluating these characteristics, laying the groundwork for defence mechanisms that improve model robustness against adversarial attacks in tabular domains."
-    - title: "Senior Research Assistant"
-      year: 2025.04 - 2025.09
-      location: Brisbane, Australia
-      department: School of Information Systems
-      institution: Queensland University of Technology
-      description:
-        - 'Corporate Partner: <a href="https://elu.net.au/" target="_blank"><b>eLu Australia</b></a>'
-        - "Established baseline understanding of electricity outages and price dynamics in the Australian National Electricity Market (NEM) through review of AEMO reports, industry literature, and exploratory data analysis."
-        - "Identified and analysed root causes of electricity outages and price volatility within the NEM."
-        - "Developed and evaluated a predictive model for electricity price forecasting, improving on current AEMO capabilities."
-        - "Designed and implemented an interactive dashboard for visualising historical NEM data and real-time electricity price forecasts."
-    - title: "Research Assistant"
-      year: 2023.11 - 2023.12
-      location: Brisbane, Australia
-      department: School of Information Systems
-      institution: Queensland University of Technology
-      description:
-        - Collected literature on multi-modal fusion for time-sequence data and identified related research gaps
-        - Developed multi-modal fusion methods for time-sequence data to enhance the capability of predictive systems
-        - Developed an open-source tool package implementing the fusion methods, enabling testing and validation
-        - Designed and executed evaluation experiments using publicly accessible real-world datasets
-    - title: "Research Assistant"
-      year: 2021.10 - 2021.12
-      location: Brisbane, Australia
-      department: School of Information Systems
-      institution: Queensland University of Technology
-      description:
-        - Developed an analytical method for applying explainable AI (XAI) techniques to the inspection of predictive models
-        - Implemented the method as an open-source tool package for testing and validation using publicly available real-life datasets
-        - Built visualisations of model inspection results and developed a website for project publicity
-    - title: "Honours Research Project"
-      year: 2021.02 - 2021.12
-      location: Brisbane, Australia
-      department: School of Information Systems
-      institution: Queensland University of Technology
-      description:
-        - "Title: Investigating the Impact of Event Logs on Deep Learning-based Process Prediction Performance"
-        - 'Co-advised by <a href="https://www.qut.edu.au/about/our-people/academic-profiles/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a> and <a href="https://profiles.uts.edu.au/Catarina.PintoMoreira" target="_blank"><b>A/Prof. Catarina Moreira</b></a>'
-        - |
-          Investigated and analysed the potential influence of specific characteristics of event logs when predicting next business process activity using deep learning techniques <br/>
-          <ul>
-            <li>Studying and identifying key characteristics of event logs</li>
-            <li>Analysing the effects of event log characteristics on predicting next processactivity based on LSTM and Transformer</li>
-          </ul>
-        - 'Presented the research findings and outcome in the scientific paper (<a href="https://doi.org/10.1016/j.knosys.2022.108773" target="_blank"><b>KBS 2022</b></a>) and <a href="https://zhipenghe.me/assets/pdf/Honours_Thesis.pdf" target="_blank"><b>Honours thesis</b></a>'
-    - title: "2021 AMSI Winter School Academic Training"
-      year: 2021.07
-      location: Brisbane, Australia
-      department: Centre for Data Science
-      institution: Queensland University of Technology
-      description:
-        - "Attended lectures and tutorials of advanced statistical learning knowledge such as Bayesian Statistics and Markov chain Monte Carlo related methods"
-        - "Gained knowledge of generative deep learning models"
-        - 'Presented a <a href="https://slides.zhipenghe.me/2021-07-AMSI.pdf" target="_blank"><b>participant talk</b></a> titled <em>Deep Learning-based Business Process Prediction</em> during the winter school'
-    - title: "VRES Research Project"
-      year: 2020.11 - 2021.02
-      location: Brisbane, Australia
-      department: School of Information Systems
-      institution: Queensland University of Technology
-      description:
-        - "Title: Towards Design and Development of Interactive Visualisation for Organisational Analytics"
-        - 'Advised by <a href="https://staff.qut.edu.au/staff/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a>'
-        - "Aimed to address how to visualise organisational analytics results as informed by existing visual analytics design principles"
-        - "Proposed an organisational mining visualisation design workflow for selecting appropriate visualisation techniques to generate organisational mining visualisation"
-        - 'A <a href="https://slides.zhipenghe.me/2021-02-VRES.pdf" target="_blank"><b>project showcase</b></a> was presented to all the VRES students and supervisors from School of Computer Science and School of Information Systems.'
-
-- title: Teaching Experience
-  type: time_table
-  contents:
-    - title: Academic Tutor - IFN695 - MDA Minor Project
-      year: 2025.02 - 2025.11
-      location: Brisbane, Australia
-      department: Faculty of Science
-      institution: Queensland University of Technology
-      description:
-        - Proposed the topic of <b>Australia's National Electricity Market</b> for the graduate research project unit, a capstone unit for the Master of Data Analytics program
-        - Assisted with weekly student supervision, participated in presentation assessment panels, and graded final project reports
-    - title: Teaching Assistant - IFN703/4 - MDA Advanced Project
-      year: 2024.02 - 2024.06
-      location: Brisbane, Australia
-      department: Faculty of Science
-      institution: Queensland University of Technology
-      description:
-        - Proposed the topic of <b>Anomaly Detection in ECG Signals</b> for the graduate research project unit, a capstone unit for the Master of Data Analytics program
-        - Assisted with weekly student supervision, participated in presentation assessment panels, and graded final project reports
-#   - title: '<b>Teaching Assistant</b> for <b>Topics in Deep Learning</b>'
-#     year: Fall 2017
-#     location: USA
-#     description:
-#     - Graduate level deep learning class <a href="http://www.cs.cmu.edu/~rsalakhu/10707/" target="_blank"><b>10-707 Topics in Deep Learning</b></a> at Carnegie Mellon University
-#     - Taught by <a href="https://www.cs.cmu.edu/~rsalakhu/" target="_blank"><b>Prof. Ruslan Salakhutdinov</b></a>
-#   - title: 'Teaching algorithms for competitive programming'
-#     year: 2013 - 2014
-#     location: Romania
-#     description:
-#     - Co-organized a competitive programming seminar at Politehnica University of Timisoara for university and high-school students interested to train for algorithmic competitions (e.g. ACM-ICPC, informatics olympiad).
-#     - Taught algorithms and data structures used in competitive programming, designed and solved practice problems and internal competitions.
-- title: Academic Service
-  type: nested_list
-  contents:
-    - title: "Journal Reviewer:"
-      items:
-        - "Applied Soft Computing"
-        - "Biomedical Engineering: Applications, Basis and Communications"
-        - "Discover Computing"
-        - "Expert Systems With Applications"
-        - "IEEE Journal of Biomedical and Health Informatics"
-        - "IEEE Open Journal of the Industrial Electronics Society"
-        - "International Journal of Data Science and Analytics"
-        - "International Journal of Machine Learning and Cybernetics"
-        - "Journal of King Saud University - Computer and Information Sciences"
-        - "Journal of Visual Communication and Image Representation"
-        - "Knowledge-Based Systems"
-        - "Neural Processing Letters"
-        - "Patterns"
-        - "Scientific Reports"
-        - "SoftwareX"
-        - "Telecommunication Systems"
-        - "The Journal of Supercomputing"
-    - title: "Conference Reviewer:"
-      items:
-        - International Conference on Business Process Management (BPM), 2026
-        - International Conference on Process Mining (ICPM), 2024 - 2025
-        - World Conference on eXplainable Artificial Intelligence (xAI), 2024
-
-- title: Professional Experience
-  type: time_table
-  contents:
-    - title: "Full-Stack AI Engineer"
-      year: 2026.02 - PRESENT
-      institution: Self-employed
-      location: Brisbane, Australia
-      description:
-        - Provide AI consulting on business process automation, software architecture, and practical adoption of LLM-based solutions.
-        - Design and build AI agent systems for business use cases, covering architecture, workflow automation, and LLM integration.
-        - Develop backend services and web interfaces to connect business data, tools, and human workflows.
-    - title: "Capstone Analyst (Industry Capstone Project)"
-      year: 2020.03 - 2020.10
-      institution: Suncorp Group
-      location: Brisbane, Australia
-      description:
-        - Delivered an industry-partnered capstone project to support the integration of Management Information Systems for the Insurance Portfolio Management Office in Suncorp.
-        - Conducted business analysis and configured enterprise architecture tools (ARIS and Alfabet), integrating systems using existing APIs and data frameworks, and customising object and model mappings to meet organisational requirements.
-        - Developed integration risk management and deployment documentation to support production implementation.
-  # - title: 'Java Web Developer Intern'
-  #   year: 2019.07 - 2019.10
-  #   institution: Yizhi Software Technology Co., Ltd, China
-  #   location: Nanjing, China
-  #   description:
-  #   - 'Project experience with Java web development frameworks -- Spring'
-  #   - 'Project experience with database modelling and implementation of application backend'
-  #   - 'Performs system analysis and system design functions for highly difficult web-based software applications and systems'
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - title: QUT Faculty of Science High Achiever HDR Student
-      year: 2025
-      description:
-        - Awarded for sustained high achievement in research and esteem measures
-    - title: QUT School of Information Systems Best HDR Championship
-      year: 2025
-      description:
-        - Awarded for outstanding leadership, advocacy and impactful research within the HDR community
-    - title: QUT School of Information Systems HDR Accomplishment Award
-      year: 2025
-      description:
-        - Awarded for high-quality research with strong publications as an HDR candidate
-    - title: QUT School of Information Systems Doctoral Consortium Outstanding Presentation Award
-      year: 2024
-      description:
-        - Awarded for the outstanding presentation at the 2024 Doctoral Consortium
-    - title: QUT Postgraduate Research Award (QUTPRA) (International)
-      year: 2022 - 2025
-      description:
-        - Competitive living stipend for full-time PhD research at QUT
-    - title: QUT HDR Tuition Fee Sponsorship
-      year: 2022 - 2026
-      description:
-        - Full tuition fee sponsorship for the Doctor of Philosophy at QUT
-    - title: QUT Faculty of Science Dean's List Award
-      year: 2021
-      description:
-        - Awarded in recognition of excellent academic performance for Honours at QUT
-    - title: Australian Mathematical Sciences Institute (AMSI) Winter School Scholarship
-      year: 2021
-      description:
-        - Awarded for funding participation in the AMSI Winter School in July 2021
-    - title: QUT International Merit Scholarship
-      year: 2021
-      description:
-        - Awarded for academic excellence, funding the Bachelor of Information Technology (Honours) at QUT
-    - title: QUT Vacation Research Experience Scheme (VRES) Scholarship
-      year: 2020
-      description:
-        - Funded a three-month research project on visualisation for organisational analytics
-    - title: QUT International Merit Scholarship
-      year: 2020
-      description:
-        - Awarded for academic excellence, funding the Bachelor of Information Technology (Information Systems) at QUT
-    - title: JIT First-class Scholarship for Undergraduate Student
-      year: 2018 - 2019
-      description:
-        - Awarded for funding undergraduate study at JIT
-    - title: JIT Merit Student Award
-      year: 2017 - 2018
-      description:
-        - Awarded in recognition of outstanding academic performance at JIT
-
-- title: Skills
-  type: nested_list
-  contents:
-    - title: "Machine Learning & AI:"
-      items:
-        - Adversarial machine learning and robustness evaluation for tabular data
-        - Privacy-preserving and federated learning for multi-institute healthcare data
-        - Reinforcement learning and multi-agent RL for energy storage optimisation
-        - Time-series forecasting for electricity price and demand
-        - Explainable AI and interpretable model design
-        - Deep learning with PyTorch, plus scikit-learn, Pandas and Jupyter for experimentation
-    - title: "AI Engineering:"
-      items:
-        - LLM-based agent systems, tool use, and workflow automation
-        - Full-stack development with Python backends and TypeScript/React web frontends
-        - Interactive dashboards for data analytics and real-time forecasting
-    - title: "Tools & Infrastructure:"
-      items:
-        - Python, TypeScript/JavaScript, Shell, SQL, LaTeX
-        - Docker, Git, GitHub Actions, and HPC job scheduling with PBS
-        - Developer documentation with Markdown/MDX static sites
-        - PostgreSQL and NoSQL databases for data warehousing and processing
+# Vitae data in RenderCV format, rendered by the al_folio_cv plugin (layout: cv, cv_format: rendercv).
+# Section order here is the order on the page. Dates use YYYY.MM so the month is shown; "Present" marks an ongoing role.
+# Sections whose entries carry a position/company render with the experience template (see _includes/cv/render.liquid)
+# and are sorted by date at render time, newest first.
+cv:
+  sections:
+    General Information:
+      - label: Full Name
+        details: HE, Zhipeng
+      - label: Chinese Name
+        details: 何志鹏
+      - label: Preferred Name
+        details: Zippo
+      - label: Contact
+        details: "zippo [dot] he [at] qut [dot] edu [dot] au"
+      - label: Languages
+        details: Mandarin Chinese (native), English (proficient)
+    Research Areas:
+      - bullet: "Privacy-Preserving & Federated Learning for Healthcare"
+      - bullet: "Adversarial Attacks & Robust ML"
+      - bullet: Reinforcement Learning for Energy Systems
+      - bullet: Explainable AI
+    Education:
+      - institution: Queensland University of Technology
+        area: School of Information Systems
+        studyType: Doctor of Philosophy, Ph.D.
+        location: Brisbane, Australia
+        start_date: "2022.02"
+        end_date: "2026.04"
+        highlights:
+          - 'Thesis: <a href="https://doi.org/10.5204/thesis.eprints.264638" target="_blank"><b>Building Adversarially Robust Predictive Systems for Tabular Data</b></a>'
+          - 'Co-advised by <a href="https://www.qut.edu.au/about/our-people/academic-profiles/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a> (Principal Supervisor), <a href="https://www.qut.edu.au/about/our-people/academic-profiles/alistair.barros" target="_blank"><b>Prof. Alistair Barros</b></a> (Associate Supervisor) and <a href="https://profiles.uts.edu.au/Catarina.PintoMoreira" target="_blank"><b>A/Prof. Catarina Moreira</b></a> (External Supervisor @UTS)'
+          - Addressed adversarial robustness of machine learning models on tabular data. Investigated state-of-the-art attack techniques, characterised what makes attacks on structured data imperceptible, and proposed metrics and a benchmark for evaluating these characteristics, laying the groundwork for defence mechanisms that improve model robustness against adversarial attacks in tabular domains.
+          - Awarded QUT Postgraduate Research Award (International) and QUT HDR Tuition Fee Sponsorship
+      - institution: Queensland University of Technology
+        area: School of Information Systems
+        studyType: Bachelor of Information Technology (Honours), First Class Honours
+        location: Brisbane, Australia
+        start_date: "2021.02"
+        end_date: "2021.12"
+        highlights:
+          - 'Thesis: <a href="https://zhipenghe.me/assets/pdf/Honours_Thesis.pdf" target="_blank"><b>Investigating the Impact of Event Logs on Deep Learning-based Process Prediction Performance</b></a>'
+          - 'Co-advised by <a href="https://www.qut.edu.au/about/our-people/academic-profiles/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a> and <a href="https://profiles.uts.edu.au/Catarina.PintoMoreira" target="_blank"><b>A/Prof. Catarina Moreira</b></a>'
+          - 'Investigated how key characteristics of event logs affect next-activity prediction with LSTM and Transformer models; findings published in <a href="https://doi.org/10.1016/j.knosys.2022.108773" target="_blank"><b>KBS 2022</b></a>'
+          - Graduated with 6.625 out of 7 GPA; awarded QUT International Merit Scholarship
+      - institution: Queensland University of Technology
+        area: Faculty of Science and Engineering
+        studyType: Bachelor of Information Technology (Information Systems)
+        location: Brisbane, Australia
+        start_date: "2020.02"
+        end_date: "2020.11"
+        highlights:
+          - JIT-QUT Joint Bachelor of IT Program
+          - Graduated with 6 out of 7 GPA; awarded QUT International Merit Scholarship
+      - institution: Jinling Institute of Technology
+        area: Faculty of Software Engineering
+        studyType: Bachelor of Engineering (Software Engineering)
+        location: Nanjing, China
+        start_date: "2016.09"
+        end_date: "2020.11"
+        highlights:
+          - JIT-QUT Joint Bachelor of IT Program
+          - Graduated with 87% Weighted Average Mark
+    Academic Experience:
+      - company: School of Mechanical, Medical and Process Engineering, Queensland University of Technology
+        position: Postdoctoral Fellow
+        location: Brisbane, Australia
+        start_date: "2026.06"
+        end_date: "Present"
+        highlights:
+          - Conduct research on AI-To-Data (ATD), a decentralised privacy-preserving AI framework for multi-institute medical data, advancing it from TRL 3 to TRL 5 under the Australia's Economic Accelerator (AEA) Ignite grant.
+          - Build training and evaluation pipelines to validate ATD at scale across distributed nodes on multi-modality medical datasets.
+          - Manage milestone delivery of the 12-month grant, covering progress tracking, risk management, and reporting to the funder.
+      - company: "Energy Transition Centre & School of Information Systems, Queensland University of Technology"
+        position: Senior Project Officer
+        location: Brisbane, Australia
+        start_date: "2026.06"
+        end_date: "Present"
+        highlights:
+          - Conduct research on multi-agent reinforcement learning (MARL) for coordinated optimisation of distributed Battery Energy Storage Systems (BESS) across household and community scales.
+          - Design and implement MARL architectures for cross-scale coordination, balancing household objectives with community-level goals such as grid stability and renewable energy utilisation.
+          - Develop a simulation testbed integrating public energy datasets to empirically evaluate the coordination architectures.
+      - company: "Energy Transition Centre & School of Information Systems, Queensland University of Technology"
+        position: Research Associate
+        location: Brisbane, Australia
+        start_date: "2025.08"
+        end_date: "2025.12"
+        highlights:
+          - Reviewed and synthesised literature on BESS with a focus on operational optimisation across different scales.
+          - Analysed how optimisation approaches and objectives differ across system scales.
+          - Developed a structured framework to summarise and compare existing optimisation methods.
+      - company: School of Information Systems, Queensland University of Technology
+        position: Senior Research Assistant
+        location: Brisbane, Australia
+        start_date: "2025.04"
+        end_date: "2025.09"
+        summary: 'Corporate partner: <a href="https://elu.net.au/" target="_blank"><b>eLu Australia</b></a>'
+        highlights:
+          - Established baseline understanding of electricity outages and price dynamics in the Australian National Electricity Market (NEM) through review of AEMO reports, industry literature, and exploratory data analysis.
+          - Identified and analysed root causes of electricity outages and price volatility within the NEM.
+          - Developed and evaluated a predictive model for electricity price forecasting, improving on current AEMO capabilities.
+          - Designed and implemented an interactive dashboard for visualising historical NEM data and real-time electricity price forecasts.
+      - company: School of Information Systems, Queensland University of Technology
+        position: Research Assistant
+        location: Brisbane, Australia
+        start_date: "2023.11"
+        end_date: "2023.12"
+        highlights:
+          - Collected literature on multi-modal fusion for time-sequence data and identified related research gaps
+          - Developed multi-modal fusion methods for time-sequence data to enhance the capability of predictive systems
+          - Developed an open-source tool package implementing the fusion methods, enabling testing and validation
+          - Designed and executed evaluation experiments using publicly accessible real-world datasets
+      - company: School of Information Systems, Queensland University of Technology
+        position: Research Assistant
+        location: Brisbane, Australia
+        start_date: "2021.10"
+        end_date: "2021.12"
+        highlights:
+          - Developed an analytical method for applying explainable AI (XAI) techniques to the inspection of predictive models
+          - Implemented the method as an open-source tool package for testing and validation using publicly available real-life datasets
+          - Built visualisations of model inspection results and developed a website for project publicity
+      - company: AMSI Winter School 2021, Centre for Data Science, Queensland University of Technology
+        position: Participant
+        location: Brisbane, Australia
+        date: "2021.07"
+        highlights:
+          - Attended lectures and tutorials on advanced statistical learning such as Bayesian statistics and Markov chain Monte Carlo methods
+          - Gained knowledge of generative deep learning models
+          - 'Presented a <a href="https://slides.zhipenghe.me/2021-07-AMSI.pdf" target="_blank"><b>participant talk</b></a> titled <em>Deep Learning-based Business Process Prediction</em>'
+      - company: School of Information Systems, Queensland University of Technology
+        position: Vacation Research Experience Scheme (VRES) Student
+        location: Brisbane, Australia
+        start_date: "2020.11"
+        end_date: "2021.02"
+        summary: "Project: Towards Design and Development of Interactive Visualisation for Organisational Analytics"
+        highlights:
+          - 'Advised by <a href="https://www.qut.edu.au/about/our-people/academic-profiles/c.ouyang" target="_blank"><b>A/Prof. Chun Ouyang</b></a>'
+          - Aimed to address how to visualise organisational analytics results as informed by existing visual analytics design principles
+          - Proposed an organisational mining visualisation design workflow for selecting appropriate visualisation techniques
+          - 'A <a href="https://slides.zhipenghe.me/2021-02-VRES.pdf" target="_blank"><b>project showcase</b></a> was presented to all VRES students and supervisors from the School of Computer Science and School of Information Systems'
+    Teaching Experience:
+      - company: Faculty of Science, Queensland University of Technology
+        position: Academic Tutor, IFN695 MDA Minor Project
+        location: Brisbane, Australia
+        start_date: "2025.02"
+        end_date: "2025.11"
+        highlights:
+          - "Proposed the topic of <b>Australia's National Electricity Market</b> for the graduate research project unit, a capstone unit for the Master of Data Analytics program"
+          - Assisted with weekly student supervision, participated in presentation assessment panels, and graded final project reports
+      - company: Faculty of Science, Queensland University of Technology
+        position: Teaching Assistant, IFN703/4 MDA Advanced Project
+        location: Brisbane, Australia
+        start_date: "2024.02"
+        end_date: "2024.06"
+        highlights:
+          - "Proposed the topic of <b>Anomaly Detection in ECG Signals</b> for the graduate research project unit, a capstone unit for the Master of Data Analytics program"
+          - Assisted with weekly student supervision, participated in presentation assessment panels, and graded final project reports
+    Academic Service:
+      - label: Journal Reviewer
+        details: "Applied Soft Computing · Biomedical Engineering&#58; Applications, Basis and Communications · Discover Computing · Expert Systems With Applications · IEEE Journal of Biomedical and Health Informatics · IEEE Open Journal of the Industrial Electronics Society · International Journal of Data Science and Analytics · International Journal of Machine Learning and Cybernetics · Journal of King Saud University - Computer and Information Sciences · Journal of Visual Communication and Image Representation · Knowledge-Based Systems · Neural Processing Letters · Patterns · Scientific Reports · SoftwareX · Telecommunication Systems · The Journal of Supercomputing"
+      - label: Conference Reviewer
+        details: International Conference on Business Process Management (BPM) 2026 · International Conference on Process Mining (ICPM) 2024–2025 · World Conference on eXplainable Artificial Intelligence (xAI) 2024
+    Professional Experience:
+      - company: Self-employed
+        position: Full-Stack AI Engineer
+        location: Brisbane, Australia
+        start_date: "2026.02"
+        end_date: "Present"
+        highlights:
+          - Provide AI consulting on business process automation, software architecture, and practical adoption of LLM-based solutions.
+          - Design and build AI agent systems for business use cases, covering architecture, workflow automation, and LLM integration.
+          - Develop backend services and web interfaces to connect business data, tools, and human workflows.
+      - company: Suncorp Group
+        position: Capstone Analyst (Industry Capstone Project)
+        location: Brisbane, Australia
+        start_date: "2020.03"
+        end_date: "2020.10"
+        highlights:
+          - Delivered an industry-partnered capstone project to support the integration of Management Information Systems for the Insurance Portfolio Management Office in Suncorp.
+          - Conducted business analysis and configured enterprise architecture tools (ARIS and Alfabet), integrating systems using existing APIs and data frameworks, and customising object and model mappings to meet organisational requirements.
+          - Developed integration risk management and deployment documentation to support production implementation.
+    Honors and Awards:
+      - title: High Achiever HDR Student
+        date: "2025"
+        awarder: Faculty of Science, Queensland University of Technology
+        summary: Awarded for sustained high achievement in research and esteem measures
+      - title: Best HDR Championship
+        date: "2025"
+        awarder: School of Information Systems, Queensland University of Technology
+        summary: Awarded for outstanding leadership, advocacy and impactful research within the HDR community
+      - title: HDR Accomplishment Award
+        date: "2025"
+        awarder: School of Information Systems, Queensland University of Technology
+        summary: Awarded for high-quality research with strong publications as an HDR candidate
+      - title: Doctoral Consortium Outstanding Presentation Award
+        date: "2024"
+        awarder: School of Information Systems, Queensland University of Technology
+        summary: Awarded for the outstanding presentation at the 2024 Doctoral Consortium
+      - title: QUT Postgraduate Research Award (QUTPRA) (International)
+        date: "2022–2025"
+        awarder: Queensland University of Technology
+        summary: Competitive living stipend for full-time PhD research at QUT
+      - title: QUT HDR Tuition Fee Sponsorship
+        date: "2022–2026"
+        awarder: Queensland University of Technology
+        summary: Full tuition fee sponsorship for the Doctor of Philosophy at QUT
+      - title: Dean's List Award
+        date: "2021"
+        awarder: Faculty of Science, Queensland University of Technology
+        summary: Awarded in recognition of excellent academic performance for Honours at QUT
+      - title: AMSI Winter School Scholarship
+        date: "2021"
+        awarder: Australian Mathematical Sciences Institute
+        summary: Awarded for funding participation in the AMSI Winter School in July 2021
+      - title: QUT International Merit Scholarship
+        date: "2021"
+        awarder: Queensland University of Technology
+        summary: Awarded for academic excellence, funding the Bachelor of Information Technology (Honours) at QUT
+      - title: Vacation Research Experience Scheme (VRES) Scholarship
+        date: "2020"
+        awarder: Queensland University of Technology
+        summary: Funded a three-month research project on visualisation for organisational analytics
+      - title: QUT International Merit Scholarship
+        date: "2020"
+        awarder: Queensland University of Technology
+        summary: Awarded for academic excellence, funding the Bachelor of Information Technology (Information Systems) at QUT
+      - title: First-class Scholarship for Undergraduate Student
+        date: "2018–2019"
+        awarder: Jinling Institute of Technology
+        summary: Awarded for funding undergraduate study at JIT
+      - title: Merit Student Award
+        date: "2017–2018"
+        awarder: Jinling Institute of Technology
+        summary: Awarded in recognition of outstanding academic performance at JIT
+    Skills:
+      - name: "Machine Learning & AI"
+        keywords:
+          - adversarial machine learning and robustness evaluation for tabular data
+          - privacy-preserving and federated learning for multi-institute healthcare data
+          - reinforcement learning and multi-agent RL for energy storage optimisation
+          - time-series forecasting for electricity price and demand
+          - explainable AI and interpretable model design
+          - deep learning with PyTorch, plus scikit-learn, Pandas and Jupyter for experimentation
+      - name: AI Engineering
+        keywords:
+          - LLM-based agent systems, tool use, and workflow automation
+          - full-stack development with Python backends and TypeScript/React web frontends
+          - interactive dashboards for data analytics and real-time forecasting
+      - name: "Tools & Infrastructure"
+        keywords:
+          - Python, TypeScript/JavaScript, Shell, SQL, LaTeX
+          - Docker, Git, GitHub Actions, and HPC job scheduling with PBS
+          - developer documentation with Markdown/MDX static sites
+          - PostgreSQL and NoSQL databases for data warehousing and processing
