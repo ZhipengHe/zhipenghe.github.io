@@ -4,7 +4,8 @@ title: about
 permalink: /
 subtitle: >
   <b><em>Postdoctoral Fellow</em></b><br>
-  School of Mechanical, Medical and Process Engineering, <a href="https://www.qut.edu.au/">Queensland University of Technology</a>
+  School of Mechanical, Medical and Process Engineering<br>
+  <a href="https://www.qut.edu.au/">Queensland University of Technology</a>
 
 profile:
   align: right
