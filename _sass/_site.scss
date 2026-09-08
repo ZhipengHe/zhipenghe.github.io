@@ -490,6 +490,27 @@ h6,
 // CV page fixes.
 // ---------------------------------------------------------------------------
 
+// Label entries whose details are a list (journal and conference reviewing)
+// render as a two-column list rather than a dot-separated run-on line.
+.cv .cv-details-list {
+  list-style: disc;
+  margin: 0.25rem 0 0;
+  padding-left: 1.25rem;
+  columns: 2;
+  column-gap: 2rem;
+
+  li {
+    break-inside: avoid;
+    padding: 0.1rem 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cv .cv-details-list {
+    columns: 1;
+  }
+}
+
 // The CV plugin's entry lists use Bootstrap list-group classes. With Tailwind
 // preflight disabled, the browser's default list markers show beside each
 // entry, so reset them here.

@@ -157,9 +157,29 @@ cv:
           - Assisted with weekly student supervision, participated in presentation assessment panels, and graded final project reports
     Academic Service:
       - label: Journal Reviewer
-        details: "Applied Soft Computing · Biomedical Engineering&#58; Applications, Basis and Communications · Discover Computing · Expert Systems With Applications · IEEE Journal of Biomedical and Health Informatics · IEEE Open Journal of the Industrial Electronics Society · International Journal of Data Science and Analytics · International Journal of Machine Learning and Cybernetics · Journal of King Saud University - Computer and Information Sciences · Journal of Visual Communication and Image Representation · Knowledge-Based Systems · Neural Processing Letters · Patterns · Scientific Reports · SoftwareX · Telecommunication Systems · The Journal of Supercomputing"
+        details:
+          - "Applied Soft Computing"
+          - "Biomedical Engineering: Applications, Basis and Communications"
+          - "Discover Computing"
+          - "Expert Systems With Applications"
+          - "IEEE Journal of Biomedical and Health Informatics"
+          - "IEEE Open Journal of the Industrial Electronics Society"
+          - "International Journal of Data Science and Analytics"
+          - "International Journal of Machine Learning and Cybernetics"
+          - "Journal of King Saud University - Computer and Information Sciences"
+          - "Journal of Visual Communication and Image Representation"
+          - "Knowledge-Based Systems"
+          - "Neural Processing Letters"
+          - "Patterns"
+          - "Scientific Reports"
+          - "SoftwareX"
+          - "Telecommunication Systems"
+          - "The Journal of Supercomputing"
       - label: Conference Reviewer
-        details: International Conference on Business Process Management (BPM) 2026 · International Conference on Process Mining (ICPM) 2024–2025 · World Conference on eXplainable Artificial Intelligence (xAI) 2024
+        details:
+          - "International Conference on Business Process Management (BPM) 2026"
+          - "International Conference on Process Mining (ICPM) 2024–2025"
+          - "World Conference on eXplainable Artificial Intelligence (xAI) 2024"
     Professional Experience:
       - company: Self-employed
         position: Full-Stack AI Engineer

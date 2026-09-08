@@ -194,7 +194,17 @@
                       </ul>
                     {% elsif entry.label %}
                       <div class="card-text font-weight-light">
-                        <strong>{{ entry.label }}:</strong> {{ entry.details }}
+                        {% if entry.details.first %}
+                          {% comment %}A YAML list renders as a multi-column list instead of one run-on line.{% endcomment %}
+                          <strong>{{ entry.label }}:</strong>
+                          <ul class="cv-details-list">
+                            {% for item in entry.details %}
+                              <li>{{ item }}</li>
+                            {% endfor %}
+                          </ul>
+                        {% else %}
+                          <strong>{{ entry.label }}:</strong> {{ entry.details }}
+                        {% endif %}
                       </div>
                     {% endif %}
                   {% endfor %}
