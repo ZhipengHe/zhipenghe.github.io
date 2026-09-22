@@ -3,6 +3,13 @@
 base_url: https://slides.zhipenghe.me/
 
 items:
+  - title: HPC in the AI Agent Era
+    type: Workshop
+    year: 2026
+    date: 22 Sep 2026
+    venue: QUT, Brisbane, Australia
+    description: QUT School of Information Systems HDR workshop on HPC fundamentals and research workflows with AI agents
+    slides: 2026-HPC-Workshop/slides.html
   - title: PhD Final Seminar 2025
     type: Talk
     year: 2025
