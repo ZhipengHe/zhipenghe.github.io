@@ -64,7 +64,14 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    {% assign paper_page = site.data.paper_pages[entry.key] %}
+    <div class="title">
+      {% if paper_page -%}
+        <a href="{{ paper_page.url | relative_url }}">{{ entry.title }}</a>
+      {%- else -%}
+        {{- entry.title -}}
+      {%- endif %}
+    </div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
@@ -398,7 +405,9 @@
     {% if entry.abstract %}
       <!-- Hidden abstract block -->
       <div class="abstract hidden">
-        <p>{{ entry.abstract }}</p>
+        <p>
+          {% if paper_page %}{{ paper_page.abstract | escape }}{% else %}{{ entry.abstract }}{% endif %}
+        </p>
       </div>
     {% endif %}
 

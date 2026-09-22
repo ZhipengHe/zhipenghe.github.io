@@ -13,12 +13,15 @@ profile:
   image_circular: false # square portrait with rounded corners
 
 focus:
-  - title: Healthcare AI
-    text: Federated, privacy-preserving learning across hospitals and modalities.
   - title: Adversarial ML
-    text: Attacks, robustness and imperceptibility on tabular data.
-  - title: Energy ML
-    text: Reinforcement learning for battery storage and electricity price forecasting.
+    url: /research/tabular-adversarial-ml/
+    text: Tabular adversarial attacks, imperceptibility and robustness evaluation.
+  - title: Healthcare AI
+    url: /research/#healthcare-ai-developing-research-direction
+    text: Developing work in privacy-preserving learning across hospitals and modalities.
+  - title: Energy systems
+    url: /research/#energy-systems-active-collaborations
+    text: Collaborations in battery optimisation and electricity price forecasting.
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page

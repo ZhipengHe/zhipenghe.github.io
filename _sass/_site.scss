@@ -564,3 +564,45 @@ h6,
 footer.fixed-bottom {
   text-align: center;
 }
+
+// Shared resource links on paper landing pages.
+.paper-resources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.paper-resources .paper-resource-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.625rem 1rem;
+  border: 1px solid var(--global-theme-color);
+  border-radius: 6px;
+  background: var(--global-card-bg-color);
+  color: var(--global-theme-color);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-decoration: none;
+  box-shadow: none;
+
+  &:hover {
+    color: var(--global-text-color);
+    border-color: var(--global-text-color);
+    text-decoration: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: 3px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .paper-resources .paper-resource-link {
+    flex: 1 1 calc(50% - 0.625rem);
+  }
+}

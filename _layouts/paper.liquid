@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header">
+    <p>
+      <a href="{{ '/research/tabular-adversarial-ml/' | relative_url }}">Tabular adversarial machine learning</a> &middot;
+      <a href="{{ '/publications/' | relative_url }}">All publications</a>
+    </p>
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <p>{{ page.paper.authors | join: ', ' | escape }}</p>
+    <p class="post-description">
+      {{ page.paper.journal | escape -}}
+      {%- if page.paper.volume != '' %}, {{ page.paper.volume | escape }}{% endif %} ({{ page.paper.year }})
+      {%- if page.paper.eid != '' %}, article {{ page.paper.eid }}{% endif %}
+    </p>
+  </header>
+  <article>
+    <h2 id="abstract">Abstract</h2>
+    <p>{{ page.paper.abstract | escape }}</p>
+    <nav class="paper-resources" aria-label="Paper resources">
+      <a class="paper-resource-link" href="https://doi.org/{{ page.paper.doi }}">Published paper</a>
+      {% if page.paper.arxiv != '' -%}
+        <a class="paper-resource-link" href="https://arxiv.org/abs/{{ page.paper.arxiv }}">Open preprint</a>
+      {%- endif %}
+      {% if page.paper.code != '' -%}
+        <a class="paper-resource-link" href="{{ page.paper.code }}">Code</a>
+      {%- endif %}
+      <a class="paper-resource-link" href="#citation">BibTeX</a>
+    </nav>
+    {{ content }}
+    <h2 id="related-research">Related research</h2>
+    <ul>
+      {% for item in site.data.paper_pages %}
+        {% unless item[0] == page.paper_key %}
+          <li>
+            <a href="{{ item[1].url | relative_url }}">{{ item[1].title | escape }}</a>
+          </li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
+    <h2 id="citation">Citation</h2>
+    <p>
+      Cite the published version using <a href="https://doi.org/{{ page.paper.doi }}">{{ page.paper.doi }}</a>.
+    </p>
+    <pre><code>{{ page.paper.bibtex | escape }}</code></pre>
+  </article>
+</div>
