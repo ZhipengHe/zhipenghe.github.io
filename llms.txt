@@ -2,11 +2,13 @@
 permalink: /llms.txt
 sitemap: false
 ---
-﻿# {{ site.first_name }} {{ site.last_name }} ({{ site.cn_name }})
+# {{ site.first_name }} {{ site.last_name }} ({{ site.cn_name }})
 
-> Personal academic website of {{ site.first_name }} "{{ site.nickname }}" {{ site.last_name }} ({{ site.cn_name }}), School of Mechanical, Medical and Process Engineering, Queensland University of Technology (QUT), Brisbane, Australia. {{ site.description }}
+> Personal academic website of {{ site.first_name }} "{{ site.nickname }}" {{ site.last_name }} ({{ site.cn_name }}), School of Mechanical, Medical and Process Engineering, Queensland University of Technology (QUT), Brisbane, Australia.
 
-Zhipeng He completed his PhD at QUT in 2026 with the thesis "Building Adversarially Robust Predictive Systems for Tabular Data", supervised by Chun Ouyang, Alistair Barros and Catarina Moreira. He now works on AI-To-Data, a decentralised privacy-preserving AI framework for learning from multi-institute, multi-modality medical data, with Laith Alzubaidi. Alongside research he builds LLM-based agent systems as an independent full-stack AI engineer.
+Zhipeng He’s research centres on adversarial machine learning for tabular data, with a focus on imperceptibility, attack evaluation and model robustness. His postdoctoral work explores privacy-preserving, distributed healthcare AI. He also contributes to collaborations on electricity price forecasting and battery storage optimisation.
+
+He completed his PhD at QUT in 2026 with the thesis "Building Adversarially Robust Predictive Systems for Tabular Data", supervised by Chun Ouyang, Alistair Barros and Catarina Moreira.
 
 Research topics: {{ site.keywords }}.
 
@@ -19,6 +21,8 @@ Research topics: {{ site.keywords }}.
 - [{{ p.title | capitalize }}]({{ p.url | remove: "index.html" | absolute_url }}){% if p.description %}: {{ p.description | strip_html | strip }}{% endif %}
 {% endunless -%}
 {% endfor %}
+- [Tabular adversarial machine learning]({{ '/research/tabular-adversarial-ml/' | absolute_url }}): PhD research on imperceptibility, attack evaluation and on-manifold adversarial attacks, with links to the thesis and related papers
+
 ## Publications
 
 Full list with abstracts; entries marked (selected) are the ones highlighted on the homepage.
